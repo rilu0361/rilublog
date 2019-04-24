@@ -1,0 +1,44 @@
+body {
+    font-family: "Noto Sans JP";
+}
+
+/* フォントカラー */
+.wy-menu-vertical a, .wy-menu-vertical .subnav a {
+    color: rgb(221, 28, 28);
+}
+.wy-menu-vertical * li.current a {
+    color: rgb(211, 75, 75);
+}
+.wy-menu-vertical span {
+    color: rgb(143, 143, 53);
+}
+
+.md-typeset h1 {
+    color: rgb(11, 26, 54);
+    border-bottom: solid 1px #f18b21;
+    font-weight: bold;
+}
+
+/* コードハイライト */
+.md-typeset pre {
+    color: #ebebeb;
+}
+.md-typeset .codehilitetable {
+    margin-left:-20px;
+    margin-right: -20px;
+    border-radius: 0;
+}
+.md-typeset .codehilitetable .linenodiv {
+    background-color: #222 !important;
+}
+.md-typeset .codehilitetable .linenodiv pre {
+    background-color: #222 !important;
+    color: rgba(248, 139, 66, 0.8);
+    margin: 0;
+}
+.md-typeset .codehilitetable .md-clipboard:before {
+    color: rgba(24,240,240,.8);
+}
+.md-typeset .codehilitetable .md-clipboard:hover:before {
+    color: rgb(238, 109, 255);
+}

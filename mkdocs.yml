@@ -1,0 +1,70 @@
+site_name: あああああああああああ
+nav:
+    - Home: index.md
+    - About: test.md
+    - test:
+        - test2: test_dir/test2.md
+        - test3: test_dir/test3.md
+
+# theme: readthedocs
+theme:
+  name: 'material'
+  language: 'ja'
+extra:
+    search:
+        language: 'ja'
+
+extra_css:
+    - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+    - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+    - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    - "css/custom.css"
+
+# extra_css: [css/custom.css]
+
+# markdown_extensions:
+#     - mdx_math:
+#         enable_dollar_delimiter: true
+#     - admonition
+#     - fontawesome_markdown
+#     # - pymdownx.emoji
+#         # - emoji_generator: !!python/name:pymdownx.emoji.to_svg
+#     - codehilite:
+#         linenums : true
+#         use_pygments: true
+#         noclasses: true
+#         pygments_style: monokai
+#     - def_list
+#     - footnotes
+
+markdown_extensions:
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+    - codehilite:
+        linenums : true
+        use_pygments: true
+        noclasses: true
+        pygments_style: monokai
+    - def_list
+    - footnotes
+    - admonition
+
+# extra_javascript: 
+#     - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
