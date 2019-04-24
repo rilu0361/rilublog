@@ -19,30 +19,6 @@ body {
     font-weight: bold;
 }
 
-
-/* pre{
-    color: #ebebeb;
-}
-.codehilitetable .linenodiv {
-    background-color: #222 !important;
-}
-.codehilitetable {
-    margin-left:-20px;
-    margin-right: -20px;
-    border-radius: 0;
-}
-.codehilitetable .linenodiv pre {
-    background-color: #222 !important;
-    color: rgba(248, 139, 66, 0.8);
-    margin: 0;
-}
-.codehilitetable .md-clipboard:before {
-    color: rgba(24,240,240,.8);
-}
-.codehilitetable .md-clipboard:hover:before {
-    color: rgb(238, 109, 255);
-} */
-
 /* コードハイライト */
 .md-typeset pre {
     color: #ebebeb;

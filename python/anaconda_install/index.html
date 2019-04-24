@@ -36,7 +36,7 @@
     
     
       
-        <title>test2 - 雑記</title>
+        <title>Anacondaによる環境構築(Win) - 雑記</title>
       
     
     
@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#2" tabindex="1" class="md-skip">
+      <a href="#anacondawin" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -108,7 +108,7 @@
               雑記
             </span>
             <span class="md-header-nav__topic">
-              test2
+              Anacondaによる環境構築(Win)
             </span>
           
         </div>
@@ -243,7 +243,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../python/anaconda_cmd/" title="anacondaコマンド集" class="md-nav__link">
+    <a href="../anaconda_cmd/" title="anacondaコマンド集" class="md-nav__link">
       anacondaコマンド集
     </a>
   </li>
@@ -258,12 +258,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       TEST
@@ -279,20 +277,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="test2" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../test_dir/test2/" title="test2" class="md-nav__link">
       test2
     </a>
-    
   </li>
 
         
@@ -302,7 +291,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../test3/" title="test3" class="md-nav__link">
+    <a href="../../test_dir/test3/" title="test3" class="md-nav__link">
       test3
     </a>
   </li>
@@ -342,6 +331,22 @@
     
   
   
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="インストール" class="md-nav__link">
+    インストール
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -353,7 +358,104 @@
               
                 
                 
-                <h1 id="2">てすと2</h1>
+                <h1 id="anacondawin">Anacondaによる環境構築(Win)</h1>
+<p>2018/09/27</p>
+<p>Windows10での環境構築をベースとします。
+Linux系でも流れは同じはず…。</p>
+<p>Anacondaのインストールからjupyter notebookでプログラムが書けるようになるまでの流れです。</p>
+<h2 id="_1">インストール</h2>
+<p>Anacondaのページにいってぽちっとする。</p>
+<p>.. image:: ./image/anaconda_install.png
+    :align: center</p>
+<p><code class="codehilite">Anaconda3-5.2.0-Windows-x86_64.exe</code>
+をどこに保存されるか聞かれるのでわかるところに置いておく。</p>
+<p>| チートシートほしいならEメール登録してと言われるが無視。
+| 入力場所じゃないところをクリックすると消える。</p>
+<p><code class="codehilite">Anaconda3-5.2.0-Windows-x86_64.exe</code> を実行する。</p>
+<p>.. image:: ./image/exe.png
+    :align: center</p>
+<p>next ,I agree, next... と進めていく。</p>
+<p>.. image:: ./image/setup.png
+    :align: center</p>
+<p>待機。</p>
+<p>ゲージがたまったらnext</p>
+<p>.. image:: ./image/vscode.png
+    :align: center</p>
+<p>vsCodeが必要なければ、とりあえずskip</p>
+<p>.. image:: ./image/finish.png
+    :align: center</p>
+<p>| そのままfinishすると
+| <code class="codehilite">http://docs.anaconda.com/anaconda/user-guide/getting-started/ &lt;http://docs.anaconda.com/anaconda/user-guide/getting-started/&gt;</code>_
+| と、
+| <code class="codehilite">https://anaconda.org/ &lt;https://anaconda.org/&gt;</code>_
+| に飛ばされる。</p>
+<p>| anacondaの使い方（英語）とAnacondaクラウドの登録っぽいあれなので無視してもよい。
+| もしくはfinishする前にチェックを外しておく。</p>
+<p>| ここまででインストールは終了。</p>
+<h1 id="_2">起動</h1>
+<p>スタートのアプリ覧を見ると、「最近追加されたもの」にAnaconda関連のものが加わっていることが分かる。</p>
+<p>検索してもよい</p>
+<p>.. image:: ./image/ret.png
+    :align: center</p>
+<p>Anaconda Navigaterを起動する。</p>
+<p>しばらく待って起動すると以下がでてくる。</p>
+<p>.. image:: ./image/start.png
+    :align: center</p>
+<p><code class="codehilite">Ok, and don&#39;t show again</code> する。チェックを外しても良い。</p>
+<p>起動画面はこれ</p>
+<p>.. image:: ./image/navi.png
+    :align: center</p>
+<p>jupyter notebookを <code class="codehilite">Launch</code> (起動)する。</p>
+<p>ブラウザが立ち上がってjupyter notebookが起動する。</p>
+<p>.. image:: ./image/jup1.png
+    :align: center</p>
+<h1 id="jupyter">jupyterの基本</h1>
+<h2 id="_3">フォルダの作成</h2>
+<p>.. image:: ./image/folder.png
+    :align: center</p>
+<p>| Folderをクリックすると、
+| 新しく、<code class="codehilite">Untitled Folder</code> が作成される。
+| 追加されたフォルダは一番上に追加されなるわけでもなく、追加しましたって通知がくるわけでもないので注意。
+| アルファベット順に見ていくと追加されているのが分かる。「U」 なので結構下の方にある。</p>
+<h2 id="_4">フォルダのソート</h2>
+<p>| 右上のほうの <code class="codehilite">Name</code>  <code class="codehilite">LastModified</code> などでソート順を変えることも可能。</p>
+<p>.. image:: ./image/add_folder.png
+    :align: center</p>
+<h2 id="_5">リネーム</h2>
+<p>| フォルダ名の変更は左上の <code class="codehilite">Rename</code> から行える。</p>
+<p>| 変更したいフォルダにチェックをうってから <code class="codehilite">Rename</code> をクリック。</p>
+<p>.. image:: ./image/rename.png
+    :align: center</p>
+<p>フォルダ名を入力し、右下の<code class="codehilite">Rename</code></p>
+<p>.. image:: ./image/rename2.png
+    :align: center</p>
+<h2 id="python">pythonファイルを書く</h2>
+<p>Pythonファイルをかき始めるには
+右上の <code class="codehilite">new</code> から <code class="codehilite">python3</code> を選択する。</p>
+<p>.. image:: ./image/add_py.png
+    :align: center</p>
+<p>以下の画面が出てくる。</p>
+<p>.. image:: ./image/py.png
+    :align: center</p>
+<p>タイトルの変更はUntitledの場所をクリックすればよい。もしくはフォルダ名の変更と同様のやり方で行う。</p>
+<p>.. image:: ./image/ch_ti.png
+    :align: center</p>
+<h1 id="python-notebookipynb">保存してあるpython notebook(.ipynb) を読み込む</h1>
+<p>右上のuploadをクリックする。</p>
+<p>.. image:: ./image/upload.png
+    :align: center</p>
+<p>読み込みたいファイルを探し、開く。</p>
+<p>.. image:: ./image/up2.png
+    :align: center</p>
+<p>名前の変更も行える。
+右の青いボタン（<code class="codehilite">Upload</code> ）をクリック。</p>
+<p>.. image:: ./image/up3.png
+    :align: center</p>
+<p>以上で追加される。</p>
+<h1 id="markdown">markdownの書き方</h1>
+<p>jupyter notebook上ではコメントを書くことができる。</p>
+<p>.. image:: ./image/mark.png
+    :align: center</p>
                 
                   
                 
@@ -370,41 +472,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../../python/anaconda_cmd/" title="anacondaコマンド集" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  前
-                </span>
-                anacondaコマンド集
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../test3/" title="test3" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  次
-                </span>
-                test3
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
