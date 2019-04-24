@@ -1,20 +1,4 @@
-# Welcome to MkDocs
-
-For full documentation visit [mkdocs.org](https://mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+# ようこそ
 
 ## テスト
 
@@ -26,6 +10,7 @@ For full documentation visit [mkdocs.org](https://mkdocs.org).
 **太字** 太字
  _イタリック_ イタリック
 
+## 数式
 $$
 a = 
 $$
@@ -34,8 +19,9 @@ $$
 print("hello")
 ```
 
+### 見出し3
 $$
-\frac{n!}{k!(n-k)!} = \binom{n}{k}
+\frac{n!}{k!(n-k)!} = \binom{n_1 n_2}{k_1 k_2}
 $$
 
 test
