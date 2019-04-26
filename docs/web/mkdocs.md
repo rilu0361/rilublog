@@ -1,7 +1,5 @@
 # MkDocsについて
 
-[mkdocs.org](https://mkdocs.org).
-
 ## コマンド
 
 - 新規プロジェクトの立ち上げ
@@ -32,7 +30,7 @@ mkdocs help
 site_name: 雑記
 nav:
     - Home: index.md
-    - About: test.md
+    - About: about.md
     - test:
         - test2: test_dir/test2.md
         - test3: test_dir/test3.md

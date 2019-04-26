@@ -1,17 +1,19 @@
-site_name: 雑記
+site_name: Rilu's blog
 nav:
     - HOME: index.md
-    - WEB:
+    - Web:
         - mkdocs: web/mkdocs.md
-    - PYTHON:
+    - Python:
         - anacondaコマンド集: python/anaconda_cmd.md
-    - MARKDOWN:
-        - 基本: markdown/mkd_1.md
-        - mkdocs: markdown/mkd_2.md
+        - anacondaインストール手順: python/anaconda_install.md
+    - Markdown:
+        - markdown基本: markdown/mkd.md
+        - markdownその他: markdown/mkdocs_md.md
+        - markdown例: markdown/mkd_ex.md
     - 雑記: 
-        - 2019年4月: 201904.md
-    - その他: other.md
+        - 2019年4月: blog/201904.md
 
+    
 # theme: readthedocs
 theme:
   name: 'material'

@@ -11,161 +11,131 @@ Anacondaのインストールからjupyter notebookでプログラムが書け�
 
 Anacondaのページにいってぽちっとする。
 
-.. image:: ./image/anaconda_install.png
-    :align: center
+![install](./image/anaconda_install.png)
 
-``Anaconda3-5.2.0-Windows-x86_64.exe``
+`Anaconda3-5.2.0-Windows-x86_64.exe`
 をどこに保存されるか聞かれるのでわかるところに置いておく。
 
-| チートシートほしいならEメール登録してと言われるが無視。
-| 入力場所じゃないところをクリックすると消える。
+チートシートほしいならEメール登録してと言われるが無視。  
+入力場所じゃないところをクリックすると消える。
 
-``Anaconda3-5.2.0-Windows-x86_64.exe`` を実行する。
+`Anaconda3-5.2.0-Windows-x86_64.exe` を実行する。
 
-.. image:: ./image/exe.png
-    :align: center
+![exe](./image/exe.png)
 
 next ,I agree, next... と進めていく。
 
-.. image:: ./image/setup.png
-    :align: center
+![setup](./image/setup.png)
 
 待機。
 
 ゲージがたまったらnext
 
-.. image:: ./image/vscode.png
-    :align: center
+![vscode](./image/vscode.png)
 
 vsCodeが必要なければ、とりあえずskip
 
-.. image:: ./image/finish.png
-    :align: center
+![finish](./image/finish.png)
 
-| そのままfinishすると
-| `http://docs.anaconda.com/anaconda/user-guide/getting-started/ <http://docs.anaconda.com/anaconda/user-guide/getting-started/>`_
-| と、
-| `https://anaconda.org/ <https://anaconda.org/>`_
-| に飛ばされる。
+そのままfinishすると  
+http://docs.anaconda.com/anaconda/user-guide/getting-started/  
+と、  
+https://anaconda.org/  
+に飛ばされる。
 
-| anacondaの使い方（英語）とAnacondaクラウドの登録っぽいあれなので無視してもよい。
-| もしくはfinishする前にチェックを外しておく。
+anacondaの使い方（英語）とAnacondaクラウドの登録っぽいあれなので無視してもよい。  
+もしくはfinishする前にチェックを外しておく。
 
-| ここまででインストールは終了。
+ここまででインストールは終了。
 
-起動
-=======
+## 起動
 
-スタートのアプリ覧を見ると、「最近追加されたもの」にAnaconda関連のものが加わっていることが分かる。
-
+スタートのアプリ覧を見ると、「最近追加されたもの」にAnaconda関連のものが加わっていることが分かる。  
 検索してもよい
 
-.. image:: ./image/ret.png
-    :align: center
+![ret](./image/ret.png)
 
 Anaconda Navigaterを起動する。
 
 しばらく待って起動すると以下がでてくる。
 
-.. image:: ./image/start.png
-    :align: center
+![start](./image/start.png)
 
-``Ok, and don't show again`` する。チェックを外しても良い。
+`Ok, and don't show again` する。チェックを外しても良い。
 
 起動画面はこれ
 
-.. image:: ./image/navi.png
-    :align: center
+![navi](./image/navi.png)
 
-jupyter notebookを ``Launch`` (起動)する。
+jupyter notebookを `Launch` (起動)する。
 
 ブラウザが立ち上がってjupyter notebookが起動する。
 
-.. image:: ./image/jup1.png
-    :align: center
+![jup1](./image/jup1.png)
 
-jupyterの基本
-==============
+## jupyterの基本
 
-フォルダの作成
-------------------
+### フォルダの作成
 
-.. image:: ./image/folder.png
-    :align: center
+![folder](./image/folder.png)
 
-| Folderをクリックすると、
-| 新しく、``Untitled Folder`` が作成される。
-| 追加されたフォルダは一番上に追加されなるわけでもなく、追加しましたって通知がくるわけでもないので注意。
-| アルファベット順に見ていくと追加されているのが分かる。「U」 なので結構下の方にある。
+Folderをクリックすると、  
+新しく、`Untitled Folder` が作成される。  
+追加されたフォルダは一番上に追加されなるわけでもなく、追加しましたって通知がくるわけでもないので注意。  
+アルファベット順に見ていくと追加されているのが分かる。「U」 なので結構下の方にある。
 
+### フォルダのソート
 
-フォルダのソート
------------------
+右上のほうの `Name`  `LastModified` などでソート順を変えることも可能。
 
-| 右上のほうの ``Name``  ``LastModified`` などでソート順を変えることも可能。
+![add_folder](./image/add_folder.png)
 
-.. image:: ./image/add_folder.png
-    :align: center
+### リネーム
 
-リネーム
-----------
+フォルダ名の変更は左上の `Rename` から行える。
 
-| フォルダ名の変更は左上の ``Rename`` から行える。
+変更したいフォルダにチェックをうってから `Rename` をクリック。
 
-| 変更したいフォルダにチェックをうってから ``Rename`` をクリック。
-
-.. image:: ./image/rename.png
-    :align: center
+![rename](./image/rename.png)
 
 フォルダ名を入力し、右下の`Rename`
 
-.. image:: ./image/rename2.png
-    :align: center
+![rename2](./image/rename2.png)
 
-pythonファイルを書く
------------------------
+## pythonファイルを書く
 
 Pythonファイルをかき始めるには
-右上の ``new`` から ``python3`` を選択する。
+右上の `new` から `python3` を選択する。
 
-.. image:: ./image/add_py.png
-    :align: center
+![add_py](./image/add_py.png)
 
 以下の画面が出てくる。
 
-.. image:: ./image/py.png
-    :align: center
+![py](./image/py.png)
 
 タイトルの変更はUntitledの場所をクリックすればよい。もしくはフォルダ名の変更と同様のやり方で行う。
 
-.. image:: ./image/ch_ti.png
-    :align: center
+![ch_ti](./image/ch_ti.png)
 
-保存してあるpython notebook(.ipynb) を読み込む
-====================================================
+## 保存してあるpython notebook(.ipynb) を読み込む
 
 右上のuploadをクリックする。
 
-.. image:: ./image/upload.png
-    :align: center
+![upload](./image/upload.png)
 
 読み込みたいファイルを探し、開く。
 
-.. image:: ./image/up2.png
-    :align: center
+![up2](./image/up2.png)
 
 名前の変更も行える。
 右の青いボタン（``Upload`` ）をクリック。
 
-.. image:: ./image/up3.png
-    :align: center
+![up3](./image/up3.png)
 
 以上で追加される。
 
-markdownの書き方
-====================
+## markdownの書き方
 
 jupyter notebook上ではコメントを書くことができる。
 
-.. image:: ./image/mark.png
-    :align: center
+![mark](./image/mark.png)
