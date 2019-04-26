@@ -36,7 +36,7 @@
     
     
       
-        <title>Anacondaによる環境構築(Win) - 雑記</title>
+        <title>anacondaインストール手順 - Rilu's blog</title>
       
     
     
@@ -92,7 +92,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="雑記" class="md-header-nav__button md-logo">
+        <a href="../.." title="Rilu's blog" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -105,10 +105,10 @@
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             <span class="md-header-nav__topic">
-              雑記
+              Rilu's blog
             </span>
             <span class="md-header-nav__topic">
-              Anacondaによる環境構築(Win)
+              anacondaインストール手順
             </span>
           
         </div>
@@ -160,12 +160,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../.." title="雑記" class="md-nav__button md-logo">
+    <a href="../.." title="Rilu's blog" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
     </a>
-    雑記
+    Rilu's blog
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -192,11 +192,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
-      WEB
+      Web
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
-        WEB
+        Web
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -222,17 +222,19 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
-      PYTHON
+      Python
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
-        PYTHON
+        Python
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -246,6 +248,118 @@
     <a href="../anaconda_cmd/" title="anacondaコマンド集" class="md-nav__link">
       anacondaコマンド集
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        anacondaインストール手順
+      </label>
+    
+    <a href="./" title="anacondaインストール手順" class="md-nav__link md-nav__link--active">
+      anacondaインストール手順
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="インストール" class="md-nav__link">
+    インストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="起動" class="md-nav__link">
+    起動
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jupyter" title="jupyterの基本" class="md-nav__link">
+    jupyterの基本
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="フォルダの作成" class="md-nav__link">
+    フォルダの作成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="フォルダのソート" class="md-nav__link">
+    フォルダのソート
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="リネーム" class="md-nav__link">
+    リネーム
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" title="pythonファイルを書く" class="md-nav__link">
+    pythonファイルを書く
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-notebookipynb" title="保存してあるpython notebook(.ipynb) を読み込む" class="md-nav__link">
+    保存してあるpython notebook(.ipynb) を読み込む
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" title="markdownの書き方" class="md-nav__link">
+    markdownの書き方
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -264,11 +378,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      MARKDOWN
+      Markdown
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        MARKDOWN
+        Markdown
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -279,8 +393,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../markdown/mkd_1/" title="基本" class="md-nav__link">
-      基本
+    <a href="../../markdown/mkd/" title="markdown基本" class="md-nav__link">
+      markdown基本
     </a>
   </li>
 
@@ -291,8 +405,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../markdown/mkd_2/" title="mkdocs" class="md-nav__link">
-      mkdocs
+    <a href="../../markdown/mkdocs_md/" title="markdownその他" class="md-nav__link">
+      markdownその他
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../markdown/mkd_ex/" title="markdown例" class="md-nav__link">
+      markdown例
     </a>
   </li>
 
@@ -327,7 +453,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../201904.md" title="2019年4月" class="md-nav__link">
+    <a href="../../blog/201904/" title="2019年4月" class="md-nav__link">
       2019年4月
     </a>
   </li>
@@ -335,18 +461,6 @@
         
       </ul>
     </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../other/" title="その他" class="md-nav__link">
-      その他
-    </a>
   </li>
 
     
@@ -377,6 +491,68 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" title="起動" class="md-nav__link">
+    起動
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jupyter" title="jupyterの基本" class="md-nav__link">
+    jupyterの基本
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="フォルダの作成" class="md-nav__link">
+    フォルダの作成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="フォルダのソート" class="md-nav__link">
+    フォルダのソート
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="リネーム" class="md-nav__link">
+    リネーム
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" title="pythonファイルを書く" class="md-nav__link">
+    pythonファイルを書く
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-notebookipynb" title="保存してあるpython notebook(.ipynb) を読み込む" class="md-nav__link">
+    保存してあるpython notebook(.ipynb) を読み込む
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" title="markdownの書き方" class="md-nav__link">
+    markdownの書き方
+  </a>
+  
+</li>
+      
       
       
       
@@ -401,97 +577,77 @@ Linux系でも流れは同じはず…。</p>
 <p>Anacondaのインストールからjupyter notebookでプログラムが書けるようになるまでの流れです。</p>
 <h2 id="_1">インストール</h2>
 <p>Anacondaのページにいってぽちっとする。</p>
-<p>.. image:: ./image/anaconda_install.png
-    :align: center</p>
+<p><img alt="install" src="../image/anaconda_install.png" /></p>
 <p><code class="codehilite">Anaconda3-5.2.0-Windows-x86_64.exe</code>
 をどこに保存されるか聞かれるのでわかるところに置いておく。</p>
-<p>| チートシートほしいならEメール登録してと言われるが無視。
-| 入力場所じゃないところをクリックすると消える。</p>
+<p>チートシートほしいならEメール登録してと言われるが無視。<br />
+入力場所じゃないところをクリックすると消える。</p>
 <p><code class="codehilite">Anaconda3-5.2.0-Windows-x86_64.exe</code> を実行する。</p>
-<p>.. image:: ./image/exe.png
-    :align: center</p>
+<p><img alt="exe" src="../image/exe.png" /></p>
 <p>next ,I agree, next... と進めていく。</p>
-<p>.. image:: ./image/setup.png
-    :align: center</p>
+<p><img alt="setup" src="../image/setup.png" /></p>
 <p>待機。</p>
 <p>ゲージがたまったらnext</p>
-<p>.. image:: ./image/vscode.png
-    :align: center</p>
+<p><img alt="vscode" src="../image/vscode.png" /></p>
 <p>vsCodeが必要なければ、とりあえずskip</p>
-<p>.. image:: ./image/finish.png
-    :align: center</p>
-<p>| そのままfinishすると
-| <code class="codehilite">http://docs.anaconda.com/anaconda/user-guide/getting-started/ &lt;http://docs.anaconda.com/anaconda/user-guide/getting-started/&gt;</code>_
-| と、
-| <code class="codehilite">https://anaconda.org/ &lt;https://anaconda.org/&gt;</code>_
-| に飛ばされる。</p>
-<p>| anacondaの使い方（英語）とAnacondaクラウドの登録っぽいあれなので無視してもよい。
-| もしくはfinishする前にチェックを外しておく。</p>
-<p>| ここまででインストールは終了。</p>
-<h1 id="_2">起動</h1>
-<p>スタートのアプリ覧を見ると、「最近追加されたもの」にAnaconda関連のものが加わっていることが分かる。</p>
-<p>検索してもよい</p>
-<p>.. image:: ./image/ret.png
-    :align: center</p>
+<p><img alt="finish" src="../image/finish.png" /></p>
+<p>そのままfinishすると<br />
+<a href="http://docs.anaconda.com/anaconda/user-guide/getting-started/">http://docs.anaconda.com/anaconda/user-guide/getting-started/</a><br />
+と、<br />
+<a href="https://anaconda.org/">https://anaconda.org/</a><br />
+に飛ばされる。</p>
+<p>anacondaの使い方（英語）とAnacondaクラウドの登録っぽいあれなので無視してもよい。<br />
+もしくはfinishする前にチェックを外しておく。</p>
+<p>ここまででインストールは終了。</p>
+<h2 id="_2">起動</h2>
+<p>スタートのアプリ覧を見ると、「最近追加されたもの」にAnaconda関連のものが加わっていることが分かる。<br />
+検索してもよい</p>
+<p><img alt="ret" src="../image/ret.png" /></p>
 <p>Anaconda Navigaterを起動する。</p>
 <p>しばらく待って起動すると以下がでてくる。</p>
-<p>.. image:: ./image/start.png
-    :align: center</p>
+<p><img alt="start" src="../image/start.png" /></p>
 <p><code class="codehilite">Ok, and don&#39;t show again</code> する。チェックを外しても良い。</p>
 <p>起動画面はこれ</p>
-<p>.. image:: ./image/navi.png
-    :align: center</p>
+<p><img alt="navi" src="../image/navi.png" /></p>
 <p>jupyter notebookを <code class="codehilite">Launch</code> (起動)する。</p>
 <p>ブラウザが立ち上がってjupyter notebookが起動する。</p>
-<p>.. image:: ./image/jup1.png
-    :align: center</p>
-<h1 id="jupyter">jupyterの基本</h1>
-<h2 id="_3">フォルダの作成</h2>
-<p>.. image:: ./image/folder.png
-    :align: center</p>
-<p>| Folderをクリックすると、
-| 新しく、<code class="codehilite">Untitled Folder</code> が作成される。
-| 追加されたフォルダは一番上に追加されなるわけでもなく、追加しましたって通知がくるわけでもないので注意。
-| アルファベット順に見ていくと追加されているのが分かる。「U」 なので結構下の方にある。</p>
-<h2 id="_4">フォルダのソート</h2>
-<p>| 右上のほうの <code class="codehilite">Name</code>  <code class="codehilite">LastModified</code> などでソート順を変えることも可能。</p>
-<p>.. image:: ./image/add_folder.png
-    :align: center</p>
-<h2 id="_5">リネーム</h2>
-<p>| フォルダ名の変更は左上の <code class="codehilite">Rename</code> から行える。</p>
-<p>| 変更したいフォルダにチェックをうってから <code class="codehilite">Rename</code> をクリック。</p>
-<p>.. image:: ./image/rename.png
-    :align: center</p>
+<p><img alt="jup1" src="../image/jup1.png" /></p>
+<h2 id="jupyter">jupyterの基本</h2>
+<h3 id="_3">フォルダの作成</h3>
+<p><img alt="folder" src="../image/folder.png" /></p>
+<p>Folderをクリックすると、<br />
+新しく、<code class="codehilite">Untitled Folder</code> が作成される。<br />
+追加されたフォルダは一番上に追加されなるわけでもなく、追加しましたって通知がくるわけでもないので注意。<br />
+アルファベット順に見ていくと追加されているのが分かる。「U」 なので結構下の方にある。</p>
+<h3 id="_4">フォルダのソート</h3>
+<p>右上のほうの <code class="codehilite">Name</code>  <code class="codehilite">LastModified</code> などでソート順を変えることも可能。</p>
+<p><img alt="add_folder" src="../image/add_folder.png" /></p>
+<h3 id="_5">リネーム</h3>
+<p>フォルダ名の変更は左上の <code class="codehilite">Rename</code> から行える。</p>
+<p>変更したいフォルダにチェックをうってから <code class="codehilite">Rename</code> をクリック。</p>
+<p><img alt="rename" src="../image/rename.png" /></p>
 <p>フォルダ名を入力し、右下の<code class="codehilite">Rename</code></p>
-<p>.. image:: ./image/rename2.png
-    :align: center</p>
+<p><img alt="rename2" src="../image/rename2.png" /></p>
 <h2 id="python">pythonファイルを書く</h2>
 <p>Pythonファイルをかき始めるには
 右上の <code class="codehilite">new</code> から <code class="codehilite">python3</code> を選択する。</p>
-<p>.. image:: ./image/add_py.png
-    :align: center</p>
+<p><img alt="add_py" src="../image/add_py.png" /></p>
 <p>以下の画面が出てくる。</p>
-<p>.. image:: ./image/py.png
-    :align: center</p>
+<p><img alt="py" src="../image/py.png" /></p>
 <p>タイトルの変更はUntitledの場所をクリックすればよい。もしくはフォルダ名の変更と同様のやり方で行う。</p>
-<p>.. image:: ./image/ch_ti.png
-    :align: center</p>
-<h1 id="python-notebookipynb">保存してあるpython notebook(.ipynb) を読み込む</h1>
+<p><img alt="ch_ti" src="../image/ch_ti.png" /></p>
+<h2 id="python-notebookipynb">保存してあるpython notebook(.ipynb) を読み込む</h2>
 <p>右上のuploadをクリックする。</p>
-<p>.. image:: ./image/upload.png
-    :align: center</p>
+<p><img alt="upload" src="../image/upload.png" /></p>
 <p>読み込みたいファイルを探し、開く。</p>
-<p>.. image:: ./image/up2.png
-    :align: center</p>
+<p><img alt="up2" src="../image/up2.png" /></p>
 <p>名前の変更も行える。
 右の青いボタン（<code class="codehilite">Upload</code> ）をクリック。</p>
-<p>.. image:: ./image/up3.png
-    :align: center</p>
+<p><img alt="up3" src="../image/up3.png" /></p>
 <p>以上で追加される。</p>
-<h1 id="markdown">markdownの書き方</h1>
+<h2 id="markdown">markdownの書き方</h2>
 <p>jupyter notebook上ではコメントを書くことができる。</p>
-<p>.. image:: ./image/mark.png
-    :align: center</p>
+<p><img alt="mark" src="../image/mark.png" /></p>
                 
                   
                 
@@ -508,6 +664,41 @@ Linux系でも流れは同じはず…。</p>
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../anaconda_cmd/" title="anacondaコマンド集" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                anacondaコマンド集
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../markdown/mkd/" title="markdown基本" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  次
+                </span>
+                markdown基本
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
