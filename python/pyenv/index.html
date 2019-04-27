@@ -36,7 +36,7 @@
     
     
       
-        <title>Anacondaによる環境構築 - Rilu's blog</title>
+        <title>pyenvでの環境構築 - Rilu's blog</title>
       
     
     
@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#anacondawin" tabindex="1" class="md-skip">
+      <a href="#pyenv" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -108,7 +108,7 @@
               Rilu's blog
             </span>
             <span class="md-header-nav__topic">
-              Anacondaによる環境構築
+              pyenvでの環境構築
             </span>
           
         </div>
@@ -255,6 +255,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../anaconda_install/" title="Anacondaによる環境構築" class="md-nav__link">
+      Anacondaによる環境構築
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -266,11 +278,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Anacondaによる環境構築
+        pyenvでの環境構築
       </label>
     
-    <a href="./" title="Anacondaによる環境構築" class="md-nav__link md-nav__link--active">
-      Anacondaによる環境構築
+    <a href="./" title="pyenvでの環境構築" class="md-nav__link md-nav__link--active">
+      pyenvでの環境構築
     </a>
     
       
@@ -284,44 +296,51 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="インストール" class="md-nav__link">
-    インストール
+  <a href="#pyenv_1" title="pyenv" class="md-nav__link">
+    pyenv
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="起動" class="md-nav__link">
-    起動
+  <a href="#_1" title="必要なもののインストール" class="md-nav__link">
+    必要なもののインストール
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#jupyter" title="jupyterの基本" class="md-nav__link">
-    jupyterの基本
+  <a href="#pyenv_2" title="pyenvのインストール" class="md-nav__link">
+    pyenvのインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyenv-virtualenv" title="pyenv-virtualenvのインストール" class="md-nav__link">
+    pyenv-virtualenvのインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyenv_3" title="pyenvの使い方" class="md-nav__link">
+    pyenvの使い方
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" title="フォルダの作成" class="md-nav__link">
-    フォルダの作成
+  <a href="#_2" title="バージョンの切り替え" class="md-nav__link">
+    バージョンの切り替え
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" title="フォルダのソート" class="md-nav__link">
-    フォルダのソート
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" title="リネーム" class="md-nav__link">
-    リネーム
+  <a href="#module" title="moduleのインストール" class="md-nav__link">
+    moduleのインストール
   </a>
   
 </li>
@@ -332,22 +351,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python" title="pythonファイルを書く" class="md-nav__link">
-    pythonファイルを書く
+  <a href="#pyenv-virtualenv_1" title="pyenv-virtualenv" class="md-nav__link">
+    pyenv-virtualenv
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="新しい環境の作成" class="md-nav__link">
+    新しい環境の作成
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-notebookipynb" title="保存してあるpython notebook(.ipynb) を読み込む" class="md-nav__link">
-    保存してあるpython notebook(.ipynb) を読み込む
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#markdown" title="markdownの書き方" class="md-nav__link">
-    markdownの書き方
+  <a href="#_4" title="参考" class="md-nav__link">
+    参考
   </a>
   
 </li>
@@ -360,18 +385,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pyenv/" title="pyenvでの環境構築" class="md-nav__link">
-      pyenvでの環境構築
-    </a>
   </li>
 
         
@@ -809,44 +822,51 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="インストール" class="md-nav__link">
-    インストール
+  <a href="#pyenv_1" title="pyenv" class="md-nav__link">
+    pyenv
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="起動" class="md-nav__link">
-    起動
+  <a href="#_1" title="必要なもののインストール" class="md-nav__link">
+    必要なもののインストール
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#jupyter" title="jupyterの基本" class="md-nav__link">
-    jupyterの基本
+  <a href="#pyenv_2" title="pyenvのインストール" class="md-nav__link">
+    pyenvのインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyenv-virtualenv" title="pyenv-virtualenvのインストール" class="md-nav__link">
+    pyenv-virtualenvのインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyenv_3" title="pyenvの使い方" class="md-nav__link">
+    pyenvの使い方
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" title="フォルダの作成" class="md-nav__link">
-    フォルダの作成
+  <a href="#_2" title="バージョンの切り替え" class="md-nav__link">
+    バージョンの切り替え
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" title="フォルダのソート" class="md-nav__link">
-    フォルダのソート
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" title="リネーム" class="md-nav__link">
-    リネーム
+  <a href="#module" title="moduleのインストール" class="md-nav__link">
+    moduleのインストール
   </a>
   
 </li>
@@ -857,22 +877,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#python" title="pythonファイルを書く" class="md-nav__link">
-    pythonファイルを書く
+  <a href="#pyenv-virtualenv_1" title="pyenv-virtualenv" class="md-nav__link">
+    pyenv-virtualenv
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="新しい環境の作成" class="md-nav__link">
+    新しい環境の作成
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#python-notebookipynb" title="保存してあるpython notebook(.ipynb) を読み込む" class="md-nav__link">
-    保存してあるpython notebook(.ipynb) を読み込む
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#markdown" title="markdownの書き方" class="md-nav__link">
-    markdownの書き方
+  <a href="#_4" title="参考" class="md-nav__link">
+    参考
   </a>
   
 </li>
@@ -894,84 +920,135 @@
               
                 
                 
-                <h1 id="anacondawin">Anacondaによる環境構築(Win)</h1>
-<p>2018/09/27</p>
-<p>Windows10での環境構築をベースとします。
-Linux系でも流れは同じはず…。</p>
-<p>Anacondaのインストールからjupyter notebookでプログラムが書けるようになるまでの流れです。</p>
-<h2 id="_1">インストール</h2>
-<p>Anacondaのページにいってぽちっとする。</p>
-<p><img alt="install" src="../image/anaconda_install.png" /></p>
-<p><code class="codehilite">Anaconda3-5.2.0-Windows-x86_64.exe</code>
-をどこに保存されるか聞かれるのでわかるところに置いておく。</p>
-<p>チートシートほしいならEメール登録してと言われるが無視。<br />
-入力場所じゃないところをクリックすると消える。</p>
-<p><code class="codehilite">Anaconda3-5.2.0-Windows-x86_64.exe</code> を実行する。</p>
-<p><img alt="exe" src="../image/exe.png" /></p>
-<p>next ,I agree, next... と進めていく。</p>
-<p><img alt="setup" src="../image/setup.png" /></p>
-<p>待機。</p>
-<p>ゲージがたまったらnext</p>
-<p><img alt="vscode" src="../image/vscode.png" /></p>
-<p>vsCodeが必要なければ、とりあえずskip</p>
-<p><img alt="finish" src="../image/finish.png" /></p>
-<p>そのままfinishすると<br />
-<a href="http://docs.anaconda.com/anaconda/user-guide/getting-started/">http://docs.anaconda.com/anaconda/user-guide/getting-started/</a><br />
-と、<br />
-<a href="https://anaconda.org/">https://anaconda.org/</a><br />
-に飛ばされる。</p>
-<p>anacondaの使い方（英語）とAnacondaクラウドの登録っぽいあれなので無視してもよい。<br />
-もしくはfinishする前にチェックを外しておく。</p>
-<p>ここまででインストールは終了。</p>
-<h2 id="_2">起動</h2>
-<p>スタートのアプリ覧を見ると、「最近追加されたもの」にAnaconda関連のものが加わっていることが分かる。<br />
-検索してもよい</p>
-<p><img alt="ret" src="../image/ret.png" /></p>
-<p>Anaconda Navigaterを起動する。</p>
-<p>しばらく待って起動すると以下がでてくる。</p>
-<p><img alt="start" src="../image/start.png" /></p>
-<p><code class="codehilite">Ok, and don&#39;t show again</code> する。チェックを外しても良い。</p>
-<p>起動画面はこれ</p>
-<p><img alt="navi" src="../image/navi.png" /></p>
-<p>jupyter notebookを <code class="codehilite">Launch</code> (起動)する。</p>
-<p>ブラウザが立ち上がってjupyter notebookが起動する。</p>
-<p><img alt="jup1" src="../image/jup1.png" /></p>
-<h2 id="jupyter">jupyterの基本</h2>
-<h3 id="_3">フォルダの作成</h3>
-<p><img alt="folder" src="../image/folder.png" /></p>
-<p>Folderをクリックすると、<br />
-新しく、<code class="codehilite">Untitled Folder</code> が作成される。<br />
-追加されたフォルダは一番上に追加されなるわけでもなく、追加しましたって通知がくるわけでもないので注意。<br />
-アルファベット順に見ていくと追加されているのが分かる。「U」 なので結構下の方にある。</p>
-<h3 id="_4">フォルダのソート</h3>
-<p>右上のほうの <code class="codehilite">Name</code>  <code class="codehilite">LastModified</code> などでソート順を変えることも可能。</p>
-<p><img alt="add_folder" src="../image/add_folder.png" /></p>
-<h3 id="_5">リネーム</h3>
-<p>フォルダ名の変更は左上の <code class="codehilite">Rename</code> から行える。</p>
-<p>変更したいフォルダにチェックをうってから <code class="codehilite">Rename</code> をクリック。</p>
-<p><img alt="rename" src="../image/rename.png" /></p>
-<p>フォルダ名を入力し、右下の<code class="codehilite">Rename</code></p>
-<p><img alt="rename2" src="../image/rename2.png" /></p>
-<h2 id="python">pythonファイルを書く</h2>
-<p>Pythonファイルをかき始めるには
-右上の <code class="codehilite">new</code> から <code class="codehilite">python3</code> を選択する。</p>
-<p><img alt="add_py" src="../image/add_py.png" /></p>
-<p>以下の画面が出てくる。</p>
-<p><img alt="py" src="../image/py.png" /></p>
-<p>タイトルの変更はUntitledの場所をクリックすればよい。もしくはフォルダ名の変更と同様のやり方で行う。</p>
-<p><img alt="ch_ti" src="../image/ch_ti.png" /></p>
-<h2 id="python-notebookipynb">保存してあるpython notebook(.ipynb) を読み込む</h2>
-<p>右上のuploadをクリックする。</p>
-<p><img alt="upload" src="../image/upload.png" /></p>
-<p>読み込みたいファイルを探し、開く。</p>
-<p><img alt="up2" src="../image/up2.png" /></p>
-<p>名前の変更も行える。
-右の青いボタン（<code class="codehilite">Upload</code> ）をクリック。</p>
-<p><img alt="up3" src="../image/up3.png" /></p>
-<p>以上で追加される。</p>
-<h2 id="markdown">markdownの書き方</h2>
-<p>jupyter notebook上ではコメントを書くことができる。</p>
-<p><img alt="mark" src="../image/mark.png" /></p>
+                <h1 id="pyenv">pyenvでの環境構築</h1>
+<p>2018/03/07</p>
+<p><strong>環境</strong>
+- Ubuntu16.04LTS
+(WSL(Windows Subsystem for Linux))</p>
+<h2 id="pyenv_1">pyenv</h2>
+<p>pythonの環境管理のために導入。</p>
+<h2 id="_1">必要なもののインストール</h2>
+<p>openSSL他、必要なパッケージをインストールするらしい。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>sudo apt install git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
+</pre></div>
+</td></tr></table>
+これをしてないとpythonのインストール時にエラーが出る可能性が。対処方法はそのエラーにのっているのでエラーに出会ってからやってもいいかもしれない。</p>
+<p>gitのインストール
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>sudo apt install git
+</pre></div>
+</td></tr></table></p>
+<h2 id="pyenv_2">pyenvのインストール</h2>
+<p>gitからpyenvの構成ファイルをダウンロード
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+</pre></div>
+</td></tr></table></p>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>vim ~/.bashrc
+</pre></div>
+</td></tr></table>
+で/.bashrcを開く。</p>
+<p>vimがないって言われた場合は他のでやるかvimをインストールする。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>sudo apt install vim
+</pre></div>
+</td></tr></table>
+でできる。</p>
+<p>下記のものを書き込む。中身の一番下にでも書いておけばいい。</p>
+<p>vim は <code class="codehilite">i</code>で編集モードに、<code class="codehilite">esc</code>で編集モードから抜ける。
+編集モードから抜けた状態で<code class="codehilite">:wq</code>と打つことで保存して終了する。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+eval &quot;$(pyenv init -)&quot;
+</pre></div>
+</td></tr></table>
+書き換え後は端末を再起動するか
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">source</span> ~/.bashrc
+</pre></div>
+</td></tr></table>
+で、更新する。</p>
+<h2 id="pyenv-virtualenv">pyenv-virtualenvのインストール</h2>
+<p>gitからpyenv-virtualenvの構成ファイルをダウンロード
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+</pre></div>
+</td></tr></table>
+先ほどと同じ手順で~/.bashrcを開き、下記のものを書き込む
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>eval &quot;$(pyenv virtualenv-init -)&quot;
+</pre></div>
+</td></tr></table>
+パスを書き換えた後は <code class="codehilite">$ <span style="color: #f8f8f2">source</span> ~/.bashrc</code> を実行するか、もしくは端末を再起動して設定ファイルをリロード。</p>
+<h2 id="pyenv_3">pyenvの使い方</h2>
+<p>ヘルプの参照
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv --help
+</pre></div>
+</td></tr></table>
+インストールできるバージョンの確認。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv install --list
+</pre></div>
+</td></tr></table>
+インストールしたいものを選んでインストール。以下は2018/03/07現在最新（ベータ除く）
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv install <span style="color: #ae81ff">3</span>.6.4
+</pre></div>
+</td></tr></table></p>
+<p>uninstallするときは
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv uninstall <span style="color: #ae81ff">3</span>.6.4
+</pre></div>
+</td></tr></table>
+(2018/03/13)なんか謎エラーが出ていたのでもう一度インストールし直そうと考えた。
+<code class="codehilite"><span style="color: #f8f8f2">rm</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">cannot</span> <span style="color: #f8f8f2">remove</span> <span style="color: #f92672">...</span> <span style="color: #f8f8f2">Permission</span> <span style="color: #f8f8f2">denied</span></code>
+とか言われるのでできていない可能性が。
+しかし<code class="codehilite">python --version</code>とすると出てこないので一部だけ消せないっぽさ。
+とりあえずもう一度<code class="codehilite">pyenv install 3.6.4</code>したらエラーは出ず正常に動いた謎。</p>
+<h3 id="_2">バージョンの切り替え</h3>
+<p>pyenvにどのバージョンをいれてあるかの確認
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv versions
+</pre></div>
+</td></tr></table>
+現在のpythonのバージョンを確認したいときは
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>python --version
+</pre></div>
+</td></tr></table></p>
+<p><code class="codehilite">pyenv global x.x.x</code> または、 <code class="codehilite">pyenv local x.x.x</code> でバージョンの切り替え。
+<code class="codehilite">global</code> とすると全体に、 <code class="codehilite">local</code> にするとそのカレントディレクトリに反映。
+この反映はterminalを終了しても続くので、localでフォルダごとに設定するととても便利らしい。</p>
+<p>シェルでの変更は、<code class="codehilite">shell</code>。今使用してるシェルでのみ、その環境が反映される。
+シェルを閉じた時、後に再度開いた場合やシェルを複数開いた場合はその環境変更は他に影響されることはない。</p>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv global x.x.x
+</pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv <span style="color: #f8f8f2">local</span> x.x.x
+</pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv shell x.x.x
+</pre></div>
+</td></tr></table>
+<code class="codehilite">x.x.x</code>の場所には環境名。</p>
+<h3 id="module">moduleのインストール</h3>
+<p><code class="codehilite">pip install</code>で好きなものを入れていく。
+<code class="codehilite">pip freeze</code>で中に何が入っているか確認できる。</p>
+<h2 id="pyenv-virtualenv_1">pyenv-virtualenv</h2>
+<h3 id="_3">新しい環境の作成</h3>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv virtualenv バージョン 環境名
+</pre></div>
+</td></tr></table>
+で作成可能。
+環境削除は以下。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv uninstall 環境名
+</pre></div>
+</td></tr></table></p>
+<p>環境に入る時は、
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv activate 環境名
+</pre></div>
+</td></tr></table>
+抜けるときは
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pyenv deactivate
+</pre></div>
+</td></tr></table></p>
+<h2 id="_4">参考</h2>
+<ul>
+<li><a href="https://qiita.com/Kodaira_/items/feadfef9add468e3a85b">pyenv と pyenv-virtualenv で環境構築</a></li>
+<li><a href="https://qiita.com/akito1986/items/be5dcd1a502aaf22010b">PyenvによるPython3.x環境構築(CentOS, Ubuntu)</a></li>
+<li><a href="https://qiita.com/uryyyyyyy/items/268f8dc0d6ec3d7da7e3">UbuntuでPythonの開発環境を整える</a></li>
+</ul>
                 
                   
                 
@@ -992,7 +1069,7 @@ Linux系でも流れは同じはず…。</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../tips/" title="ちょっとしたプログラム集" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../anaconda_install/" title="Anacondaによる環境構築" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1001,19 +1078,19 @@ Linux系でも流れは同じはず…。</p>
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                ちょっとしたプログラム集
+                Anacondaによる環境構築
               </span>
             </div>
           </a>
         
         
-          <a href="../pyenv/" title="pyenvでの環境構築" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../nlp/mecab/" title="mecabの導入" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                pyenvでの環境構築
+                mecabの導入
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
