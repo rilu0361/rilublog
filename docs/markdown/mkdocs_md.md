@@ -1,4 +1,6 @@
-# その他
+# markdown 拡張
+
+拡張機能を利用して
 
 ## 定義
 定義する単語など
@@ -6,12 +8,29 @@
 
 
 ## コードの強調
+
+````
+``` python hl_lines="2"
+print("hello")
+import tqdm
+```
+````
+
 ``` python hl_lines="2"
 print("hello")
 import tqdm
 ```
 
 ## コードハイライト
+
+````
+```diff
+--- print("hello")
++++ print("コンニチハ")
+import tqdm
+```
+````
+
 ```diff
 --- print("hello")
 +++ print("コンニチハ")
@@ -54,3 +73,37 @@ import tqdm
 {>>コメント？<<}
 ==マーカー==
 ^^あああああ^^
+
+## keys
+```md
+++ctrl+alt+f1++
+```
+
+++ctrl+alt+f1++
+
+## 注釈
+```md
+これはああああ[^1]です
+
+[^1]: aaaa
+```
+これはああああ[^1]です
+
+[^1]: aaaa
+
+## smart symbols
+```sh
++/-
+-->
+<--
+<-->
+=/=
+1st
+```
+
++/-
+-->
+<--
+<-->
+=/=
+1st

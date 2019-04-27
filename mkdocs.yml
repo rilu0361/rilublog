@@ -1,23 +1,50 @@
 site_name: Rilu's blog
 nav:
     - HOME: index.md
-    - Web:
-        - mkdocs: web/mkdocs.md
     - Python:
-        - anacondaコマンド集: python/anaconda_cmd.md
-        - anacondaインストール手順: python/anaconda_install.md
+        - Anacondaコマンド集: python/anaconda_cmd.md
+        - python基本構文: python/general.md
+        - pandas: python/pandas.md
+        - ちょっとしたプログラム集: python/tips.md
+        - Anacondaによる環境構築: python/anaconda_install.md
+        - pyenvでの環境構築: python/pyenv.md
+    - 自然言語処理:
+        - mecabの導入: nlp/mecab.md
+        - mecabユーザー辞書の追加: nlp/mecab_add_userdic.md
+    # - 異常検知:
+    #     - 異常検知基礎: anormaly/base.md
     - Markdown:
         - markdown基本: markdown/mkd.md
-        - markdownその他: markdown/mkdocs_md.md
+        - markdown拡張: markdown/mkdocs_md.md
         - markdown例: markdown/mkd_ex.md
+        - mkdocsによるwebページの公開: markdown/mkdocs.md
+    - Ubuntu: 
+        - Ubuntu設定関連: ubuntu/setting.md
+        - Ubuntuコマンド集: ubuntu/cmd.md
+        - 2TB以上のHDDのマウント: ubuntu/hdd_mnt.md
+        - GPU for tensorflow-gpu: ubuntu/gpu.md
+        - ログインループの対処: ubuntu/login_loop.md
+    - Windows:
+        - WSL導入: windows/wsl.md
+        - WSL ~matplotlib~ : windows/wsl_matplotlib.md
+        - Xming文字化け対処: windows/xming_char.md
+    - RestructuredText:
+        - Rest基本構文: rest/fund.md
+        - 注意・強調: rest/admotions.md
+        - リンク・脚注: rest/link.md
+        - 数式の挿入: rest/math.md
+        - コード・表・画像・サイドバー: rest/module.md
+        - その他: rest/other.md
+        - sphinxによるwebページの公開: rest/sphinx.md
     - 雑記: 
         - 2019年4月: blog/201904.md
 
-    
 # theme: readthedocs
 theme:
   name: 'material'
   language: 'ja'
+  feature:
+    tabs: False
 extra:
     search:
         language: 'ja'
@@ -44,6 +71,7 @@ markdown_extensions:
     - pymdownx.mark
     - pymdownx.smartsymbols
     - pymdownx.superfences
+    - pymdownx.keys
     - pymdownx.tasklist:
         custom_checkbox: true
     - pymdownx.tilde
