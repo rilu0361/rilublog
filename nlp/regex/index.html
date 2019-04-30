@@ -36,7 +36,7 @@
     
     
       
-        <title>正規表現 - Rilu's blog</title>
+        <title>正規表現を使う - Rilu's blog</title>
       
     
     
@@ -108,7 +108,7 @@
               Rilu's blog
             </span>
             <span class="md-header-nav__topic">
-              正規表現
+              正規表現を使う
             </span>
           
         </div>
@@ -318,12 +318,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       自然言語処理
@@ -368,84 +366,6 @@
     <a href="../mecab_usage/" title="mecabを使用する" class="md-nav__link">
       mecabを使用する
     </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        正規表現
-      </label>
-    
-    <a href="./" title="正規表現" class="md-nav__link md-nav__link--active">
-      正規表現
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目次</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="コンパイルあり" class="md-nav__link">
-    コンパイルあり
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" title="コンパイルなし" class="md-nav__link">
-    コンパイルなし
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" title="メソッド一覧" class="md-nav__link">
-    メソッド一覧
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" title="日本語を扱うとき" class="md-nav__link">
-    日本語を扱うとき
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" title="参考" class="md-nav__link">
-    参考
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -985,7 +905,7 @@
 </pre></div>
 </td></tr></table>
 
-<p>パターンに <code class="codehilite">r</code> をつけるのは、文字列中のバックスラッシュ文字をそのままバックスラッシュとして扱えるようにするため。</p>
+<p>パターンに <code class="codehilite">r</code> をつけるのは、文字列中のバックスラッシュ(<code class="codehilite">\</code>)をそのまま扱えるようにするため。エスケープとされるのを防ぐ。</p>
 <h2 id="_4">メソッド一覧</h2>
 <table>
 <thead>
@@ -1000,43 +920,89 @@
 <td align="center">文字列の先頭とマッチするか</td>
 </tr>
 <tr>
-<td align="center">search(pat, str)</td>
+<td align="center">search(pattern, str)</td>
 <td align="center">文字列のどこにマッチするか</td>
 </tr>
 <tr>
-<td align="center">findall(pat, str)</td>
+<td align="center">findall(pattern, str)</td>
 <td align="center">マッチする部分文字列をすべて探してリストで返す</td>
 </tr>
 <tr>
-<td align="center">finditer(pat, str)</td>
+<td align="center">finditer(pattern, str)</td>
 <td align="center">マッチする部分文字列を探し、イテレータとして返す</td>
 </tr>
 <tr>
-<td align="center">split(pat, str)</td>
+<td align="center">split(pattern, str)</td>
 <td align="center">マッチする部分があるたびに分割して返す</td>
 </tr>
 <tr>
-<td align="center">sub(pat, repl, str)</td>
+<td align="center">sub(pattern, repl, str)</td>
 <td align="center">マッチする部分をreplに置換</td>
 </tr>
 </tbody>
 </table>
-<p>オブジェクトから情報を取り出すための関数
-|メソッド|目的|
-|:-----:|:--:|
-|group()|マッチした文字列を返す|
-|start()|マッチした開始位置を返す|
-|end()|マッチした終了位置を返す|
-|span()|マッチした位置(start,end)のタプルを返す|</p>
-<p>プロパティ
-|プロパティ|意味|
-|:-----:|:--:|
-|ASCII,A|ASCII文字だけにマッチさせる|
-|DOTALL, S|.を改行含む任意の文字にマッチするようにする|
-|IGNORECASE, I|大文字小文字の区別をなくす|
-|LOCALE, L|ロケールに対応したマッチングをする|
-|MULTILINE, M|^, $に作用して、複数行にマッチング|
-|VERBOSE, X|冗長な正規表現を利用できるようにする。|</p>
+<p>オブジェクトから情報を取り出すための関数</p>
+<table>
+<thead>
+<tr>
+<th align="center">メソッド</th>
+<th align="center">目的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">group()</td>
+<td align="center">マッチした文字列を返す</td>
+</tr>
+<tr>
+<td align="center">start()</td>
+<td align="center">マッチした開始位置を返す</td>
+</tr>
+<tr>
+<td align="center">end()</td>
+<td align="center">マッチした終了位置を返す</td>
+</tr>
+<tr>
+<td align="center">span()</td>
+<td align="center">マッチした位置(start,end)のタプルを返す</td>
+</tr>
+</tbody>
+</table>
+<p>プロパティ</p>
+<table>
+<thead>
+<tr>
+<th align="center">プロパティ</th>
+<th align="center">意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ASCII,A</td>
+<td align="center">ASCII文字だけにマッチさせる</td>
+</tr>
+<tr>
+<td align="center">DOTALL, S</td>
+<td align="center">.を改行含む任意の文字にマッチするようにする</td>
+</tr>
+<tr>
+<td align="center">IGNORECASE, I</td>
+<td align="center">大文字小文字の区別をなくす</td>
+</tr>
+<tr>
+<td align="center">LOCALE, L</td>
+<td align="center">ロケールに対応したマッチングをする</td>
+</tr>
+<tr>
+<td align="center">MULTILINE, M</td>
+<td align="center">^, $に作用して、複数行にマッチング</td>
+</tr>
+<tr>
+<td align="center">VERBOSE, X</td>
+<td align="center">冗長な正規表現を利用できるようにする。</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_5">日本語を扱うとき</h2>
 <p>Unicodeにしたほうがいい?
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">matchOB</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">re</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">match(</span><span style="color: #e6db74">u&quot;[ぁ-ゞ]&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">u&quot;あ&quot;</span><span style="color: #f8f8f2">)</span>
@@ -1060,41 +1026,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../mecab_usage/" title="mecabを使用する" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  前
-                </span>
-                mecabを使用する
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../../markdown/mkd/" title="markdown基本" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  次
-                </span>
-                markdown基本
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
