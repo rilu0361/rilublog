@@ -243,6 +243,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../python/statistic/" title="平均・分散・中央値など" class="md-nav__link">
+      平均・分散・中央値など
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/typehint/" title="型注釈" class="md-nav__link">
+      型注釈
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/commandLine_option/" title="コマンドライン引数" class="md-nav__link">
+      コマンドライン引数
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../python/tips/" title="ちょっとしたプログラム集" class="md-nav__link">
       ちょっとしたプログラム集
     </a>
@@ -321,6 +357,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nlp/mecab_usage/" title="mecabを使用する" class="md-nav__link">
+      mecabを使用する
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nlp/regex/" title="正規表現" class="md-nav__link">
+      正規表現
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -394,6 +454,30 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../math/" title="markdown数式" class="md-nav__link">
+      markdown数式
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../math_symbol/" title="markdown数式・記号" class="md-nav__link">
+      markdown数式・記号
+    </a>
   </li>
 
         
@@ -700,10 +784,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
     <label class="md-nav__link" for="nav-8">
-      雑記
+      その他
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-8">
+        その他
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../other/git/" title="git" class="md-nav__link">
+      git
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      雑記
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
         雑記
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -784,8 +904,10 @@
 <h2 id="2">見出し2</h2>
 <h3 id="3">見出し3</h3>
 <h2 id="_2">改行</h2>
-<p>行の最後にスペースを2つ入れる
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+<p>行の最後にスペースを2つ入れる。
+または、空行をはさむ。
+<code class="codehilite">\\</code> を文末に記述する場合もある。</p>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>1行目  
 2行目
 </pre></div>
@@ -832,7 +954,15 @@ print(&quot;aaa&quot;)
 </pre></div>
 </td></tr></table>
 <code class="codehilite">print(&quot;aaa&quot;)</code></p>
-<h2 id="_7">文字の装飾など</h2>
+<h2 id="_7">引用</h2>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">&gt; </span><span style="font-style: italic">これは引用です</span>
+</pre></div>
+</td></tr></table>
+
+<blockquote>
+<p>これは引用です</p>
+</blockquote>
+<h2 id="_8">文字の装飾など</h2>
 <p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
 2
 3
@@ -846,7 +976,7 @@ print(&quot;aaa&quot;)
 <strong>太字</strong>
 <em>ストライド</em>
 <del>取り消し線</del></p>
-<h2 id="_8">チェックボックス</h2>
+<h2 id="_9">チェックボックス</h2>
 <p>チェックの[x]はx(エックス)です。
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
 2
@@ -862,7 +992,7 @@ print(&quot;aaa&quot;)
 </li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> チェック2</li>
 </ul>
-<h2 id="_9">表・テーブル</h2>
+<h2 id="_10">表・テーブル</h2>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
 2
 3
@@ -901,6 +1031,8 @@ print(&quot;aaa&quot;)
 </tr>
 </tbody>
 </table>
+<h2 id="_11">画像の挿入</h2>
+<p><img alt="日々草" src="image/nichi" /></p>
                 
                   
                 
@@ -921,7 +1053,7 @@ print(&quot;aaa&quot;)
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../nlp/mecab_add_userdic/" title="mecabユーザー辞書の追加" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../nlp/regex/" title="正規表現" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -930,19 +1062,19 @@ print(&quot;aaa&quot;)
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                mecabユーザー辞書の追加
+                正規表現
               </span>
             </div>
           </a>
         
         
-          <a href="../mkdocs_md/" title="markdown拡張" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../math/" title="markdown数式" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                markdown拡張
+                markdown数式
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

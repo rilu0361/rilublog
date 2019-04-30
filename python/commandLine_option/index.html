@@ -1,0 +1,1380 @@
+
+
+
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="クリップボードへコピー">
+      
+        <meta name="lang:clipboard.copied" content="コピーしました">
+      
+        <meta name="lang:search.language" content="ja">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="何も見つかりませんでした">
+      
+        <meta name="lang:search.result.one" content="1件見つかりました">
+      
+        <meta name="lang:search.result.other" content="#件見つかりました">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.2">
+    
+    
+      
+        <title>コマンドライン引数 - Rilu's blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.3020aac5.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjp.css">
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:600,800">
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Rilu's blog" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Rilu's blog
+            </span>
+            <span class="md-header-nav__topic">
+              コマンドライン引数
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            検索キーワードを入力してください
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Rilu's blog" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Rilu's blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="HOME" class="md-nav__link">
+      HOME
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../anaconda_cmd/" title="Anacondaコマンド集" class="md-nav__link">
+      Anacondaコマンド集
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../general/" title="python基本構文" class="md-nav__link">
+      python基本構文
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pandas/" title="pandas" class="md-nav__link">
+      pandas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../statistic/" title="平均・分散・中央値など" class="md-nav__link">
+      平均・分散・中央値など
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../typehint/" title="型注釈" class="md-nav__link">
+      型注釈
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        コマンドライン引数
+      </label>
+    
+    <a href="./" title="コマンドライン引数" class="md-nav__link md-nav__link--active">
+      コマンドライン引数
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sysargv" title="sys.argv" class="md-nav__link">
+    sys.argv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#argparse" title="argparseの使用方法" class="md-nav__link">
+    argparseの使用方法
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="基本" class="md-nav__link">
+    基本
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="位置引数" class="md-nav__link">
+    位置引数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional" title="Optional引数の導入" class="md-nav__link">
+    Optional引数の導入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional_1" title="位置引数とoptional引数の併用" class="md-nav__link">
+    位置引数とoptional引数の併用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="もう少し応用" class="md-nav__link">
+    もう少し応用
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tips/" title="ちょっとしたプログラム集" class="md-nav__link">
+      ちょっとしたプログラム集
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../anaconda_install/" title="Anacondaによる環境構築" class="md-nav__link">
+      Anacondaによる環境構築
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pyenv/" title="pyenvでの環境構築" class="md-nav__link">
+      pyenvでの環境構築
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      自然言語処理
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        自然言語処理
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nlp/mecab/" title="mecabの導入" class="md-nav__link">
+      mecabの導入
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nlp/mecab_add_userdic/" title="mecabユーザー辞書の追加" class="md-nav__link">
+      mecabユーザー辞書の追加
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nlp/mecab_usage/" title="mecabを使用する" class="md-nav__link">
+      mecabを使用する
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nlp/regex/" title="正規表現" class="md-nav__link">
+      正規表現
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Markdown
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Markdown
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../markdown/mkd/" title="markdown基本" class="md-nav__link">
+      markdown基本
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../markdown/math/" title="markdown数式" class="md-nav__link">
+      markdown数式
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../markdown/math_symbol/" title="markdown数式・記号" class="md-nav__link">
+      markdown数式・記号
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../markdown/mkdocs_md/" title="markdown拡張" class="md-nav__link">
+      markdown拡張
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../markdown/mkd_ex/" title="markdown例" class="md-nav__link">
+      markdown例
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../markdown/mkdocs/" title="mkdocsによるwebページの公開" class="md-nav__link">
+      mkdocsによるwebページの公開
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Ubuntu
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Ubuntu
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ubuntu/setting/" title="Ubuntu設定関連" class="md-nav__link">
+      Ubuntu設定関連
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ubuntu/cmd/" title="Ubuntuコマンド集" class="md-nav__link">
+      Ubuntuコマンド集
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ubuntu/hdd_mnt/" title="2TB以上のHDDのマウント" class="md-nav__link">
+      2TB以上のHDDのマウント
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ubuntu/gpu/" title="GPU for tensorflow-gpu" class="md-nav__link">
+      GPU for tensorflow-gpu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ubuntu/login_loop/" title="ログインループの対処" class="md-nav__link">
+      ログインループの対処
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Windows
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Windows
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../windows/wsl/" title="WSL導入" class="md-nav__link">
+      WSL導入
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../windows/wsl_matplotlib/" title="WSL ~matplotlib~" class="md-nav__link">
+      WSL ~matplotlib~
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../windows/xming_char/" title="Xming文字化け対処" class="md-nav__link">
+      Xming文字化け対処
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      RestructuredText
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        RestructuredText
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rest/fund/" title="Rest基本構文" class="md-nav__link">
+      Rest基本構文
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rest/admotions/" title="注意・強調" class="md-nav__link">
+      注意・強調
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rest/link/" title="リンク・脚注" class="md-nav__link">
+      リンク・脚注
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rest/math/" title="数式の挿入" class="md-nav__link">
+      数式の挿入
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rest/module/" title="コード・表・画像・サイドバー" class="md-nav__link">
+      コード・表・画像・サイドバー
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rest/other/" title="その他" class="md-nav__link">
+      その他
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../rest/sphinx/" title="sphinxによるwebページの公開" class="md-nav__link">
+      sphinxによるwebページの公開
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      その他
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        その他
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../other/git/" title="git" class="md-nav__link">
+      git
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      雑記
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        雑記
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blog/201904/" title="2019年4月" class="md-nav__link">
+      2019年4月
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sysargv" title="sys.argv" class="md-nav__link">
+    sys.argv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#argparse" title="argparseの使用方法" class="md-nav__link">
+    argparseの使用方法
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="基本" class="md-nav__link">
+    基本
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="位置引数" class="md-nav__link">
+    位置引数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional" title="Optional引数の導入" class="md-nav__link">
+    Optional引数の導入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional_1" title="位置引数とoptional引数の併用" class="md-nav__link">
+    位置引数とoptional引数の併用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="もう少し応用" class="md-nav__link">
+    もう少し応用
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">コマンドライン引数を使ってオプションを指定する</h1>
+<p>2018/05/07</p>
+<h2 id="sysargv">sys.argv</h2>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">sys</span>
+
+<span style="color: #f8f8f2">args</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">sys</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">argv</span>
+
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(args)</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;第１引数：&#39;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">args[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">])</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;第２引数：&#39;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">args[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">])</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;第３引数：&#39;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">args[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">])</span>
+</pre></div>
+</td></tr></table>
+結果
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ python test_par.py あ い う
+<span style="color: #f92672">[</span><span style="color: #e6db74">&#39;test_par.py&#39;</span>, <span style="color: #e6db74">&#39;あ&#39;</span>, <span style="color: #e6db74">&#39;い&#39;</span>, <span style="color: #e6db74">&#39;う&#39;</span><span style="color: #f92672">]</span>
+第１引数：あ
+第２引数：い
+第３引数：う
+</pre></div>
+</td></tr></table></p>
+<p><a href="https://www.python-izm.com/basic/command_line_arguments/">コマンドライン引数</a></p>
+<h2 id="argparse">argparseの使用方法</h2>
+<p>オプションを作成するのに使用した。</p>
+<h3 id="_2">基本</h3>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">argparse</span>
+<span style="color: #f8f8f2">parser</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">argparse</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ArgumentParser()</span>
+<span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parse_args()</span>
+</pre></div>
+</td></tr></table>
+これだけで<code class="codehilite">-h</code>,<code class="codehilite">--help</code> を勝手に作ってくれるので素敵。
+ヘルプには「使用方法(usage)」と「オプションの引数」の説明が書かれる。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ python test_par.py -h
+usage: test_par.py <span style="color: #f92672">[</span>-h<span style="color: #f92672">]</span>
+
+optional arguments:
+  -h, --help  show this <span style="color: #f8f8f2">help</span> message and <span style="color: #f8f8f2">exit</span>
+</pre></div>
+</td></tr></table>
+ヘルプの
+<code class="codehilite">optional argument</code> がオプションで、指定しなくてもしてもいいもの。
+<code class="codehilite">positional argument</code> が位置引数。指定必須。</p>
+<h4 id="_3">位置引数</h4>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">argparse</span>
+<span style="color: #f8f8f2">parser</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">argparse</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ArgumentParser()</span>
+<span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;hoge&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">args</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parse_args()</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">hoge)</span>
+</pre></div>
+</td></tr></table>
+コマンドライン引数に例えば<code class="codehilite">aaaaaaa</code>を入れたら、それを<code class="codehilite">args.hoge</code>で呼び出せる。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ python test_par.py aaaaaaa
+aaaaaaa
+</pre></div>
+</td></tr></table></p>
+<p>なにかを入れないとエラーが出る。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ python test_par.py
+usage: test_par.py <span style="color: #f92672">[</span>-h<span style="color: #f92672">]</span> hoge
+test_par.py: error: the following arguments are required: hoge
+</pre></div>
+</td></tr></table>
+ヘルプを見ると追加されていることが分かる。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ python test_par.py --help
+usage: test_par.py <span style="color: #f92672">[</span>-h<span style="color: #f92672">]</span> hoge
+
+positional arguments:
+ hoge
+
+optional arguments:
+ -h, --help  show this <span style="color: #f8f8f2">help</span> message and <span style="color: #f8f8f2">exit</span>
+</pre></div>
+</td></tr></table>
+この状態では<code class="codehilite">hoge</code>の説明が何も書かれていないので<code class="codehilite">help</code>を指定する。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;hoge&quot;</span><span style="color: #f8f8f2">,help</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;hogeの説明&#39;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table>
+以下のようになる。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>positional arguments:
+  hoge        hogeの説明
+</pre></div>
+</td></tr></table>
+と追加される。</p>
+<p>引数でひっぱってくるのは、文字列なので注意。
+数字を入れたい場合は<code class="codehilite">type=int</code>の指定をする。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;hoge&quot;</span><span style="color: #f8f8f2">,help</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;hogeの説明&#39;</span><span style="color: #f8f8f2">,type</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">int)</span>
+<span style="color: #f8f8f2">args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">hoge</span><span style="color: #f92672">**</span><span style="color: #ae81ff">2</span>
+</pre></div>
+</td></tr></table>
+引数に<code class="codehilite">int</code>を指定しているので<code class="codehilite">args.hoge</code>を<code class="codehilite">**2</code>すると数値を入れれば２乗の値が返ってくる。文字列を入れても数値の操作をしないならエラーは出ない。
+<code class="codehilite">args.hoge</code>に入れる段階でエラーが出ているわけではなく、それに数値的な操作を行うときにエラーが出る。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">TypeError</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">unsupported</span> <span style="color: #f8f8f2">operand</span> <span style="color: #f8f8f2">type</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">s</span><span style="color: #f92672">)</span> <span style="color: #66d9ef">for</span> <span style="color: #f92672">**</span> <span style="color: #f8f8f2">or</span> <span style="color: #f8f8f2">pow</span><span style="color: #f92672">():</span> <span style="color: #e6db74">&#39;str&#39;</span> <span style="color: #f8f8f2">and</span> <span style="color: #e6db74">&#39;int&#39;</span>
+</pre></div>
+</td></tr></table></p>
+<h4 id="optional">Optional引数の導入</h4>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">argparse</span>
+<span style="color: #f8f8f2">parser</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">argparse</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ArgumentParser()</span>
+<span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;--fuga&quot;</span><span style="color: #f8f8f2">,action</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;store_true&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">help</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;せつめい&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">args</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parse_args()</span>
+<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">fuga:</span>
+    <span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;fuga turned on&quot;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table>
+<code class="codehilite">--fuga</code> を引数に指定すると<code class="codehilite">if</code>の中のプログラムが動く。</p>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ python test_par.py --fuga
+fuga turned on
+</pre></div>
+</td></tr></table>
+
+<p><code class="codehilite">action=&#39;store_true&#39;</code>が必須。この指定により、オプションが指定されたとき<code class="codehilite">args.fuga=True</code>になる。値を指定するとエラー。
+ヘルプを見てみると追加されていることが分かる。</p>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ python test_par.py -h
+usage: test_par.py <span style="color: #f92672">[</span>-h<span style="color: #f92672">]</span> <span style="color: #f92672">[</span>-f fuga<span style="color: #f92672">]</span>
+
+optional arguments:
+  -h, --help            show this <span style="color: #f8f8f2">help</span> message and <span style="color: #f8f8f2">exit</span>
+  --fuga fuga
+                        せつめい
+</pre></div>
+</td></tr></table>
+
+<p><code class="codehilite">parser.add_argument(&quot;-f&quot;,&quot;--fuga&quot;, help=&quot;せつめい&quot;)</code> とすれば <code class="codehilite">-f</code>でも同じものが指定できるようになる。</p>
+<p><code class="codehilite">-h</code> を新しく指定することはできない。(すでに<code class="codehilite">help</code>があるため)</p>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">argparse</span>
+<span style="color: #f8f8f2">parser</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">argparse</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ArgumentParser()</span>
+<span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;--fuga&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&#39;-f&#39;</span><span style="color: #f8f8f2">,type</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">int,</span> <span style="color: #f8f8f2">help</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;せつめい&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">args</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parse_args()</span>
+<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">fuga</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">:</span>
+    <span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;fuga turned on&quot;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table>
+<code class="codehilite">action = &#39;store_true&#39;</code> を <code class="codehilite">type=int</code> に変更するとオプションの後に数値を指定させられるようになり、<code class="codehilite">args.fuga</code>にはその数値が入る。</p>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ python test_par.py -f <span style="color: #ae81ff">1</span>
+fuga turned on
+</pre></div>
+</td></tr></table>
+何も数値が指定されない場合、<code class="codehilite">args.fuga</code>は<code class="codehilite">None</code>になるため、エラー。
+デフォルトの値を設定しておくために以下のように変更する。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;--fuga&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&#39;-f&#39;</span><span style="color: #f8f8f2">,type</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">int,</span> <span style="color: #f8f8f2">default</span><span style="color: #f92672">=</span><span style="color: #ae81ff">1</span> <span style="color: #f8f8f2">,help</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;せつめい&quot;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table>
+これでオプション<code class="codehilite">-f</code>が指定されないとき<code class="codehilite">args.fuga</code>はデフォルトの値になる。
+<code class="codehilite">-f</code>が指定されているのに<code class="codehilite">-f</code>に引数がないときはエラーになることに注意。</p>
+<p><code class="codehilite">action=count</code>の場合、そのオプションの指定回数がとれる。</p>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ python3 prog.py <span style="color: #ae81ff">4</span> -ff
+the square of <span style="color: #ae81ff">4</span> equals <span style="color: #ae81ff">16</span>
+</pre></div>
+</td></tr></table>
+
+<h4 id="optional_1">位置引数とoptional引数の併用</h4>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">argparse</span>
+<span style="color: #f8f8f2">parser</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">argparse</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ArgumentParser()</span>
+<span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;square&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">type</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">int,</span>
+                    <span style="color: #f8f8f2">help</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;display a square of a given number&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;-f&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;--fuga&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">action</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;store_true&quot;</span><span style="color: #f8f8f2">,</span>
+                    <span style="color: #f8f8f2">help</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;increase output fuga&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">args</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parse_args()</span>
+<span style="color: #f8f8f2">answer</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">square</span><span style="color: #f92672">**</span><span style="color: #ae81ff">2</span>
+<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">fuga:</span>
+    <span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;the square of {} equals {}&quot;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">format(args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">square,</span> <span style="color: #f8f8f2">answer))</span>
+<span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span>
+    <span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(answer)</span>
+</pre></div>
+</td></tr></table>
+<code class="codehilite">square</code>は位置引数、<code class="codehilite">varbose</code>がoptional引数。
+コマンドラインに<code class="codehilite">-f</code>を指定したら<code class="codehilite">if args.fuga</code>以下が実行される。
+指定しなければ<code class="codehilite">else</code>以下を実行。</p>
+<p><code class="codehilite">square</code>は位置引数で何か値が入っていないとダメなので、何も引数がないとエラー。</p>
+<h2 id="_4">もう少し応用</h2>
+<p>混在するとまずいオプション。</p>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">argparse</span>
+
+<span style="color: #f8f8f2">parser</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">argparse</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">ArgumentParser()</span>
+<span style="color: #f8f8f2">group</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_mutually_exclusive_group()</span>
+<span style="color: #f8f8f2">group</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;-v&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;--verbose&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">action</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;store_true&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">group</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;-q&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&quot;--quiet&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">action</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;store_true&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;x&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">type</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">int,</span> <span style="color: #f8f8f2">help</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;the base&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">add_argument(</span><span style="color: #e6db74">&quot;y&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">type</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">int,</span> <span style="color: #f8f8f2">help</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;the exponent&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">args</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">parser</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parse_args()</span>
+<span style="color: #f8f8f2">answer</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">x</span><span style="color: #f92672">**</span><span style="color: #f8f8f2">args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">y</span>
+
+<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">quiet:</span>
+    <span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(answer)</span>
+<span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">verbose:</span>
+    <span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;{} to the power {} equals {}&quot;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">format(args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">x,</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">y,</span> <span style="color: #f8f8f2">answer))</span>
+<span style="color: #66d9ef">else</span><span style="color: #f8f8f2">:</span>
+    <span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;{}^{} == {}&quot;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">format(args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">x,</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">y,</span> <span style="color: #f8f8f2">answer))</span>
+</pre></div>
+</td></tr></table>
+
+<p>今回重要<code class="codehilite">group</code>。<code class="codehilite">-v</code>と<code class="codehilite">-q</code>が一緒にあるとまずいもの同士。
+混在した場合の出力結果は以下。</p>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ python3 prog.py <span style="color: #ae81ff">4</span> <span style="color: #ae81ff">2</span> -vq
+usage: prog.py <span style="color: #f92672">[</span>-h<span style="color: #f92672">]</span> <span style="color: #f92672">[</span>-v <span style="color: #f8f8f2">|</span> -q<span style="color: #f92672">]</span> x y
+prog.py: error: argument -q/--quiet: not allowed with argument -v/--verbose
+</pre></div>
+</td></tr></table>
+
+<p>ヘルプの中身のusageの部分も変わっている。<br />
+<code class="codehilite">|</code>でどっちかしか使えないことを示している。</p>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>usage: test_par.py <span style="color: #f92672">[</span>-h<span style="color: #f92672">]</span> <span style="color: #f92672">[</span>-v <span style="color: #f8f8f2">|</span> -q<span style="color: #f92672">]</span> x y
+</pre></div>
+</td></tr></table>
+
+<p><a href="https://docs.python.jp/3/howto/argparse.html#id1">Argparse チュートリアル</a></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../typehint/" title="型注釈" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                型注釈
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../tips/" title="ちょっとしたプログラム集" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  次
+                </span>
+                ちょっとしたプログラム集
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.267712eb.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.ja.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
