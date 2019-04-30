@@ -36,7 +36,7 @@
     
     
       
-        <title>pandas - Rilu's blog</title>
+        <title>pandas - 備忘録と雑記</title>
       
     
     
@@ -92,7 +92,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Rilu's blog" class="md-header-nav__button md-logo">
+        <a href="../.." title="備忘録と雑記" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -105,7 +105,7 @@
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             <span class="md-header-nav__topic">
-              Rilu's blog
+              備忘録と雑記
             </span>
             <span class="md-header-nav__topic">
               pandas
@@ -160,12 +160,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../.." title="Rilu's blog" class="md-nav__button md-logo">
+    <a href="../.." title="備忘録と雑記" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
     </a>
-    Rilu's blog
+    備忘録と雑記
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -231,6 +231,42 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../if/" title="条件分岐if" class="md-nav__link">
+      条件分岐if
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../for/" title="繰り返し for,while" class="md-nav__link">
+      繰り返し for,while
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../collection/" title="コレクション" class="md-nav__link">
+      コレクション
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -260,14 +296,54 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#csv" title="csvに保存" class="md-nav__link">
-    csvに保存
+  <a href="#csv" title="csvデータの読み込み" class="md-nav__link">
+    csvデータの読み込み
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="列を指定して取り出す" class="md-nav__link">
+    列を指定して取り出す
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" title="重複を削除する" class="md-nav__link">
+  <a href="#_2" title="書き込み(保存)" class="md-nav__link">
+    書き込み(保存)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#excel" title="Excelファイルとして保存" class="md-nav__link">
+    Excelファイルとして保存
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="例" class="md-nav__link">
+    例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="重複を削除する" class="md-nav__link">
     重複を削除する
   </a>
   
@@ -874,14 +950,54 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#csv" title="csvに保存" class="md-nav__link">
-    csvに保存
+  <a href="#csv" title="csvデータの読み込み" class="md-nav__link">
+    csvデータの読み込み
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" title="列を指定して取り出す" class="md-nav__link">
+    列を指定して取り出す
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" title="重複を削除する" class="md-nav__link">
+  <a href="#_2" title="書き込み(保存)" class="md-nav__link">
+    書き込み(保存)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#excel" title="Excelファイルとして保存" class="md-nav__link">
+    Excelファイルとして保存
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="例" class="md-nav__link">
+    例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="重複を削除する" class="md-nav__link">
     重複を削除する
   </a>
   
@@ -906,12 +1022,80 @@
                 
                 <h1 id="pandas">Pandas</h1>
 <p>工事中…</p>
-<h2 id="csv">csvに保存</h2>
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&#39;./csv_data.csv&#39;</span><span style="color: #f8f8f2">)</span>
+<p>Pandasを利用するときには以下を記述しておく。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">pandas</span> <span style="color: #f92672">as</span> <span style="color: #f8f8f2">pd</span>
+</pre></div>
+</td></tr></table></p>
+<h2 id="csv">csvデータの読み込み</h2>
+<p>csvを読み込んでデータフレームに格納する。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">hoge</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">read_csv(</span><span style="color: #e6db74">&#39;my_data.csv&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">index_col</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span>
 </pre></div>
 </td></tr></table>
-
-<p>例)
+indexがある場合は<code class="codehilite">index_col=0</code> 。
+<code class="codehilite">read.table()</code> もあるそうだが、それは区切り文字がタブの場合(.tsv)に使用する。
+でも、<code class="codehilite">read_csv()</code> でも <code class="codehilite">sep=</code> で指定してあげればできるはず（区切り文字の指定）。</p>
+<p>headerがない場合は<code class="codehilite">header = None</code> と指定すれば、列名として数字を振ってくれる。
+<code class="codehilite">names = []</code> すれば、列名を任意に割り当てられる。</p>
+<h3 id="_1">列を指定して取り出す</h3>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">hoge</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">read_csv(</span><span style="color: #e6db74">&#39;my_data.csv&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">index_col</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">usecols</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">])</span>
+</pre></div>
+</td></tr></table>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">hoge</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">read_csv(</span><span style="color: #e6db74">&#39;my_data.csv&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">index_col</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">usecols</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;列名&#39;</span><span style="color: #f8f8f2">])</span>
+</pre></div>
+</td></tr></table>
+引数に <code class="codehilite">usecols</code> を使用するとできる。
+列名もしくは順番で指定する。</p>
+<p>列の複数指定もできる。その場合データフレームが返ってくる。
+列が単独指定なら、リストが返ってくるっぽい。</p>
+<h2 id="_2">書き込み(保存)</h2>
+<p>データフレームをcsvなどに保存できる。
+基本。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&quot;hoge.csv&quot;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table>
+保存をする際にエンコーディングなどの指定が可能。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">f</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&quot;hoge.tsv&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">encoding</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;shift_jis&quot;</span><span style="color: #f8f8f2">,sep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;</span><span style="color: #ae81ff">\t</span><span style="color: #e6db74">&#39;</span><span style="color: #f8f8f2">,index</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;False&#39;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table>
+その他オプション
+<code class="codehilite">sep</code> : 区切り文字の指定。デフォルトは <code class="codehilite">,</code>
+<code class="codehilite">index</code> : 行名を入れるかどうか。デフォルトは <code class="codehilite">True</code></p>
+<p>Windows環境でExcelを開く予定がある場合、デフォルトだと文字化けを起こす。
+タブ区切りUTF-16を指定するとうまくいった気がする。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&quot;hoge.csv&quot;</span><span style="color: #f8f8f2">,encoding</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;UTF-16&quot;</span><span style="color: #f8f8f2">,sep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;</span><span style="color: #ae81ff">\t</span><span style="color: #e6db74">&#39;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table></p>
+<h3 id="excel">Excelファイルとして保存</h3>
+<p>excelへの書き込みにも対応している。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>df.to_excel(&#39;document.xlsx&#39;, sheet_name=&#39;Sheet1&#39;)
+</pre></div>
+</td></tr></table>
+ただし、<code class="codehilite">openpyxl</code> が必要。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pip install openpyxl
+</pre></div>
+</td></tr></table></p>
+<h3 id="_3">例</h3>
+<p>リストからのデータフレーム化も含め以下に例を記載
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e"># 保存</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">pandas</span> <span style="color: #f92672">as</span> <span style="color: #f8f8f2">pd</span>
+<span style="color: #f8f8f2">data</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span><span style="color: #e6db74">&quot;id&quot;</span> <span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">id_list,</span>
+        <span style="color: #e6db74">&quot;title&quot;</span> <span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">title_list}</span>
+<span style="color: #f8f8f2">w_df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">DataFrame(data)</span>
+<span style="color: #f8f8f2">w_df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_excel(</span><span style="color: #e6db74">&#39;document.xlsx&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">sheet_name</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;Sheet1&#39;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;excelへの書き込みを完了しました&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">w_df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&#39;document.csv&#39;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;csvへの書き込みを完了しました&quot;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table></p>
+<p>例2)
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
 2
 3
@@ -927,7 +1111,7 @@
 <span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&#39;./csv_data.csv&#39;</span><span style="color: #f8f8f2">)</span>
 </pre></div>
 </td></tr></table></p>
-<h2 id="_1">重複を削除する</h2>
+<h2 id="_4">重複を削除する</h2>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">df[df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">duplicated(keep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;last&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">subset</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;query&quot;</span><span style="color: #f8f8f2">)</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">False]</span>
 </pre></div>
 </td></tr></table>
@@ -951,7 +1135,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../general/" title="python基本構文" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../collection/" title="コレクション" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -960,7 +1144,7 @@
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                python基本構文
+                コレクション
               </span>
             </div>
           </a>

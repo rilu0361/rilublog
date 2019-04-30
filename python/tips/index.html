@@ -36,7 +36,7 @@
     
     
       
-        <title>ちょっとしたプログラム集 - Rilu's blog</title>
+        <title>ちょっとしたプログラム集 - 備忘録と雑記</title>
       
     
     
@@ -92,7 +92,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="Rilu's blog" class="md-header-nav__button md-logo">
+        <a href="../.." title="備忘録と雑記" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -105,7 +105,7 @@
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             <span class="md-header-nav__topic">
-              Rilu's blog
+              備忘録と雑記
             </span>
             <span class="md-header-nav__topic">
               ちょっとしたプログラム集
@@ -160,12 +160,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../.." title="Rilu's blog" class="md-nav__button md-logo">
+    <a href="../.." title="備忘録と雑記" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
     </a>
-    Rilu's blog
+    備忘録と雑記
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -233,6 +233,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../if/" title="条件分岐if" class="md-nav__link">
+      条件分岐if
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../for/" title="繰り返し for,while" class="md-nav__link">
+      繰り返し for,while
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../collection/" title="コレクション" class="md-nav__link">
+      コレクション
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../pandas/" title="pandas" class="md-nav__link">
       pandas
     </a>
@@ -289,9 +325,52 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        ちょっとしたプログラム集
+      </label>
+    
     <a href="./" title="ちょっとしたプログラム集" class="md-nav__link md-nav__link--active">
       ちょっとしたプログラム集
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="バージョンの確認" class="md-nav__link">
+    バージョンの確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" title="1行で書く" class="md-nav__link">
+    1行で書く
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="ファイルのリストの取得" class="md-nav__link">
+    ファイルのリストの取得
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -834,6 +913,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="バージョンの確認" class="md-nav__link">
+    バージョンの確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" title="1行で書く" class="md-nav__link">
+    1行で書く
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="ファイルのリストの取得" class="md-nav__link">
+    ファイルのリストの取得
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -845,10 +954,34 @@
               
                 
                 
-                <h1 id="_1">ちょっとしたプログラム集</h1>
-<p><sub><sub>使うに便利な</sub></sub>ちょっとしたプログラム集.<br />
-あとでまとめ直して大幅な変更がある可能性があります。</p>
-<h1 id="_2">ファイルのリストの取得</h1>
+                <h1 id="_1">ちょっとしたなにか</h1>
+<h2 id="_2">バージョンの確認</h2>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">sys</span>
+<span style="color: #f8f8f2">s</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;バージョン：{0.version}&quot;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">format(sys)</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(s)</span>
+<span style="color: #75715e"># &gt; バージョン：3.6.4 (default, Mar 13 2018, 08:59:38)</span>
+<span style="color: #75715e"># [GCC 5.4.0 20160609]</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="1">1行で書く</h2>
+<p>文末に<code class="codehilite">;</code> をつけても問題ない。
+改行扱いになるので、短いものを1行にまとめて綺麗にできそうだが、あまりやっているのを見かけたことはない。</p>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;a&quot;</span><span style="color: #f8f8f2">);</span> <span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;b&quot;</span><span style="color: #f8f8f2">);</span> <span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;c&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #75715e"># &gt; a</span>
+<span style="color: #75715e"># &gt; b</span>
+<span style="color: #75715e"># &gt; c</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="_3">ファイルのリストの取得</h2>
 <p>特定フォルダ内のファイルリストを取得する。</p>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
 2
