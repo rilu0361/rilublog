@@ -1,9 +1,12 @@
-site_name: Rilu's blog
+site_name: 備忘録と雑記
 nav:
     - HOME: index.md
     - Python:
         - Anacondaコマンド集: python/anaconda_cmd.md
         - python基本構文: python/general.md
+        - 条件分岐if : python/if.md
+        - 繰り返し for,while: python/for.md
+        - コレクション: python/collection.md
         - pandas: python/pandas.md
         - 平均・分散・中央値など: python/statistic.md
         - 型注釈: python/typehint.md
@@ -15,7 +18,7 @@ nav:
         - mecabの導入: nlp/mecab.md
         - mecabユーザー辞書の追加: nlp/mecab_add_userdic.md
         - mecabを使用する: nlp/mecab_usage.md
-        - 正規表現: nlp/regex.md
+        # - 正規表現: nlp/regex.md
     # - 異常検知:
     #     - 異常検知基礎: anormaly/base.md
     - Markdown:
@@ -47,6 +50,7 @@ nav:
         - git: other/git.md
     - 雑記: 
         - 2019年4月: blog/201904.md
+    - 免責事項: disclaimer.md
 
 # theme: readthedocs
 theme:

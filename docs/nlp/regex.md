@@ -23,20 +23,21 @@ text = "caabsacasca"
 matchOB = re.match(pattern , text)
 ```
 
-パターンに `r` をつけるのは、文字列中のバックスラッシュ文字をそのままバックスラッシュとして扱えるようにするため。
+パターンに `r` をつけるのは、文字列中のバックスラッシュ(`\`)をそのまま扱えるようにするため。エスケープとされるのを防ぐ。
 
 ## メソッド一覧
 
 |メソッド|目的|
 |:-----:|:--:|
 |match(pattern, str)|文字列の先頭とマッチするか|
-|search(pat, str)|文字列のどこにマッチするか|
-|findall(pat, str)|マッチする部分文字列をすべて探してリストで返す|
-|finditer(pat, str)|マッチする部分文字列を探し、イテレータとして返す|
-|split(pat, str)|マッチする部分があるたびに分割して返す|
-|sub(pat, repl, str)|マッチする部分をreplに置換|
+|search(pattern, str)|文字列のどこにマッチするか|
+|findall(pattern, str)|マッチする部分文字列をすべて探してリストで返す|
+|finditer(pattern, str)|マッチする部分文字列を探し、イテレータとして返す|
+|split(pattern, str)|マッチする部分があるたびに分割して返す|
+|sub(pattern, repl, str)|マッチする部分をreplに置換|
 
 オブジェクトから情報を取り出すための関数
+
 |メソッド|目的|
 |:-----:|:--:|
 |group()|マッチした文字列を返す|
@@ -45,6 +46,7 @@ matchOB = re.match(pattern , text)
 |span()|マッチした位置(start,end)のタプルを返す|
 
 プロパティ
+
 |プロパティ|意味|
 |:-----:|:--:|
 |ASCII,A|ASCII文字だけにマッチさせる|
