@@ -5,16 +5,23 @@ nav:
         - Anacondaコマンド集: python/anaconda_cmd.md
         - python基本構文: python/general.md
         - pandas: python/pandas.md
+        - 平均・分散・中央値など: python/statistic.md
+        - 型注釈: python/typehint.md
+        - コマンドライン引数: python/commandLine_option.md
         - ちょっとしたプログラム集: python/tips.md
         - Anacondaによる環境構築: python/anaconda_install.md
         - pyenvでの環境構築: python/pyenv.md
     - 自然言語処理:
         - mecabの導入: nlp/mecab.md
         - mecabユーザー辞書の追加: nlp/mecab_add_userdic.md
+        - mecabを使用する: nlp/mecab_usage.md
+        - 正規表現: nlp/regex.md
     # - 異常検知:
     #     - 異常検知基礎: anormaly/base.md
     - Markdown:
         - markdown基本: markdown/mkd.md
+        - markdown数式: markdown/math.md
+        - markdown数式・記号: markdown/math_symbol.md
         - markdown拡張: markdown/mkdocs_md.md
         - markdown例: markdown/mkd_ex.md
         - mkdocsによるwebページの公開: markdown/mkdocs.md
@@ -36,6 +43,8 @@ nav:
         - コード・表・画像・サイドバー: rest/module.md
         - その他: rest/other.md
         - sphinxによるwebページの公開: rest/sphinx.md
+    - その他:
+        - git: other/git.md
     - 雑記: 
         - 2019年4月: blog/201904.md
 

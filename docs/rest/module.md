@@ -9,27 +9,22 @@
 コードブロック 
 ==============
 
+```rest
 書き方1 ::
 
-    書き方1 ::
-
-        for a in range(10):
-            print(a)
-
+    for a in range(10):
         print(a)
 
-    コードは前後一行を空行にしてインデントする
+    print(a)
 
-| 「::」の前に空白を入れると「:」は非表示になる。
-| それ以外では「:」が表示される。
+コードは前後一行を空行にしてインデントする
+
+「::」の前に空白を入れると「:」は非表示になる。
+それ以外では「:」が表示される。
 
 書き方２
 
-.. code-block:: none
-    :linenos:
-    :caption: コードブロックの書き方
-    :emphasize-lines: 2,3,4
-
+```rest
     .. code-block :: none
         :linenos:
         :caption: コードブロックの書き方
@@ -39,6 +34,7 @@
                 print(a)
 
             print(a)
+```
 
 オプション
 
