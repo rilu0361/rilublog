@@ -36,7 +36,7 @@
     
     
       
-        <title>単純ベイズ法による異常検知 - 備忘録と雑記</title>
+        <title>特徴量 - 備忘録と雑記</title>
       
     
     
@@ -108,7 +108,7 @@
               備忘録と雑記
             </span>
             <span class="md-header-nav__topic">
-              単純ベイズ法による異常検知
+              特徴量
             </span>
           
         </div>
@@ -414,16 +414,178 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
-      Markdown
+      画像
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
+        画像
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        特徴量
+      </label>
+    
+    <a href="./" title="特徴量" class="md-nav__link md-nav__link--active">
+      特徴量
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="明度と輝度" class="md-nav__link">
+    明度と輝度
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" title="2値化" class="md-nav__link">
+    2値化
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#haar-like" title="Haar-like特徴" class="md-nav__link">
+    Haar-like特徴
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ada-boost" title="Ada Boost" class="md-nav__link">
+    Ada Boost
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eohedge-of-orientation-histogram" title="EOH(Edge of Orientation Histogram)" class="md-nav__link">
+    EOH(Edge of Orientation Histogram)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hog-histograms-of-orientation-gradient" title="HOG (Histograms of Orientation Gradient)" class="md-nav__link">
+    HOG (Histograms of Orientation Gradient)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sift-scale-invariant-feature-transform" title="SIFT (Scale Invariant Feature Transform)" class="md-nav__link">
+    SIFT (Scale Invariant Feature Transform)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hlac-high-order-local-auto-correlation" title="HLAC (High-order Local Auto Correlation)" class="md-nav__link">
+    HLAC (High-order Local Auto Correlation)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chlac-cubic-high-order-local-auto-correlation" title="CHLAC (Cubic High-order Local Auto Correlation)" class="md-nav__link">
+    CHLAC (Cubic High-order Local Auto Correlation)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../filter/" title="フィルタ" class="md-nav__link">
+      フィルタ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../template_matching/" title="テンプレートマッチング" class="md-nav__link">
+      テンプレートマッチング
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Markdown
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
         Markdown
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -513,13 +675,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-6">
       Ubuntu
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-6">
         Ubuntu
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -597,13 +759,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-7">
       Windows
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-7">
         Windows
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -657,13 +819,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-8">
       RestructuredText
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-8">
         RestructuredText
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -765,13 +927,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
     
-    <label class="md-nav__link" for="nav-8">
+    <label class="md-nav__link" for="nav-9">
       その他
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+      <label class="md-nav__title" for="nav-9">
         その他
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -801,13 +963,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
     
-    <label class="md-nav__link" for="nav-9">
+    <label class="md-nav__link" for="nav-10">
       雑記
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
+      <label class="md-nav__title" for="nav-10">
         雑記
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -863,16 +1025,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" title="変数が統計的に独立な場合の最尤推定" class="md-nav__link">
-    変数が統計的に独立な場合の最尤推定
+  <a href="#_2" title="明度と輝度" class="md-nav__link">
+    明度と輝度
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" title="2値化" class="md-nav__link">
+    2値化
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#haar-like" title="Haar-like特徴" class="md-nav__link">
+    Haar-like特徴
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" title="説明" class="md-nav__link">
-    説明
+  <a href="#ada-boost" title="Ada Boost" class="md-nav__link">
+    Ada Boost
   </a>
   
 </li>
@@ -883,15 +1059,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#t2t2" title="独立変数モデルのもとでのホテリングT^2T^2法" class="md-nav__link">
-    独立変数モデルのもとでのホテリングT^2T^2法
+  <a href="#eohedge-of-orientation-histogram" title="EOH(Edge of Orientation Histogram)" class="md-nav__link">
+    EOH(Edge of Orientation Histogram)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" title="多項分布による単純ベイズ分類" class="md-nav__link">
-    多項分布による単純ベイズ分類
+  <a href="#hog-histograms-of-orientation-gradient" title="HOG (Histograms of Orientation Gradient)" class="md-nav__link">
+    HOG (Histograms of Orientation Gradient)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sift-scale-invariant-feature-transform" title="SIFT (Scale Invariant Feature Transform)" class="md-nav__link">
+    SIFT (Scale Invariant Feature Transform)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hlac-high-order-local-auto-correlation" title="HLAC (High-order Local Auto Correlation)" class="md-nav__link">
+    HLAC (High-order Local Auto Correlation)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chlac-cubic-high-order-local-auto-correlation" title="CHLAC (Cubic High-order Local Auto Correlation)" class="md-nav__link">
+    CHLAC (Cubic High-order Local Auto Correlation)
   </a>
   
 </li>
@@ -913,162 +1110,49 @@
               
                 
                 
-                <h1 id="_1">単純ベイズ法による異常検知</h1>
-<h2 id="_2">変数が統計的に独立な場合の最尤推定</h2>
-<p><span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span>次元ベクトル<span><span class="MathJax_Preview">\boldsymbol{x}</span><script type="math/tex">\boldsymbol{x}</script></span>とラベル<span><span class="MathJax_Preview">y\in\{0(正常),1(異常)\}</span><script type="math/tex">y\in\{0(正常),1(異常)\}</script></span>がある<span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span>個の標本をもつデータ<span><span class="MathJax_Preview">\mathcal{D}</span><script type="math/tex">\mathcal{D}</script></span>を考える。
-$$
-\mathcal{D} = \bigr{(\boldsymbol{x}<sup>{(1)},y</sup>{(1)}), (\boldsymbol{x}<sup>{(2)},y</sup>{(2)}), ..., (\boldsymbol{x}<sup>{(N)},y</sup>{(N)}) \bigl} \
-$$</p>
-<p>ラベル付きデータがある場合、異常度(anormaly score)は
-条件付き確率 <span><span class="MathJax_Preview">p(x|y)</span><script type="math/tex">p(x|y)</script></span> を用いて、以下のように表される。</p>
+                <h1 id="_1">特徴量</h1>
+<h2 id="_2">明度と輝度</h2>
 <div>
 <div class="MathJax_Preview">
-a(x) = \ln \frac{p(x|y=1)}{p(x|y=0)}
+明度 = \frac{\max(\text{RGB}) + \min(\text{RGB})}{2} 
 </div>
 <script type="math/tex; mode=display">
-a(x) = \ln \frac{p(x|y=1)}{p(x|y=0)}
-</script>
-</div>
-<p><span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span>次元のそれぞれが統計的に独立であるとして、<span><span class="MathJax_Preview">y</span><script type="math/tex">y</script></span>を与えられたときの<span><span class="MathJax_Preview">\boldsymbol{x}</span><script type="math/tex">\boldsymbol{x}</script></span>の条件付き分布<span><span class="MathJax_Preview">p(\boldsymbol{x}|y)</span><script type="math/tex">p(\boldsymbol{x}|y)</script></span>は次のように仮定される。</p>
-<div>
-<div class="MathJax_Preview">
-p(\boldsymbol{x}|y) = p(x_1|y)p(x_2|y)p(x_M|y) = \prod^M_{i=1} p(x_i|y)
-</div>
-<script type="math/tex; mode=display">
-p(\boldsymbol{x}|y) = p(x_1|y)p(x_2|y)p(x_M|y) = \prod^M_{i=1} p(x_i|y)
-</script>
-</div>
-<p>異常度を計算するためには、この<span><span class="MathJax_Preview">p(\boldsymbol{x}|y)</span><script type="math/tex">p(\boldsymbol{x}|y)</script></span>をモデルとして、それに含まれるパラメータを決定する必要があるため、最尤推定を行う。</p>
-<p>このとき、<strong>M変数のそれぞれに対して別々に最尤推定することでモデルのパラメータを求めることが可能。</strong>(変数が統計的に独立な場合)</p>
-<h3 id="_3">説明</h3>
-<hr />
-<p>データ<span><span class="MathJax_Preview">\mathcal{D}</span><script type="math/tex">\mathcal{D}</script></span>が異常標本を含まないか、圧倒的少数であるという仮定のもと、以下の確率密度関数に従うとする。
-$$
-\mathcal{N}(\boldsymbol{x}^{(n)} | \boldsymbol{\mu} ,\Sigma) \equiv \frac{|\Sigma|<sup>{-&frac12;}}{(2\pi)</sup>{M/2}} \exp{-\frac{1}{2}(\boldsymbol{x}-\boldsymbol{\mu})<sup>T\Sigma</sup>{-1}(\boldsymbol{x}-\boldsymbol{\mu})} \
-$$
-この確率密度関数を正規分布またはガウス分布と呼ぶ。<br />
-<span><span class="MathJax_Preview">\mu</span><script type="math/tex">\mu</script></span>は平均,<span><span class="MathJax_Preview">\Sigma</span><script type="math/tex">\Sigma</script></span>は共分散行列を表し、この２つが確率分布のパラメータ。</p>
-<p>このパラメータの決定には最尤推定を用いるのが一般的。<br />
-最尤推定ではデータ集合<span><span class="MathJax_Preview">\mathcal{D}</span><script type="math/tex">\mathcal{D}</script></span>の対数尤度<span><span class="MathJax_Preview">L(\mu,\Sigma| \mathcal{D})</span><script type="math/tex">L(\mu,\Sigma| \mathcal{D})</script></span>を最大化する<span><span class="MathJax_Preview">\mu</span><script type="math/tex">\mu</script></span>と<span><span class="MathJax_Preview">\Sigma</span><script type="math/tex">\Sigma</script></span>を求める。</p>
-<p>まず、<span><span class="MathJax_Preview">\mathcal{D}</span><script type="math/tex">\mathcal{D}</script></span>の対数尤度<span><span class="MathJax_Preview">L(\mu,\Sigma| \mathcal{D})</span><script type="math/tex">L(\mu,\Sigma| \mathcal{D})</script></span>は以下の式で表せる。</p>
-<div>
-<div class="MathJax_Preview">
-L(\mu,\Sigma| \mathcal{D}) = \ln \prod^N_{n=1}\mathcal{N}(\boldsymbol{x}^{(n)} | \boldsymbol{\mu} ,\Sigma) = \sum^N_{n=1} \mathcal{N}(\boldsymbol{x}^{(n)} | \boldsymbol{\mu} , \Sigma) \\
-</div>
-<script type="math/tex; mode=display">
-L(\mu,\Sigma| \mathcal{D}) = \ln \prod^N_{n=1}\mathcal{N}(\boldsymbol{x}^{(n)} | \boldsymbol{\mu} ,\Sigma) = \sum^N_{n=1} \mathcal{N}(\boldsymbol{x}^{(n)} | \boldsymbol{\mu} , \Sigma) \\
-</script>
-</div>
-<p>ガウス分布(<span><span class="MathJax_Preview">\mathcal{N}(\boldsymbol{x}^{(n)} | \boldsymbol{\mu} ,\Sigma)</span><script type="math/tex">\mathcal{N}(\boldsymbol{x}^{(n)} | \boldsymbol{\mu} ,\Sigma)</script></span>)の定義より、</p>
-<div>
-<div class="MathJax_Preview">
-L(\boldsymbol{\mu}, \Sigma | \mathcal{D}) = -\frac{MN}{2}\ln(2\pi) - \frac{N}{2} \ln|\Sigma| - \frac{1}{2} \sum^N_{n=1}(\boldsymbol{x}^{(n)}-\boldsymbol{\mu})^T \Sigma^{-1} (\boldsymbol{x}^{(n)} - \boldsymbol{\mu})
-</div>
-<script type="math/tex; mode=display">
-L(\boldsymbol{\mu}, \Sigma | \mathcal{D}) = -\frac{MN}{2}\ln(2\pi) - \frac{N}{2} \ln|\Sigma| - \frac{1}{2} \sum^N_{n=1}(\boldsymbol{x}^{(n)}-\boldsymbol{\mu})^T \Sigma^{-1} (\boldsymbol{x}^{(n)} - \boldsymbol{\mu})
-</script>
-</div>
-<p>これを最大化する<span><span class="MathJax_Preview">\mu</span><script type="math/tex">\mu</script></span>と<span><span class="MathJax_Preview">\Sigma</span><script type="math/tex">\Sigma</script></span>を求めるので、<span><span class="MathJax_Preview">L(\boldsymbol{\mu}, \Sigma | \mathcal{D})</span><script type="math/tex">L(\boldsymbol{\mu}, \Sigma | \mathcal{D})</script></span> を<span><span class="MathJax_Preview">\boldsymbol{\mu}</span><script type="math/tex">\boldsymbol{\mu}</script></span>に関して微分する。</p>
-<div>
-<div class="MathJax_Preview">
-\frac{\partial L(\boldsymbol{\mu}, \Sigma | \mathcal{D})}{\partial \mu} = \sum^{N}_{n=1}\Sigma^{-1} (\boldsymbol{x}^{(n)} - \boldsymbol{\mu})
-</div>
-<script type="math/tex; mode=display">
-\frac{\partial L(\boldsymbol{\mu}, \Sigma | \mathcal{D})}{\partial \mu} = \sum^{N}_{n=1}\Sigma^{-1} (\boldsymbol{x}^{(n)} - \boldsymbol{\mu})
-</script>
-</div>
-<!-- これより平均の最尤解$\hat{\mu}$は
-$$
-\hat{\mu} = \frac{1}{N} \sum^N_{n=1} \boldsymbol{x}^{(n)}
-$$
-これは最尤解$\hat{\mu}$が$x$の相加平均であることを示す。
-
-$\Sigma$の最尤解$\hat{\Sigma}$は、$-\ln |\Sigma| = \ln|\Sigma^{-1}|$に注意して、$\Sigma^{-1}$で微分すると以下のように求められる。
-
-$$
-\hat{\Sigma} = \frac{1}{N} \sum^N_{n=1}(\boldsymbol{x}^{(n)}-\boldsymbol{\hat{\mu}})(\boldsymbol{x}^{(n)} - \boldsymbol{\hat{\mu}})^T
-$$ -->
-
-<hr />
-<p><span><span class="MathJax_Preview">x_i</span><script type="math/tex">x_i</script></span>の条件付き分布を、未知パラメータ<span><span class="MathJax_Preview">\boldsymbol{\theta}^y_i</span><script type="math/tex">\boldsymbol{\theta}^y_i</script></span>を用いて、<span><span class="MathJax_Preview">p(x_i|\boldsymbol{\theta}^y_i, y)</span><script type="math/tex">p(x_i|\boldsymbol{\theta}^y_i, y)</script></span>と仮定する。このとき対数尤度は以下の式で表せる。</p>
-<div>
-<div class="MathJax_Preview">
-L(\Theta | \mathcal{D}) = \sum^N_{n=1}\sum^M_{i=1} \ln p(x_i^{(n)} | \boldsymbol{\theta}^{y^{n}}_i , y^{(n)}) \\
-= \sum^M_{i=1}\bigr\{\sum_{n \in \mathcal{D}^1} \ln p(x_i^{(n)} | \boldsymbol{\theta}^{1}_i , y=1) + \sum_{n \in \mathcal{D}^0} \ln p(x_i^{(n)} | \boldsymbol{\theta}^{0}_i , y=0)  \bigl\}
-</div>
-<script type="math/tex; mode=display">
-L(\Theta | \mathcal{D}) = \sum^N_{n=1}\sum^M_{i=1} \ln p(x_i^{(n)} | \boldsymbol{\theta}^{y^{n}}_i , y^{(n)}) \\
-= \sum^M_{i=1}\bigr\{\sum_{n \in \mathcal{D}^1} \ln p(x_i^{(n)} | \boldsymbol{\theta}^{1}_i , y=1) + \sum_{n \in \mathcal{D}^0} \ln p(x_i^{(n)} | \boldsymbol{\theta}^{0}_i , y=0)  \bigl\}
-</script>
-</div>
-<p><span><span class="MathJax_Preview">\mathcal{D}^0, \mathcal{D}^1</span><script type="math/tex">\mathcal{D}^0, \mathcal{D}^1</script></span>はそれぞれ<span><span class="MathJax_Preview">y=0,1</span><script type="math/tex">y=0,1</script></span>の標本集合。<br />
-<span><span class="MathJax_Preview">\Theta</span><script type="math/tex">\Theta</script></span>はパラメータ<span><span class="MathJax_Preview">\theta</span><script type="math/tex">\theta</script></span>をまとめた記号として表記している。</p>
-<p><span><span class="MathJax_Preview">y=1</span><script type="math/tex">y=1</script></span>のとき<span><span class="MathJax_Preview">\theta^1_{i}</span><script type="math/tex">\theta^1_{i}</script></span>の最尤解を与える条件式は以下のようになる。
-$$
-\boldsymbol{0} 
-= \frac{\partial L}{\partial  \boldsymbol{\theta}^{1}<em>i} 
-= \frac{\partial}{\partial  \boldsymbol{\theta}^{1}_i} \sum</em>{n\in \mathcal{D^1}} \ln p(x_i^{(n)} | \theta^1_{i}, y=1)
-$$</p>
-<p>以上より、<span><span class="MathJax_Preview">i</span><script type="math/tex">i</script></span>と<span><span class="MathJax_Preview">y=1</span><script type="math/tex">y=1</script></span>に対応する項しか寄与していないことが分かる。
-よって、この問題は、各変数(<span><span class="MathJax_Preview">x_i</span><script type="math/tex">x_i</script></span>)ごと、ラベルごと(<span><span class="MathJax_Preview">y\in\{0,1\}</span><script type="math/tex">y\in\{0,1\}</script></span>)に独立していることを意味する。  </p>
-<h2 id="t2t2">独立変数モデルのもとでのホテリング<span><span class="MathJax_Preview">T^2</span><script type="math/tex">T^2</script></span>法</h2>
-<p>多変量正規分布
-$$
-\mathcal{N}(\boldsymbol{x}^{(n)} | \boldsymbol{\mu} ,\Sigma) 
-\equiv \frac{|\Sigma|<sup>{-&frac12;}}{(2\pi)</sup>{M/2}} \exp{-\frac{1}{2}(\boldsymbol{x}-\boldsymbol{\mu})<sup>T\Sigma</sup>{-1}(\boldsymbol{x}-\boldsymbol{\mu})} 
-$$</p>
-<p>において、共分散行列<span><span class="MathJax_Preview">\Sigma</span><script type="math/tex">\Sigma</script></span>の非対角成分をすべて<span><span class="MathJax_Preview">0</span><script type="math/tex">0</script></span>に置き換え以下の式を考える。<br />
-これは各変数の相関係数が<span><span class="MathJax_Preview">0</span><script type="math/tex">0</script></span>であることを意味する。</p>
-<div>
-<div class="MathJax_Preview">
-p(x) 
-= \prod^M_{i=1} \mathcal{N}(x^{(n)} |\mu_i ,\Sigma_{ii}) 
-= \prod^M_{i=1} \frac{1}{\sqrt{2\pi \Sigma_{ii}}} \exp \{-\frac{1}{2\Sigma_{ii}}(x_i - \mu_i)^2\} 
-</div>
-<script type="math/tex; mode=display">
-p(x) 
-= \prod^M_{i=1} \mathcal{N}(x^{(n)} |\mu_i ,\Sigma_{ii}) 
-= \prod^M_{i=1} \frac{1}{\sqrt{2\pi \Sigma_{ii}}} \exp \{-\frac{1}{2\Sigma_{ii}}(x_i - \mu_i)^2\} 
-</script>
-</div>
-<p>この場合も、<strong>M変数のそれぞれに対して別々に最尤推定することでモデルのパラメータを求めることが可能。</strong></p>
-<p>対数尤度を<span><span class="MathJax_Preview">\mu_i</span><script type="math/tex">\mu_i</script></span>および、<span><span class="MathJax_Preview">\Sigma^{-1}_{ii}</span><script type="math/tex">\Sigma^{-1}_{ii}</script></span>に関して微分することで以下の最尤解が求められる。</p>
-<div>
-<div class="MathJax_Preview">
-\hat{\mu_i} = \frac{1}{N} \sum^N_{n=1} x_i^{(n)}
-</div>
-<script type="math/tex; mode=display">
-\hat{\mu_i} = \frac{1}{N} \sum^N_{n=1} x_i^{(n)}
+明度 = \frac{\max(\text{RGB}) + \min(\text{RGB})}{2} 
 </script>
 </div>
 <div>
 <div class="MathJax_Preview">
-\hat{\Sigma}_{ii} 
-= \hat{\sigma}_i^2 
-\equiv \frac{1}{N} \sum^N_{n=1}(x^{(n)}_i-\hat{\mu}_i)^2
+輝度 = 0.3R + 0.6G + 0.1B
 </div>
 <script type="math/tex; mode=display">
-\hat{\Sigma}_{ii} 
-= \hat{\sigma}_i^2 
-\equiv \frac{1}{N} \sum^N_{n=1}(x^{(n)}_i-\hat{\mu}_i)^2
+輝度 = 0.3R + 0.6G + 0.1B
 </script>
 </div>
-<p>これを使って異常度を求めると、以下の式で定義できる。<br />
-異常度は<span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span>個の変数の異常度の和として表す。</p>
+<h2 id="2">2値化</h2>
+<p>しきい値を決めて、白か黒の2値にしてしまう。</p>
+<ul>
+<li>グローバルしきい値法
+大津の二値化</li>
+<li>ローカルしきい値法</li>
+</ul>
+<h2 id="haar-like">Haar-like特徴</h2>
 <div>
 <div class="MathJax_Preview">
-a(\boldsymbol{x}) = \sum^M_{i=1} (\frac{x_i - \hat{\mu}_i}{\hat{\sigma_i}})^2
+(黒領域の輝度値の総和) - (白領域の輝度値の総和) 
 </div>
 <script type="math/tex; mode=display">
-a(\boldsymbol{x}) = \sum^M_{i=1} (\frac{x_i - \hat{\mu}_i}{\hat{\sigma_i}})^2
+(黒領域の輝度値の総和) - (白領域の輝度値の総和) 
 </script>
 </div>
-<p>計算が面倒でない(逆行列の計算など不要)ので <br />
-<span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span>個の変数が独立なら実用上有用。<br />
-独立でなくとも異常度の大きさを見積もるために有用。</p>
-<p>変数を個々に見ると異常判定の枠が不当に大きくなる場合があり、変数に線形相関がありそうな場合に上手く対応できない。</p>
-<p>これに対処するため、変数を2つずつ組にして処理する方法がある。</p>
-<h2 id="_4">多項分布による単純ベイズ分類</h2>
+<p>Haar-like特徴量をAda Boostと組み合わせて識別を行う。</p>
+<h4 id="ada-boost">Ada Boost</h4>
+<p>一つでは精度の低い弱識別器を多数用いることで強い識別器を作る手法。</p>
+<h2 id="eohedge-of-orientation-histogram">EOH(Edge of Orientation Histogram)</h2>
+<h2 id="hog-histograms-of-orientation-gradient">HOG (Histograms of Orientation Gradient)</h2>
+<h2 id="sift-scale-invariant-feature-transform">SIFT (Scale Invariant Feature Transform)</h2>
+<p>照明変化、拡大縮小、回転などの変化に頑健。</p>
+<h2 id="hlac-high-order-local-auto-correlation">HLAC (High-order Local Auto Correlation)</h2>
+<h2 id="chlac-cubic-high-order-local-auto-correlation">CHLAC (Cubic High-order Local Auto Correlation)</h2>
                 
                   
                 
@@ -1085,6 +1169,41 @@ a(\boldsymbol{x}) = \sum^M_{i=1} (\frac{x_i - \hat{\mu}_i}{\hat{\sigma_i}})^2
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../nlp/mecab_usage/" title="mecabを使用する" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                mecabを使用する
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../filter/" title="フィルタ" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  次
+                </span>
+                フィルタ
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
