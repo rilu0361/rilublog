@@ -1028,8 +1028,8 @@ BOS/EOS,*,*,*,*,*,*,*,*
 </pre></div>
 </td></tr></table></p>
 <h2 id="_3">特定の品詞のみを抜き出す.</h2>
-<p>名詞と動詞のみを**基本形**で抜き出す。<br />
-表層形で抜き出したい場合はコメントアウトを抜けば良い。
+<p>名詞と動詞のみを**表層形**で抜き出す。<br />
+基本形で抜き出したい場合はコメントアウトを抜けば良い。
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span> 1
  2
  3
@@ -1050,8 +1050,8 @@ BOS/EOS,*,*,*,*,*,*,*,*
     <span style="color: #f8f8f2">word_list</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[]</span>
     <span style="color: #f8f8f2">node</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">mecabTagger</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parseToNode(text)</span>
     <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">node:</span>
-        <span style="color: #75715e"># word = node.surface # 表層形</span>
-        <span style="color: #f8f8f2">word</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">node</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">feature</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">split(</span><span style="color: #e6db74">&quot;,&quot;</span><span style="color: #f8f8f2">)[</span><span style="color: #ae81ff">6</span><span style="color: #f8f8f2">]</span> <span style="color: #75715e"># 基本形</span>
+        <span style="color: #f8f8f2">word</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">node</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">surface</span> <span style="color: #75715e"># 表層形</span>
+        <span style="color: #75715e"># word = node.feature.split(&quot;,&quot;)[6] # 基本形</span>
         <span style="color: #f8f8f2">hinshi</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">node</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">feature</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">split(</span><span style="color: #e6db74">&quot;,&quot;</span><span style="color: #f8f8f2">)[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> <span style="color: #75715e"># 品詞</span>
         <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">hinshi</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&#39;名詞&#39;</span> <span style="color: #f92672">or</span> <span style="color: #f8f8f2">hinshi</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&#39;動詞&#39;</span><span style="color: #f8f8f2">:</span>
             <span style="color: #f8f8f2">word_list</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(word)</span>
