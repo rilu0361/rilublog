@@ -21,6 +21,16 @@ body {
 }
 .md-typeset h2 {
     color: rgb(0, 0, 0);
+    border-bottom: double 2px #c2c2c2;
+    font-weight: bold;
+}
+.md-typeset h3 {
+    color: rgb(0, 0, 0);
+    border-bottom: double 1px #c2c2c2;
+    font-weight: bold;
+}
+.md-typeset h4 {
+    color: rgb(0, 0, 0);
     border-bottom: double 1px #c2c2c2;
     font-weight: bold;
 }
