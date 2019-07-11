@@ -1616,28 +1616,23 @@ python3 バインド
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pip install mecab-python3
 </pre></div>
 </td></tr></table></p>
+<p><code class="codehilite">conda install mecab-python3</code> はできなかった。</p>
 <h2 id="neologd">neologdのインストール</h2>
-<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>git clone https://github.com/neologd/mecab-ipadic-neologd.git
 <span style="color: #f8f8f2">cd</span> mecab-ipadic-neologd
 sudo bin/install-mecab-ipadic-neologd
 </pre></div>
 </td></tr></table>
-&lt;!-- 
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
-2
-3
-4
-5
-6
-7</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ <span style="color: #f8f8f2">cd</span> mecab-ipadic-neologd/
-$ sudo bin/install-mecab-ipadic-neologd
-<span style="color: #e6db74">```</span> --&gt;
 
-<span style="color: #e6db74">`</span>/etc/mecabrc<span style="color: #e6db74">`</span> を編集。<span style="color: #e6db74">`</span>sudo<span style="color: #e6db74">`</span> じゃないと書き込み不可。
-<span style="color: #e6db74">```</span>py
-sudo vim mecabrc
+<!-- ```sh
+$ cd mecab-ipadic-neologd/
+$ sudo bin/install-mecab-ipadic-neologd
+```  -->
+
+<p><code class="codehilite">/etc/mecabrc</code> を編集。<code class="codehilite">sudo</code> じゃないと書き込み不可。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">sudo</span> <span style="color: #f8f8f2">vim</span> <span style="color: #f8f8f2">mecabrc</span>
 </pre></div>
 </td></tr></table>
 書き換えるものは、<code class="codehilite">dicdir =</code> の箇所。
