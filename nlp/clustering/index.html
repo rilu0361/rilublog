@@ -36,7 +36,7 @@
     
     
       
-        <title>GPU for tensorflow-gpu - 備忘録と雑記</title>
+        <title>クラスタリング - 備忘録と雑記</title>
       
     
     
@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#gpu-for-tensorflow-gpu" tabindex="1" class="md-skip">
+      <a href="#_1" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -108,7 +108,7 @@
               備忘録と雑記
             </span>
             <span class="md-header-nav__topic">
-              GPU for tensorflow-gpu
+              クラスタリング
             </span>
           
         </div>
@@ -654,10 +654,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       自然言語処理
@@ -675,7 +677,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../nlp/tfidf/" title="TFIDF" class="md-nav__link">
+    <a href="../tfidf/" title="TFIDF" class="md-nav__link">
       TFIDF
     </a>
   </li>
@@ -687,7 +689,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../nlp/zenhan/" title="半角全角変換" class="md-nav__link">
+    <a href="../zenhan/" title="半角全角変換" class="md-nav__link">
       半角全角変換
     </a>
   </li>
@@ -699,7 +701,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../nlp/stopword/" title="ストップワード除去" class="md-nav__link">
+    <a href="../stopword/" title="ストップワード除去" class="md-nav__link">
       ストップワード除去
     </a>
   </li>
@@ -709,11 +711,70 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../nlp/clustering/" title="クラスタリング" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        クラスタリング
+      </label>
+    
+    <a href="./" title="クラスタリング" class="md-nav__link md-nav__link--active">
       クラスタリング
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="参考" class="md-nav__link">
+    参考
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pca" title="PCA" class="md-nav__link">
+    PCA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t-sne" title="t-SNE" class="md-nav__link">
+    t-SNE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="補足" class="md-nav__link">
+    補足
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -723,7 +784,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../nlp/mecab/" title="mecabの導入" class="md-nav__link">
+    <a href="../mecab/" title="mecabの導入" class="md-nav__link">
       mecabの導入
     </a>
   </li>
@@ -735,7 +796,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../nlp/mecab_add_userdic/" title="mecabユーザー辞書の追加" class="md-nav__link">
+    <a href="../mecab_add_userdic/" title="mecabユーザー辞書の追加" class="md-nav__link">
       mecabユーザー辞書の追加
     </a>
   </li>
@@ -747,7 +808,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../nlp/mecab_usage/" title="mecabを使用する" class="md-nav__link">
+    <a href="../mecab_usage/" title="mecabを使用する" class="md-nav__link">
       mecabを使用する
     </a>
   </li>
@@ -1110,12 +1171,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
     
     <label class="md-nav__link" for="nav-9">
       Ubuntu
@@ -1133,7 +1192,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../setting/" title="Ubuntu設定関連" class="md-nav__link">
+    <a href="../../ubuntu/setting/" title="Ubuntu設定関連" class="md-nav__link">
       Ubuntu設定関連
     </a>
   </li>
@@ -1145,7 +1204,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cmd/" title="Ubuntuコマンド集" class="md-nav__link">
+    <a href="../../ubuntu/cmd/" title="Ubuntuコマンド集" class="md-nav__link">
       Ubuntuコマンド集
     </a>
   </li>
@@ -1157,7 +1216,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../hdd_mnt/" title="2TB以上のHDDのマウント" class="md-nav__link">
+    <a href="../../ubuntu/hdd_mnt/" title="2TB以上のHDDのマウント" class="md-nav__link">
       2TB以上のHDDのマウント
     </a>
   </li>
@@ -1167,63 +1226,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        GPU for tensorflow-gpu
-      </label>
-    
-    <a href="./" title="GPU for tensorflow-gpu" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../ubuntu/gpu/" title="GPU for tensorflow-gpu" class="md-nav__link">
       GPU for tensorflow-gpu
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目次</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" title="ドライバのインストール" class="md-nav__link">
-    ドライバのインストール
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tensorflow-gpu" title="tensorflow-gpu の環境構築" class="md-nav__link">
-    tensorflow-gpu の環境構築
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="参考" class="md-nav__link">
-    参考
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1233,7 +1240,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../login_loop/" title="ログインループの対処" class="md-nav__link">
+    <a href="../../ubuntu/login_loop/" title="ログインループの対処" class="md-nav__link">
       ログインループの対処
     </a>
   </li>
@@ -1601,22 +1608,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="ドライバのインストール" class="md-nav__link">
-    ドライバのインストール
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tensorflow-gpu" title="tensorflow-gpu の環境構築" class="md-nav__link">
-    tensorflow-gpu の環境構築
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" title="参考" class="md-nav__link">
     参考
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pca" title="PCA" class="md-nav__link">
+    PCA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t-sne" title="t-SNE" class="md-nav__link">
+    t-SNE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="補足" class="md-nav__link">
+    補足
   </a>
   
 </li>
@@ -1638,70 +1652,105 @@
               
                 
                 
-                <h1 id="gpu-for-tensorflow-gpu">GPU for tensorflow-gpu</h1>
-<p>2018/12/18</p>
-<p>deep learningをするためにGPU (GeForce 1080ti)を導入したときの備忘録。</p>
-<h2 id="_1">ドライバのインストール</h2>
-<ol>
-<li>
-<p>aptリポジトリ追加
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>sudo add-apt-repository ppa:graphics-drivers/ppa
-</pre></div>
-</td></tr></table></p>
-</li>
-<li>
-<p>更新
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>sudo apt update
-</pre></div>
-</td></tr></table></p>
-</li>
-<li>ドライバのインストール
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>sudo apt install nvidia-390
-</pre></div>
-</td></tr></table></li>
-</ol>
-<p><em>2019/3/29　追記</em><br />
-GPUのサポート情報→
-<a href="https://www.tensorflow.org/install/gpu">GPU support TensorFlow</a></p>
-<ol>
-<li>確認
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>nvidia-smi
-</pre></div>
-</td></tr></table></li>
-</ol>
-<h2 id="tensorflow-gpu">tensorflow-gpu の環境構築</h2>
-<p>環境構築は <del>脳死で</del> Anacondaを頼ることにした。</p>
-<p>pip でのinstall よりもconda でのinstallのほうが、tensorflowのパフォーマンスがよくなるとか。
-(8倍以上？)</p>
-<p><a href="https://towardsdatascience.com/stop-installing-tensorflow-using-pip-for-performance-sake-5854f9d9eb0c?mkt_tok=eyJpIjoiWTJabE5tTXlZbU5oTXpGaSIsInQiOiJOU0dRRmFoRUpGc0VONjBJeVFsZmdtK1cxV2ZHbGxUMEJlaUZnek96UWxRTFR4KzNMREx6V3pya240cUozVitFMWJRKzN2MVBQd2FFQjdLb2tzdEVxUW1UZ0hlazc0WUVsc0NSWnJnWUtWWXJzZXQ1RHlQbVFnN1RjalA1VUlVdCJ9">Stop Installing Tensorflow using pip for performance sake!</a></p>
-<p>また、pip でやるよりも簡単にできそうなのがいいところ。</p>
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>conda install tensorflow
+                <h1 id="_1">次元削減</h1>
+<p>2018/07/02
+2018/08/20 追記</p>
+<h3 id="_2">参考</h3>
+<p><a href="https://hayataka2049.hatenablog.jp/entry/2017/02/26/182916">【python】pca、mds、nmds、tsneとmatplotlibでデータの可視化をしてみる)</a></p>
+<h3 id="pca">PCA</h3>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">from</span> <span style="color: #f8f8f2">typing</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">List</span>
+<span style="color: #f92672">from</span> <span style="color: #f8f8f2">sklearn.decomposition</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">PCA</span>
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">pca</span><span style="color: #f8f8f2">(vectors:List[List[float]])</span> <span style="color: #f92672">-&gt;</span> <span style="color: #f8f8f2">List[List[float]]:</span>
+    <span style="color: #f8f8f2">pca</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">PCA(n_components</span><span style="color: #f92672">=</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">pca</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">fit_transform(vectors)</span>
 </pre></div>
 </td></tr></table>
 
-<p>してから</p>
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>conda install tensotflow-gpu
+<blockquote>
+<p>主成分分析（PCA）:
+データの特異値分解を用いた線形次元削減により、より低次元の空間に投影することができる。<br />
+<a href="http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html#sklearn.decomposition.PCA">sklearn.decomposition.PCA </a></p>
+</blockquote>
+<p>AutoEncoder がPCAの上位互換になるらしいという話を聞いたのでAutoEncoderをやるべきかも？  </p>
+<h3 id="t-sne">t-SNE</h3>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">from</span> <span style="color: #f8f8f2">typing</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">List</span>
+<span style="color: #f92672">from</span> <span style="color: #f8f8f2">sklearn.manifold</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">TSNE</span>
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">tsne</span><span style="color: #f8f8f2">(vectors:List[List[float]])</span> <span style="color: #f92672">-&gt;</span> <span style="color: #f8f8f2">List[List[float]]:</span>
+    <span style="color: #f8f8f2">tsne</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">TSNE()</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">tsne</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">fit_transform(vectors)</span>
 </pre></div>
 </td></tr></table>
 
-<p>するだけらしいのだが、これをすると、cuda9.2が導入されてしまい、tensorflowのサポート対象外になってしまった。(2018/12/18現在)</p>
-<p>よってcudnnのバージョンを7.2.1から7.1.2に下げる。</p>
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>conda install <span style="color: #f8f8f2">cudnn</span><span style="color: #f92672">=</span><span style="color: #ae81ff">7</span>.1.2
+<blockquote>
+<p>t-SNE(t-distributed Stochastic Neighbor Embedding) :
+(1)高次元空間上の類似度 と (2)低次元空間上の類似度 をそれぞれ確率分布pijpijとqijqijで表現して，pijpijとqijqijを最小化するように確率分布のパラメータを最適化します．<br />
+<a href="https://qiita.com/stfate/items/8988d01aad9596f9d586">引用：t-SNEによるイケてる次元圧縮&amp;可視化</a></p>
+</blockquote>
+<p>「可視化」ということに重点を置いた手法。実はグラフ上の距離が正しくないとかいう話を見たが、詳しいことまで勉強してないので不明。</p>
+<p>グラフを読み解く際の注意点<br />
+<a href="https://deepage.net/machine_learning/2017/03/08/tsne.html">高次元のデータを可視化するt-SNEの効果的な使い方</a></p>
+<p>上のリンクの記事にも書いてあった通り、上手く可視化できないときはパラメータをいじるといいかも。<br />
+ということで、以下公式のリンク。<br />
+パラメーター関連<br />
+<a href="http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">sklearn.manifold.TSNE</a></p>
+<p>perplexity, learning_rateあたりはいじれそうなので、いろいろ試してみたり。<br />
+perplexityは元論文で5～50が推奨されているらしく、デフォルトで30なので元から妥当なところ感があるので果たしてという感じ。<br />
+learning_rateはデフォルトで200。  </p>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">TSNE(perplexity</span><span style="color: #f92672">=</span><span style="color: #ae81ff">30</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">learning_rate</span><span style="color: #f92672">=</span><span style="color: #ae81ff">200</span><span style="color: #f8f8f2">)</span>
 </pre></div>
 </td></tr></table>
 
-<p>を実行する。</p>
-<p>その後
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>conda install tensorflow
+<p>引数を何もとらないデフォルトで上記の指定と同じ状態。中身の数値をいじれば多少変化があるかも。<br />
+文書分類の際いろいろやってみたが、結局綺麗に可視化できなかったのでよくわからない。<br />
+元のベクトルの次元が大きすぎた気がする。  </p>
+<p>次元の呪い についてなどもう少し調べるべきなのかもしれない。</p>
+<h3 id="_3">補足</h3>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">if</span><span style="color: #f8f8f2">(vectors</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">shape[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">&gt;</span> <span style="color: #ae81ff">15</span><span style="color: #f8f8f2">):</span>
+    <span style="color: #f8f8f2">vectors</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">PCA(n_components</span><span style="color: #f92672">=</span><span style="color: #ae81ff">15</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">fit_transform(vectors)</span>
 </pre></div>
 </td></tr></table>
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>conda install tensorflow-gpu
+計算コストを減らすために上記を各々の関数に追記するのもあり？<br />
+PCAで15次元程度に落としてからやるらしい。<br />
+元論文でこの方法は推奨されているらしく、ライブラリの中で元から実装されている可能性あり。なのであえてやる必要ない？  </p>
+<blockquote>
+<p>可視化を主な目的とした次元削減の問題は，「高次元空間上の類似度をよく表現する低次元空間の類似度を推定する」問題</p>
+</blockquote>
+<!-- #### MDS
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">from</span> <span style="color: #f8f8f2">sklearn.manifold</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">MDS</span>
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">mds</span><span style="color: #f8f8f2">(vectors):</span>
+    <span style="color: #f8f8f2">mds</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">MDS(n_jobs</span><span style="color: #f92672">=</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">mds</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">fit_transform(vectors)</span>
 </pre></div>
-</td></tr></table></p>
-<p>して実行して問題なく、GPUを使用するプログラムは動作した。</p>
-<h2 id="_2">参考</h2>
-<p><a href="https://www.nvidia.co.jp/Download/Find.aspx?lang=jp">nvidia driverのバージョン</a></p>
-<p><a href="https://repo.anaconda.com/pkgs/main/linux-64/">cudnnのバージョン</a></p>
+</td></tr></table>
+> 多次元尺度法 (MDS: multi-dimensional scaling) :
+ 個体間の親近性データを、2次元あるいは3次元空間に類似したものを近く、そうでないものを遠くに配置する方法で、データの構造を考察する方法である。
+[引用：Rと多次元尺度法](https://www1.doshisha.ac.jp/~mjin/R/Chap_27/27.html)
+
+#### NMDS
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">from</span> <span style="color: #f8f8f2">sklearn.manifold</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">MDS</span>
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">nmds</span><span style="color: #f8f8f2">(vectors):</span>
+    <span style="color: #f8f8f2">nmds</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">MDS(metric</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False,</span> <span style="color: #f8f8f2">n_jobs</span><span style="color: #f92672">=</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">nmds</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">fit_transform(vectors)</span>
+</pre></div>
+</td></tr></table>
+> 非計量（Non-metric）MDS：
+NMDS、nMDS、またはNMSなどと略される。非類似度の順序関係と低次元空間上でのユークリッド距離の順序関係が一致するような布置を探すノンパラメトリックなMDS。単調性を保つような操作の典型はIsotonic回帰であり、Louis Guttmanの最小空間解析（smallest space analysis, SSA）などがある。
+[引用：MDSとその愉快な仲間たち](http://d.hatena.ne.jp/fronori/20140517) -->
                 
                   
                 
@@ -1722,7 +1771,7 @@ GPUのサポート情報→
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../hdd_mnt/" title="2TB以上のHDDのマウント" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../stopword/" title="ストップワード除去" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1731,19 +1780,19 @@ GPUのサポート情報→
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                2TB以上のHDDのマウント
+                ストップワード除去
               </span>
             </div>
           </a>
         
         
-          <a href="../login_loop/" title="ログインループの対処" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../mecab/" title="mecabの導入" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                ログインループの対処
+                mecabの導入
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

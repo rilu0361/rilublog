@@ -36,7 +36,7 @@
     
     
       
-        <title>key入力 - 備忘録と雑記</title>
+        <title>キーボード操作 - 備忘録と雑記</title>
       
     
     
@@ -108,7 +108,7 @@
               備忘録と雑記
             </span>
             <span class="md-header-nav__topic">
-              key入力
+              キーボード操作
             </span>
           
         </div>
@@ -186,10 +186,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Python
@@ -577,6 +579,77 @@
           
           
 
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        キーボード操作
+      </label>
+    
+    <a href="./" title="キーボード操作" class="md-nav__link md-nav__link--active">
+      キーボード操作
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="概要" class="md-nav__link">
+    概要
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="内容" class="md-nav__link">
+    内容
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="例" class="md-nav__link">
+    例
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="備考" class="md-nav__link">
+    備考
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
 
   <li class="md-nav__item">
     <a href="../tips/" title="ちょっとしたなにか" class="md-nav__link">
@@ -592,13 +665,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-15" type="checkbox" id="nav-2-15">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-16" type="checkbox" id="nav-2-16">
     
-    <label class="md-nav__link" for="nav-2-15">
+    <label class="md-nav__link" for="nav-2-16">
       環境構築
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-15">
+      <label class="md-nav__title" for="nav-2-16">
         環境構築
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -689,6 +762,18 @@
   <li class="md-nav__item">
     <a href="../../nlp/stopword/" title="ストップワード除去" class="md-nav__link">
       ストップワード除去
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nlp/clustering/" title="クラスタリング" class="md-nav__link">
+      クラスタリング
     </a>
   </li>
 
@@ -1443,6 +1528,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../blog/201907/" title="2019年7月" class="md-nav__link">
+      2019年7月
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../blog/201906/" title="2019年6月" class="md-nav__link">
       2019年6月
     </a>
@@ -1569,8 +1666,14 @@
 </pre></div>
 </td></tr></table>
 
-<p>キーを押す。</p>
-<p>キーを離す。</p>
+<p>キーを押す。(ctrl)
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">pgui</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">keyDown(</span><span style="color: #e6db74">&quot;ctrlleft&quot;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table></p>
+<p>キーを離す。(z)
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">pgui</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">keyUp(</span><span style="color: #e6db74">&quot;z&quot;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table></p>
 <h2 id="_3">例</h2>
 <p><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-z">Z</kbd></span></p>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
@@ -1605,6 +1708,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../log/" title="ログの表示" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                ログの表示
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../tips/" title="ちょっとしたなにか" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  次
+                </span>
+                ちょっとしたなにか
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
