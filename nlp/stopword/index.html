@@ -470,6 +470,66 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      matplotlib
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        matplotlib
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/matplotlib/plot/" title="matplotlibの基本" class="md-nav__link">
+      matplotlibの基本
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/matplotlib/subplot/" title="複数の図をまとめて表示" class="md-nav__link">
+      複数の図をまとめて表示
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/matplotlib/scatter/" title="散布図を描く" class="md-nav__link">
+      散布図を描く
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../../python/statistic/" title="平均・分散・中央値など" class="md-nav__link">
       平均・分散・中央値など
@@ -604,13 +664,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-16" type="checkbox" id="nav-2-16">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-17" type="checkbox" id="nav-2-17">
     
-    <label class="md-nav__link" for="nav-2-16">
+    <label class="md-nav__link" for="nav-2-17">
       環境構築
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-16">
+      <label class="md-nav__title" for="nav-2-17">
         環境構築
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -670,6 +730,30 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../prepare/" title="前処理の一連の流れ" class="md-nav__link">
+      前処理の一連の流れ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../textdata/" title="データの読み込みと保存" class="md-nav__link">
+      データの読み込みと保存
+    </a>
+  </li>
+
         
           
           
@@ -772,8 +856,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../clustering/" title="クラスタリング" class="md-nav__link">
-      クラスタリング
+    <a href="../dimention/" title="次元削減" class="md-nav__link">
+      次元削減
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cos/" title="コサイン類似度" class="md-nav__link">
+      コサイン類似度
     </a>
   </li>
 
@@ -810,6 +906,54 @@
   <li class="md-nav__item">
     <a href="../mecab_usage/" title="mecabを使用する" class="md-nav__link">
       mecabを使用する
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../janome/" title="janome" class="md-nav__link">
+      janome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../parse/" title="単語のパース" class="md-nav__link">
+      単語のパース
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../co_matrix/" title="共起行列の作成" class="md-nav__link">
+      共起行列の作成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sample/" title="サンプル" class="md-nav__link">
+      サンプル
     </a>
   </li>
 
@@ -1654,7 +1798,8 @@
                 
                 <h1 id="stop-word">stop wordの除去</h1>
 <h2 id="_1">概要</h2>
-<p>邪魔な単語を削除する。</p>
+<p>邪魔な単語を削除する。
+単語のリストになっていることが前提。</p>
 <h2 id="_2">数字の除去</h2>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">re</span>
@@ -1663,10 +1808,11 @@
 </td></tr></table>
 
 <h2 id="_3">小文字に統一</h2>
-<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">target_word</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[word</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">lower()</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">word</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">target_word</span> <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">re</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">match(</span><span style="color: #e6db74">r&#39;\w&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">word)]</span>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">target_word</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[word</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">lower()</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">word</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">target_word</span> <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">re</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">match(</span><span style="color: #e6db74">r&#39;\w&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">word)]</span>
 </pre></div>
 </td></tr></table>
-大文字に統一したい場合は <code class="codehilite">word.upper()</code> 。</p>
+
+<p>大文字に統一したい場合は <code class="codehilite">word.upper()</code> 。</p>
 <p>ただし、その他のライブラリでは小文字に統一をするほうがよく見かけるのでそれらに合わせて小文字に統一している。</p>
 <h2 id="_4">特定単語の除去</h2>
 <p>別ファイルでストップワードを記述しておき、それを読み込んで使う。</p>
@@ -1718,13 +1864,13 @@
           </a>
         
         
-          <a href="../clustering/" title="クラスタリング" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../dimention/" title="次元削減" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                クラスタリング
+                次元削減
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
