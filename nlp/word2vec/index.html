@@ -36,7 +36,7 @@
     
     
       
-        <title>単語のパース - 備忘録と雑記</title>
+        <title>word2vec - 備忘録と雑記</title>
       
     
     
@@ -83,7 +83,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#_1" tabindex="1" class="md-skip">
+      <a href="#word2vec" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -108,7 +108,7 @@
               備忘録と雑記
             </span>
             <span class="md-header-nav__topic">
-              単語のパース
+              word2vec
             </span>
           
         </div>
@@ -783,11 +783,63 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../word2vec/" title="word2vec" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        word2vec
+      </label>
+    
+    <a href="./" title="word2vec" class="md-nav__link md-nav__link--active">
       word2vec
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="概要" class="md-nav__link">
+    概要
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="導入" class="md-nav__link">
+    導入
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="プログラム" class="md-nav__link">
+    プログラム
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -879,56 +931,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        単語のパース
-      </label>
-    
-    <a href="./" title="単語のパース" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../parse/" title="単語のパース" class="md-nav__link">
       単語のパース
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目次</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="日本語のパース" class="md-nav__link">
-    日本語のパース
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" title="英語などのパース" class="md-nav__link">
-    英語などのパース
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1750,15 +1757,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" title="日本語のパース" class="md-nav__link">
-    日本語のパース
+  <a href="#_1" title="概要" class="md-nav__link">
+    概要
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" title="英語などのパース" class="md-nav__link">
-    英語などのパース
+  <a href="#_2" title="導入" class="md-nav__link">
+    導入
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="プログラム" class="md-nav__link">
+    プログラム
   </a>
   
 </li>
@@ -1780,32 +1794,47 @@
               
                 
                 
-                <h1 id="_1">単語ごとにパースする</h1>
-<p>2019/07/14</p>
-<h2 id="_2">日本語のパース</h2>
-<ul>
-<li>mecabを使用する
-<a href="../mecab_usage/">mecabを使用する</a></li>
-<li>janomeを使用する
-<a href="../janome/">janomeを使用する</a></li>
-</ul>
-<h2 id="_3">英語などのパース</h2>
-<p>基本的にスペースでパースすれば良いはず。<br />
-最初の大文字などが別語彙になってしまうため、全て小文字に統一する。<br />
-また、ピリオドやコンマが単語ごとにくっついていると問題なので離す処理をする。  </p>
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">text</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;This is a pen.&quot;</span>
-<span style="color: #f8f8f2">text</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">text</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">lower()</span> <span style="color: #75715e">#大文字を小文字に変換する</span>
-<span style="color: #f8f8f2">text</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">text</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">replace(</span><span style="color: #e6db74">&quot;.&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot; .&quot;</span><span style="color: #f8f8f2">)</span> <span style="color: #75715e"># ピリオドの前に空白を挿入</span>
-<span style="color: #f8f8f2">words</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">text</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">split()</span> <span style="color: #75715e"># 空白(スペース)がある度に分割</span>
-<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(words)</span>
+                <h1 id="word2vec">word2vec</h1>
+<p>2019/07/17</p>
+<h2 id="_1">概要</h2>
+<p>単語をベクトル表現する。  </p>
+<h2 id="_2">導入</h2>
+<p>gensimのword2vecを使用する。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>conda install gensim
+</pre></div>
+</td></tr></table></p>
+<h2 id="_3">プログラム</h2>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">docs</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span><span style="color: #e6db74">&quot;I have a pen.&quot;</span><span style="color: #f8f8f2">,</span>
+        <span style="color: #e6db74">&quot;You have an apple&quot;</span><span style="color: #f8f8f2">,</span>
+        <span style="color: #e6db74">&quot;He make a pen&quot;</span><span style="color: #f8f8f2">]</span>
+<span style="color: #f8f8f2">sentences</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[text</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">split()</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">text</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">docs]</span>
+
+<span style="color: #f92672">from</span> <span style="color: #f8f8f2">gensim.models</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">Word2Vec</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">logging</span>
+<span style="color: #f8f8f2">logging</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">basicConfig(format</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;%(asctime)s : %(levelname)s : %(message)s&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">level</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">logging</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">INFO)</span>
+
+<span style="color: #f8f8f2">VECTOR_DIM</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">100</span>
+<span style="color: #f8f8f2">model</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Word2Vec(sentences,</span> <span style="color: #f8f8f2">iter</span><span style="color: #f92672">=</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">min_count</span><span style="color: #f92672">=</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">size</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">VECTOR_DIM,</span> <span style="color: #f8f8f2">workers</span><span style="color: #f92672">=</span><span style="color: #ae81ff">6</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">sg</span><span style="color: #f92672">=</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;model : &quot;</span> <span style="color: #f8f8f2">,model)</span>
+
+<span style="color: #f8f8f2">model</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">save(</span><span style="color: #e6db74">&quot;w2v_model&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;w2v_modelとして単語ベクトルのセーブを完了。&quot;</span><span style="color: #f8f8f2">)</span>
 </pre></div>
 </td></tr></table>
-
-<p>その他、単語を基本形(原形)に統一するなどしてみるといいのかも。</p>
                 
                   
                 
@@ -1826,7 +1855,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../janome/" title="janome" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../zenhan/" title="半角全角変換" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1835,19 +1864,19 @@
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                janome
+                半角全角変換
               </span>
             </div>
           </a>
         
         
-          <a href="../co_matrix/" title="共起行列の作成" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../stopword/" title="ストップワード除去" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                共起行列の作成
+                ストップワード除去
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

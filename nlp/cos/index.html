@@ -785,6 +785,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../word2vec/" title="word2vec" class="md-nav__link">
+      word2vec
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../stopword/" title="ストップワード除去" class="md-nav__link">
       ストップワード除去
     </a>
@@ -1824,7 +1836,15 @@
 <h2 id="2">プログラム2</h2>
 <p>scipyを利用する。
 <!-- scipy.spatial.distance.cosine -->
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">list1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span>
+<span style="color: #f8f8f2">list2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span>
+<span style="color: #f8f8f2">vec1,</span> <span style="color: #f8f8f2">vec2</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">np</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">array(list1),</span> <span style="color: #f8f8f2">np</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">array(list2)</span>
+<span style="color: #f92672">from</span> <span style="color: #f8f8f2">scipy</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">spatial</span>
+<span style="color: #f8f8f2">cos_sim</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">1</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">spatial</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">distance</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">cosine(vec1,</span> <span style="color: #f8f8f2">vec2)</span>
 </pre></div>
 </td></tr></table></p>
                 
