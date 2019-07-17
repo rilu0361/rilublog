@@ -861,6 +861,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../kmeans/" title="kmenas" class="md-nav__link">
+      kmenas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../dimention/" title="次元削減" class="md-nav__link">
       次元削減
     </a>
@@ -1861,12 +1873,37 @@ tqdmに関しては以下を参照のこと。<br />
 36
 37
 38
-39</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e"># 全角半角の統一の関数</span>
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e"># 全角半角の統一の関数</span>
+<span style="color: #75715e"># import mojimoji</span>
+<span style="color: #75715e"># def zen_han(text: str) -&gt; str:</span>
+<span style="color: #75715e">#     text = mojimoji.zen_to_han(text,kana=False)</span>
+<span style="color: #75715e">#     text = mojimoji.han_to_zen(text,digit=False,ascii=False)</span>
+<span style="color: #75715e">#     return text</span>
+
+<span style="color: #75715e"># 文字列の正規化(前処理)</span>
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">mojimoji</span>
-<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">zen_han</span><span style="color: #f8f8f2">(text:</span> <span style="color: #f8f8f2">str)</span> <span style="color: #f92672">-&gt;</span> <span style="color: #f8f8f2">str:</span>
-    <span style="color: #f8f8f2">text</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">mojimoji</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">zen_to_han(text,kana</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False)</span>
-    <span style="color: #f8f8f2">text</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">mojimoji</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">han_to_zen(text,digit</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False,ascii</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False)</span>
-    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">text</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">re</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">regex</span>
+<span style="color: #66d9ef">def</span> <span style="color: #a6e22e">norm</span><span style="color: #f8f8f2">(text):</span>
+   <span style="color: #75715e"># 日本語は全角、数字アルファベットは半角</span>
+   <span style="color: #f8f8f2">text</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">mojimoji</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">zen_to_han(text,kana</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False)</span>
+   <span style="color: #f8f8f2">text</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">mojimoji</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">han_to_zen(text,digit</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False,ascii</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False)</span>
+   <span style="color: #f8f8f2">text</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">text</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">lower()</span> <span style="color: #75715e"># アルファベットを小文字に統一</span>
+<span style="color: #75715e">#    text = re.sub(&quot;\d&quot;,&quot;&quot;, text) # 数字の除去</span>
+   <span style="color: #f8f8f2">text</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">join(regex</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">findall(</span><span style="color: #e6db74">r&#39;[\p{Han}&amp;&amp;\p{Katakana}&amp;&amp;\p{Hiragana}&amp;&amp;\p{L}&amp;&amp;\d&amp;&amp;\s]&#39;</span><span style="color: #f8f8f2">,text))</span>
+   <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">text</span>
 
 <span style="color: #75715e"># 分かち書きの関数</span>
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">MeCab</span>
@@ -1885,10 +1922,11 @@ tqdmに関しては以下を参照のこと。<br />
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">re</span>
 <span style="color: #f8f8f2">split_texts</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[]</span>  <span style="color: #75715e"># 単語ごとにスペース区切りしたテキスト集合</span>
 <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">line</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">tqdm(text_list):</span>
-    <span style="color: #f8f8f2">line</span>  <span style="color: #f92672">=</span> <span style="color: #f8f8f2">zen_han(line)</span> <span style="color: #75715e"># 全角/半角の統一</span>
-    <span style="color: #f8f8f2">line</span>  <span style="color: #f92672">=</span> <span style="color: #f8f8f2">line</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">lower()</span>  <span style="color: #75715e"># 小文字に統一</span>
+    <span style="color: #75715e"># line  = zen_han(line) # 全角/半角の統一</span>
+    <span style="color: #75715e"># line  = line.lower()  # 小文字に統一</span>
+    <span style="color: #f8f8f2">line</span>  <span style="color: #f92672">=</span> <span style="color: #f8f8f2">norm(line)</span> <span style="color: #75715e"># 正規化</span>
     <span style="color: #f8f8f2">words</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">wakati(line)</span>  <span style="color: #75715e"># 分かち書き</span>
-    <span style="color: #f8f8f2">words</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[word</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">word</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">target_word</span> <span style="color: #66d9ef">if</span> <span style="color: #f92672">not</span> <span style="color: #f8f8f2">re</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">match(</span><span style="color: #e6db74">r&#39;\d&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">word)]</span> <span style="color: #75715e"># 数字の除去</span>
+    <span style="color: #75715e"># words = [word for word in target_word if not re.match(r&#39;\d&#39;, word)] # 数字の除去</span>
     <span style="color: #f8f8f2">words</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[word</span> <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">word</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">target_word</span> <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">word</span> <span style="color: #f92672">not</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">stop_word_list]</span> <span style="color: #75715e"># ストップワードの除去</span>
     <span style="color: #f8f8f2">split_text</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39; &#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">join(words)</span> <span style="color: #75715e"># スペース区切りのテキストに変更</span>
     <span style="color: #f8f8f2">split_texts</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(split_text)</span>
