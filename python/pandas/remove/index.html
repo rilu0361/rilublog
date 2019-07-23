@@ -1614,10 +1614,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
     
     <label class="md-nav__link" for="nav-12">
-      その他
+      アプリケーション
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-12">
+        アプリケーション
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../create/pdf2md/" title="pdfからテキストを抽出する" class="md-nav__link">
+      pdfからテキストを抽出する
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      その他
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
         その他
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1659,13 +1695,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
     
-    <label class="md-nav__link" for="nav-13">
+    <label class="md-nav__link" for="nav-14">
       雑記
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-13">
+      <label class="md-nav__title" for="nav-14">
         雑記
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1782,7 +1818,12 @@
                 
                 <h1 id="_1">表操作・削除</h1>
 <h2 id="_2">重複を削除する</h2>
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">df[df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">duplicated(keep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;last&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">subset</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;query&quot;</span><span style="color: #f8f8f2">)</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">False]</span>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">df[df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">duplicated(keep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;last&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">subset</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col1&quot;</span><span style="color: #f8f8f2">)</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">False]</span>
+</pre></div>
+</td></tr></table>
+
+<p><code class="codehilite">subset</code> はリストの要素に列名を指定すれば、複数列を見ることができる。</p>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">df[df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">duplicated(keep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;last&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">subset</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">[</span><span style="color: #e6db74">&quot;col1&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;col2&quot;</span><span style="color: #f8f8f2">])</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">False]</span>
 </pre></div>
 </td></tr></table>
                 
