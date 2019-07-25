@@ -36,7 +36,7 @@
     
     
       
-        <title>統計・カウント - 備忘録と雑記</title>
+        <title>単語のカウント - 備忘録と雑記</title>
       
     
     
@@ -108,7 +108,7 @@
               備忘録と雑記
             </span>
             <span class="md-header-nav__topic">
-              統計・カウント
+              単語のカウント
             </span>
           
         </div>
@@ -714,10 +714,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       自然言語処理
@@ -762,6 +764,83 @@
     <a href="../tfidf/" title="TFIDF" class="md-nav__link">
       TFIDF
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        単語のカウント
+      </label>
+    
+    <a href="./" title="単語のカウント" class="md-nav__link md-nav__link--active">
+      単語のカウント
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tf" title="単語のカウント(TF値)" class="md-nav__link">
+    単語のカウント(TF値)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="出現頻度の高い単語" class="md-nav__link">
+    出現頻度の高い単語
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#df" title="単語の出現文書のカウント(DF値)" class="md-nav__link">
+    単語の出現文書のカウント(DF値)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="統計情報としてまとめる" class="md-nav__link">
+    統計情報としてまとめる
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1932,6 +2011,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../tfidf/" title="TFIDF" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                TFIDF
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../zenhan/" title="半角全角変換" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  次
+                </span>
+                半角全角変換
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
