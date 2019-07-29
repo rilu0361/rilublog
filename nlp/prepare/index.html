@@ -1924,7 +1924,10 @@ tqdmに関しては以下を参照のこと。<br />
 39
 40
 41
-42</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e"># 文字列の正規化(前処理)</span>
+42
+43
+44
+45</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e"># 文字列の正規化(前処理)</span>
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">mojimoji</span>
 <span style="color: #f92672">import</span> <span style="color: #f8f8f2">re</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">regex</span>
 <span style="color: #66d9ef">def</span> <span style="color: #a6e22e">norm</span><span style="color: #f8f8f2">(text):</span>
@@ -1947,6 +1950,9 @@ tqdmに関しては以下を参照のこと。<br />
 <span style="color: #f8f8f2">READ_FILE_PATH</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;sample.txt&#39;</span>
 <span style="color: #66d9ef">with</span> <span style="color: #f8f8f2">open(READ_FILE_PATH,</span> <span style="color: #e6db74">&#39;r&#39;</span><span style="color: #f8f8f2">)</span> <span style="color: #66d9ef">as</span> <span style="color: #f8f8f2">f_r:</span>
     <span style="color: #f8f8f2">text_list</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">f_r</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">readlines()</span>
+
+<span style="color: #75715e"># stopwordの設定</span>
+<span style="color: #75715e"># stop_word_list = [&quot;を&quot;,&quot;に&quot;,&quot;の&quot;]</span>
 
 <span style="color: #75715e"># 前処理</span>
 <span style="color: #f92672">from</span> <span style="color: #f8f8f2">tqdm</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">tqdm</span>
