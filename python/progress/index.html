@@ -456,8 +456,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../pandas/dataframe/" title="DataFrame" class="md-nav__link">
-      DataFrame
+    <a href="../pandas/df_crate/" title="DetaFrameの生成" class="md-nav__link">
+      DetaFrameの生成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pandas/df_show/" title="DataFrameの全表示" class="md-nav__link">
+      DataFrameの全表示
     </a>
   </li>
 
@@ -626,10 +638,30 @@
     基本
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jupyter-notebook" title="jupyter notebook上で使用する場合" class="md-nav__link">
+    jupyter notebook上で使用する場合
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" title="参考" class="md-nav__link">
+  <a href="#_4" title="手動更新" class="md-nav__link">
+    手動更新
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="参考" class="md-nav__link">
     参考
   </a>
   
@@ -712,6 +744,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../tkinter/" title="tkinter" class="md-nav__link">
+      tkinter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../tips/" title="ちょっとしたなにか" class="md-nav__link">
       ちょっとしたなにか
     </a>
@@ -725,13 +769,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-17" type="checkbox" id="nav-2-17">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-18" type="checkbox" id="nav-2-18">
     
-    <label class="md-nav__link" for="nav-2-17">
+    <label class="md-nav__link" for="nav-2-18">
       環境構築
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-17">
+      <label class="md-nav__title" for="nav-2-18">
         環境構築
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1053,6 +1097,30 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../image/img_load/" title="画像の読み込み" class="md-nav__link">
+      画像の読み込み
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../image/img_aug/" title="画像のデータ拡張" class="md-nav__link">
+      画像のデータ拡張
+    </a>
+  </li>
+
         
           
           
@@ -1842,10 +1910,30 @@
     基本
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jupyter-notebook" title="jupyter notebook上で使用する場合" class="md-nav__link">
+    jupyter notebook上で使用する場合
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" title="参考" class="md-nav__link">
+  <a href="#_4" title="手動更新" class="md-nav__link">
+    手動更新
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="参考" class="md-nav__link">
     参考
   </a>
   
@@ -1894,12 +1982,28 @@
 
 <p>上のようにイテレータを <code class="codehilite">tqdm()</code> `で包む。
 ジェネレータだとバーは表示されず、簡素になるが進捗はわかる。</p>
+<h3 id="jupyter-notebook">jupyter notebook上で使用する場合</h3>
 <p>jupyter notebookで利用する場合はimport文を以下に変更するらしい。</p>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">from</span> <span style="color: #f8f8f2">tqdm</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">tqdm_notebook</span> <span style="color: #66d9ef">as</span> <span style="color: #f8f8f2">tqdm</span>
 </pre></div>
 </td></tr></table>
 
-<h2 id="_4">参考</h2>
+<h2 id="_4">手動更新</h2>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">from</span> <span style="color: #f8f8f2">tqdm</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">tqdm</span>
+<span style="color: #f8f8f2">data_list</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">*</span> <span style="color: #ae81ff">10000</span>
+<span style="color: #f8f8f2">pbar</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">tqdm(total</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">len(data_list))</span> <span style="color: #75715e"># プログレスバー設定</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">data_list:</span>
+    <span style="color: #f8f8f2">pbar</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">update(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">pbar</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">close()</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="_5">参考</h2>
 <p><a href="https://blog.amedama.jp/entry/2018/07/23/080000">Python: tqdm で処理の進捗状況をプログレスバーとして表示する</a></p>
 <p><a href="https://torina.top/detail/119/">Pythonで進捗バーを表示する（tqdm）</a></p>
                 

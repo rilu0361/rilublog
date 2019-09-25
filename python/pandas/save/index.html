@@ -516,8 +516,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../dataframe/" title="DataFrame" class="md-nav__link">
-      DataFrame
+    <a href="../df_crate/" title="DetaFrameの生成" class="md-nav__link">
+      DetaFrameの生成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../df_show/" title="DataFrameの全表示" class="md-nav__link">
+      DataFrameの全表示
     </a>
   </li>
 
@@ -713,6 +725,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../tkinter/" title="tkinter" class="md-nav__link">
+      tkinter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../tips/" title="ちょっとしたなにか" class="md-nav__link">
       ちょっとしたなにか
     </a>
@@ -726,13 +750,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-17" type="checkbox" id="nav-2-17">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-18" type="checkbox" id="nav-2-18">
     
-    <label class="md-nav__link" for="nav-2-17">
+    <label class="md-nav__link" for="nav-2-18">
       環境構築
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-17">
+      <label class="md-nav__title" for="nav-2-18">
         環境構築
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1054,6 +1078,30 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../image/img_load/" title="画像の読み込み" class="md-nav__link">
+      画像の読み込み
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../image/img_aug/" title="画像のデータ拡張" class="md-nav__link">
+      画像のデータ拡張
+    </a>
+  </li>
+
         
           
           
@@ -1893,13 +1941,16 @@
 </td></tr></table></p>
 <h3 id="excel">Excelファイルとして保存</h3>
 <p>excelへの書き込みにも対応している。
+csvでエンコードをどうにかしてExcelで見るよりもこっちのほうが圧倒的に楽。</p>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>df.to_excel(&#39;document.xlsx&#39;, sheet_name=&#39;Sheet1&#39;)
 </pre></div>
 </td></tr></table>
-ただし、<code class="codehilite">openpyxl</code> が必要。
+
+<p>ただし、<code class="codehilite">openpyxl</code> が必要。</p>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>pip install openpyxl
 </pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <h3 id="_3">例</h3>
 <p>リストからのデータフレーム化も含め以下に例を記載
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
