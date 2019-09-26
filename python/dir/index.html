@@ -1955,7 +1955,8 @@
 </td></tr></table>
 
 <p>なければその名前のディレクトリを作る。<br />
-あっても上書きして作り直す場合は以下。</p>
+<code class="codehilite">exist_ok=False</code> で、すでに存在する場合はエラーを返す。
+<code class="codehilite">exist_ok=True</code> で、存在していても続行する。</p>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">os</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">makedirs(DIR_NAME,</span> <span style="color: #f8f8f2">exist_ok</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">True)</span>
 </pre></div>
 </td></tr></table>
