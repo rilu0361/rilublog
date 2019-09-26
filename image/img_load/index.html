@@ -1114,6 +1114,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#keras_1" title="画像の保存 (keras)" class="md-nav__link">
+    画像の保存 (keras)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1981,6 +1988,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#keras_1" title="画像の保存 (keras)" class="md-nav__link">
+    画像の保存 (keras)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2048,7 +2062,7 @@
 <ul>
 <li>
 <p>保存
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">np</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">save(</span><span style="color: #e6db74">&quot;sample.npy&quot;</span><span style="color: #f8f8f2">)</span>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">np</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">save(</span><span style="color: #e6db74">&quot;./sample.npy&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">img_array)</span>
 </pre></div>
 </td></tr></table></p>
 </li>
@@ -2056,7 +2070,7 @@
 <p>読み込み
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">LOAD_PATH</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;./sample.npy&quot;</span>
-<span style="color: #f8f8f2">arr</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">np</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">load(LOAD_PATH)</span>
+<span style="color: #f8f8f2">img_array</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">np</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">load(LOAD_PATH)</span>
 </pre></div>
 </td></tr></table></p>
 </li>
@@ -2078,6 +2092,21 @@
 
 <h3 id="numpyimg">numpyをimgに変換する</h3>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">img</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">array_to_img(img_array)</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="keras_1">画像の保存 (keras)</h3>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">from</span> <span style="color: #f8f8f2">keras.preprocessing.image</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">load_img,</span> <span style="color: #f8f8f2">save_img,</span> <span style="color: #f8f8f2">img_to_array,</span> <span style="color: #f8f8f2">array_to_img</span>
+<span style="color: #f8f8f2">COLOR</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;grayscale&quot;</span>   <span style="color: #75715e"># &quot;rgb&quot;, &quot;rgba&quot;, &quot;grayscale&quot;</span>
+<span style="color: #f8f8f2">IMG_SIZE</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>    <span style="color: #75715e"># 画像サイズ</span>
+<span style="color: #f8f8f2">img</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">load_img(</span><span style="color: #e6db74">&quot;./sample.png&quot;</span><span style="color: #f8f8f2">,color_mode</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">COLOR,target_size</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">IMG_SIZE)</span>
+<span style="color: #f8f8f2">img_array</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">img_to_array(img)</span> <span style="color: #75715e"># ndarrayに変換</span>
+<span style="color: #f8f8f2">save_img(</span><span style="color: #e6db74">&quot;./new_sample.png&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">img_array)</span>
 </pre></div>
 </td></tr></table>
 
