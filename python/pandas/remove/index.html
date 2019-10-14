@@ -36,7 +36,7 @@
     
     
       
-        <title>表操作 - 備忘録と雑記</title>
+        <title>重複の削除 - 備忘録と雑記</title>
       
     
     
@@ -108,7 +108,7 @@
               備忘録と雑記
             </span>
             <span class="md-header-nav__topic">
-              表操作
+              重複の削除
             </span>
           
         </div>
@@ -372,8 +372,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../numpy/choice/" title="ランダムに選ぶ" class="md-nav__link">
-      ランダムに選ぶ
+    <a href="../../numpy/choice/" title="ランダム選出" class="md-nav__link">
+      ランダム選出
     </a>
   </li>
 
@@ -434,8 +434,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../load/" title="表形式データの読込" class="md-nav__link">
-      表形式データの読込
+    <a href="../csv_load/" title="csvデータの読込" class="md-nav__link">
+      csvデータの読込
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../excel_load/" title="excelデータの読込" class="md-nav__link">
+      excelデータの読込
     </a>
   </li>
 
@@ -454,38 +466,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        表操作
-      </label>
-    
-    <a href="./" title="表操作" class="md-nav__link md-nav__link--active">
-      表操作
+    <a href="./" title="重複の削除" class="md-nav__link md-nav__link--active">
+      重複の削除
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">目次</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="重複を削除する" class="md-nav__link">
-    重複を削除する
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -510,6 +493,18 @@
   <li class="md-nav__item">
     <a href="../df_show/" title="DataFrameの全表示" class="md-nav__link">
       DataFrameの全表示
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sr_create/" title="Seriesの生成" class="md-nav__link">
+      Seriesの生成
     </a>
   </li>
 
@@ -584,21 +579,28 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../../statistic/" title="平均・分散・中央値など" class="md-nav__link">
-      平均・分散・中央値など
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../file/" title="ファイル操作" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
       ファイル操作
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        ファイル操作
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../file/dir_show/" title="ファイル一覧取得" class="md-nav__link">
+      ファイル一覧取得
     </a>
   </li>
 
@@ -609,8 +611,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../dir/" title="ディレクトリ操作" class="md-nav__link">
-      ディレクトリ操作
+    <a href="../../file/file_r/" title="ファイル読み込み" class="md-nav__link">
+      ファイル読み込み
     </a>
   </li>
 
@@ -621,7 +623,79 @@
 
 
   <li class="md-nav__item">
-    <a href="../../commandLine_option/" title="コマンドライン引数" class="md-nav__link">
+    <a href="../../file/file_w/" title="ファイル書き込み" class="md-nav__link">
+      ファイル書き込み
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../file/file_d/" title="ファイル削除" class="md-nav__link">
+      ファイル削除
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../file/dir_create/" title="ディレクトリ作成" class="md-nav__link">
+      ディレクトリ作成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../file/dir_d/" title="ディレクトリ削除" class="md-nav__link">
+      ディレクトリ削除
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      便利ツール
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        便利ツール
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tool/commandLine_option/" title="コマンドライン引数" class="md-nav__link">
       コマンドライン引数
     </a>
   </li>
@@ -633,7 +707,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../progress/" title="プログレスバーの表示" class="md-nav__link">
+    <a href="../../tool/progress/" title="プログレスバーの表示" class="md-nav__link">
       プログレスバーの表示
     </a>
   </li>
@@ -645,7 +719,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../pickle/" title="データの保存(pickle)" class="md-nav__link">
+    <a href="../../tool/pickle/" title="データの保存(pickle)" class="md-nav__link">
       データの保存(pickle)
     </a>
   </li>
@@ -657,7 +731,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../exe/" title="pythonのexe化" class="md-nav__link">
+    <a href="../../tool/exe/" title="pythonのexe化" class="md-nav__link">
       pythonのexe化
     </a>
   </li>
@@ -669,7 +743,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../time/" title="現在時間の取得" class="md-nav__link">
+    <a href="../../tool/time/" title="現在時間の取得" class="md-nav__link">
       現在時間の取得
     </a>
   </li>
@@ -681,7 +755,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../log/" title="ログの表示" class="md-nav__link">
+    <a href="../../tool/log/" title="ログの表示" class="md-nav__link">
       ログの表示
     </a>
   </li>
@@ -693,7 +767,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../key/" title="キーボード操作" class="md-nav__link">
+    <a href="../../tool/key/" title="キーボード操作" class="md-nav__link">
       キーボード操作
     </a>
   </li>
@@ -705,21 +779,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tkinter/" title="tkinter" class="md-nav__link">
+    <a href="../../tool/tkinter/" title="tkinter" class="md-nav__link">
       tkinter
     </a>
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../tips/" title="ちょっとしたなにか" class="md-nav__link">
-      ちょっとしたなにか
-    </a>
+      </ul>
+    </nav>
   </li>
 
         
@@ -730,13 +797,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-18" type="checkbox" id="nav-2-18">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-8" type="checkbox" id="nav-2-8">
     
-    <label class="md-nav__link" for="nav-2-18">
+    <label class="md-nav__link" for="nav-2-8">
+      その他?
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-8">
+        その他?
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../other/statistic/" title="統計基礎" class="md-nav__link">
+      統計基礎
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../other/tips/" title="ちょっとしたなにか" class="md-nav__link">
+      ちょっとしたなにか
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-9" type="checkbox" id="nav-2-9">
+    
+    <label class="md-nav__link" for="nav-2-9">
       環境構築
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-2-18">
+      <label class="md-nav__title" for="nav-2-9">
         環境構築
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -748,7 +863,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../anaconda_install/" title="Anacondaによる環境構築" class="md-nav__link">
+    <a href="../../env/anaconda_install/" title="Anacondaによる環境構築" class="md-nav__link">
       Anacondaによる環境構築
     </a>
   </li>
@@ -760,7 +875,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../pyenv/" title="pyenvでの環境構築" class="md-nav__link">
+    <a href="../../env/pyenv/" title="pyenvでの環境構築" class="md-nav__link">
       pyenvでの環境構築
     </a>
   </li>
@@ -1897,22 +2012,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">目次</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="重複を削除する" class="md-nav__link">
-    重複を削除する
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1924,13 +2023,17 @@
               
                 
                 
-                <h1 id="_1">表操作・削除</h1>
-<h2 id="_2">重複を削除する</h2>
+                <h1 id="_1">重複を削除する</h1>
+<div class="admonition dangar">
+<p class="admonition-title">Dangar</p>
+<p>未検証...</p>
+</div>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">df[df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">duplicated(keep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;last&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">subset</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;col1&quot;</span><span style="color: #f8f8f2">)</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">False]</span>
 </pre></div>
 </td></tr></table>
 
-<p><code class="codehilite">subset</code> はリストの要素に列名を指定すれば、複数列を見ることができる。</p>
+<p><code class="codehilite">keep=last</code> は重複しているものの最後のみを残す指定。のはず。</p>
+<p><code class="codehilite">subset</code> でリストの要素に列名を指定すれば、指定列を対象にできる。</p>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">df[df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">duplicated(keep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;last&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">subset</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">[</span><span style="color: #e6db74">&quot;col1&quot;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&quot;col2&quot;</span><span style="color: #f8f8f2">])</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">False]</span>
 </pre></div>
 </td></tr></table>
@@ -1954,7 +2057,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../load/" title="表形式データの読込" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../excel_load/" title="excelデータの読込" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1963,7 +2066,7 @@
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                表形式データの読込
+                excelデータの読込
               </span>
             </div>
           </a>
