@@ -372,6 +372,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../numpy/random/" title="乱数生成" class="md-nav__link">
+      乱数生成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../numpy/choice/" title="ランダム選出" class="md-nav__link">
       ランダム選出
     </a>
@@ -449,29 +461,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" title="書き込み(保存)" class="md-nav__link">
-    書き込み(保存)
+  <a href="#csv" title="CSVファイルとして保存" class="md-nav__link">
+    CSVファイルとして保存
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#excel" title="Excelファイルとして保存" class="md-nav__link">
     Excelファイルとして保存
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" title="例" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="例" class="md-nav__link">
     例
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="追記事項?" class="md-nav__link">
+    追記事項?
+  </a>
   
 </li>
       
@@ -530,6 +543,30 @@
   <li class="md-nav__item">
     <a href="../df_create/" title="DetaFrameの生成" class="md-nav__link">
       DetaFrameの生成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../df_look/" title="DataFrameの参照" class="md-nav__link">
+      DataFrameの参照
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../df_ope/" title="DataFrameの操作" class="md-nav__link">
+      DataFrameの操作
     </a>
   </li>
 
@@ -612,8 +649,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../matplotlib/scatter/" title="散布図を描く" class="md-nav__link">
-      散布図を描く
+    <a href="../../matplotlib/hist/" title="ヒストグラムの描画" class="md-nav__link">
+      ヒストグラムの描画
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../matplotlib/scatter/" title="散布図を描画" class="md-nav__link">
+      散布図を描画
     </a>
   </li>
 
@@ -965,6 +1014,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../nlp/sample/" title="サンプル" class="md-nav__link">
+      サンプル
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../nlp/prepare/" title="前処理の一連の流れ" class="md-nav__link">
       前処理の一連の流れ
     </a>
@@ -1133,6 +1194,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../nlp/stanfordnlp.md" title="stanfordnlp" class="md-nav__link">
+      stanfordnlp
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../nlp/parse/" title="単語のパース" class="md-nav__link">
       単語のパース
     </a>
@@ -1147,18 +1220,6 @@
   <li class="md-nav__item">
     <a href="../../../nlp/co_matrix/" title="共起行列の作成" class="md-nav__link">
       共起行列の作成
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../nlp/sample/" title="サンプル" class="md-nav__link">
-      サンプル
     </a>
   </li>
 
@@ -2065,29 +2126,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" title="書き込み(保存)" class="md-nav__link">
-    書き込み(保存)
+  <a href="#csv" title="CSVファイルとして保存" class="md-nav__link">
+    CSVファイルとして保存
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#excel" title="Excelファイルとして保存" class="md-nav__link">
     Excelファイルとして保存
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" title="例" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="例" class="md-nav__link">
     例
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="追記事項?" class="md-nav__link">
+    追記事項?
+  </a>
   
 </li>
       
@@ -2108,33 +2170,24 @@
               
                 
                 
-                <h1 id="_1">書き込み</h1>
-<p>Pandasを利用するときには以下を記述しておく。
+                <h1 id="_1">書き込み・保存</h1>
+<ul>
+<li>前提<br />
+Pandasを利用するときには以下を記述しておく。
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">pandas</span> <span style="color: #f92672">as</span> <span style="color: #f8f8f2">pd</span>
 </pre></div>
-</td></tr></table></p>
-<h2 id="_2">書き込み(保存)</h2>
+</td></tr></table></li>
+</ul>
+<h2 id="csv">CSVファイルとして保存</h2>
 <p>データフレームをcsvなどに保存できる。
 基本。
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&quot;hoge.csv&quot;</span><span style="color: #f8f8f2">)</span>
 </pre></div>
-</td></tr></table>
-保存をする際にエンコーディングなどの指定が可能。
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">f</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&quot;hoge.tsv&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">encoding</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;shift_jis&quot;</span><span style="color: #f8f8f2">,sep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;</span><span style="color: #ae81ff">\t</span><span style="color: #e6db74">&#39;</span><span style="color: #f8f8f2">,index</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;False&#39;</span><span style="color: #f8f8f2">)</span>
-</pre></div>
-</td></tr></table>
-その他オプション
-<code class="codehilite">sep</code> : 区切り文字の指定。デフォルトは <code class="codehilite">,</code>
-<code class="codehilite">index</code> : 行名を入れるかどうか。デフォルトは <code class="codehilite">True</code></p>
-<p>Windows環境でExcelを開く予定がある場合、デフォルトだと文字化けを起こす。
-タブ区切りUTF-16を指定するとうまくいった気がする。
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&quot;hoge.csv&quot;</span><span style="color: #f8f8f2">,encoding</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;UTF-16&quot;</span><span style="color: #f8f8f2">,sep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;</span><span style="color: #ae81ff">\t</span><span style="color: #e6db74">&#39;</span><span style="color: #f8f8f2">)</span>
-</pre></div>
 </td></tr></table></p>
-<h3 id="excel">Excelファイルとして保存</h3>
+<h2 id="excel">Excelファイルとして保存</h2>
 <p>excelへの書き込みにも対応している。
 csvでエンコードをどうにかしてExcelで見るよりもこっちのほうが圧倒的に楽。</p>
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_excel(</span><span style="color: #e6db74">&#39;document.xlsx&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">sheet_name</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;Sheet1&#39;</span><span style="color: #f8f8f2">)</span>
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_excel(</span><span style="color: #e6db74">&#39;hoge.xlsx&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">sheet_name</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;Sheet1&#39;</span><span style="color: #f8f8f2">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -2143,28 +2196,8 @@ csvでエンコードをどうにかしてExcelで見るよりもこっちのほ
 </pre></div>
 </td></tr></table>
 
-<h3 id="_3">例</h3>
-<p>リストからのデータフレーム化も含め以下に例を記載
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e"># 保存</span>
-<span style="color: #f92672">import</span> <span style="color: #f8f8f2">pandas</span> <span style="color: #f92672">as</span> <span style="color: #f8f8f2">pd</span>
-<span style="color: #f8f8f2">data</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span><span style="color: #e6db74">&quot;id&quot;</span> <span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">id_list,</span>
-        <span style="color: #e6db74">&quot;title&quot;</span> <span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">title_list}</span>
-<span style="color: #f8f8f2">w_df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">DataFrame(data)</span>
-<span style="color: #f8f8f2">w_df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_excel(</span><span style="color: #e6db74">&#39;document.xlsx&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">sheet_name</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;Sheet1&#39;</span><span style="color: #f8f8f2">)</span>
-<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;excelへの書き込みを完了しました&quot;</span><span style="color: #f8f8f2">)</span>
-<span style="color: #f8f8f2">w_df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&#39;document.csv&#39;</span><span style="color: #f8f8f2">)</span>
-<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;csvへの書き込みを完了しました&quot;</span><span style="color: #f8f8f2">)</span>
-</pre></div>
-</td></tr></table></p>
-<p>例2)
+<h2 id="_2">例</h2>
+<p>リストからのデータフレーム化も含め以下に例を記載</p>
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
 2
 3
@@ -2176,10 +2209,26 @@ csvでエンコードをどうにかしてExcelで見るよりもこっちのほ
         <span style="color: #e6db74">&quot;key2&quot;</span> <span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">value2,</span>
         <span style="color: #e6db74">&quot;key3&quot;</span> <span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">value3}</span>
 <span style="color: #f8f8f2">df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">DataFrame(data)</span>
+<span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_excel(</span><span style="color: #e6db74">&#39;test.xlsx&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">sheet_name</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;Sheet1&#39;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&#39;./test.csv&#39;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table>
 
-<span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&#39;./csv_data.csv&#39;</span><span style="color: #f8f8f2">)</span>
+<h2 id="_3">追記事項?</h2>
+<p>保存をする際にエンコーディングなどの指定が可能。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">f</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&quot;hoge.tsv&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">encoding</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;shift_jis&quot;</span><span style="color: #f8f8f2">,sep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;</span><span style="color: #ae81ff">\t</span><span style="color: #e6db74">&#39;</span><span style="color: #f8f8f2">,index</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;False&#39;</span><span style="color: #f8f8f2">)</span>
+</pre></div>
+</td></tr></table>
+その他オプション
+<code class="codehilite">sep</code> : 区切り文字の指定。デフォルトは <code class="codehilite">,</code>
+<code class="codehilite">index</code> : 行名を入れるかどうか。デフォルトは <code class="codehilite">True</code></p>
+<p>Windows環境でExcelを開く予定がある場合、デフォルトだと文字化けを起こす。
+タブ区切りUTF-16を指定するとうまくいった気がする。
+<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f8f8f2">df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to_csv(</span><span style="color: #e6db74">&quot;hoge.csv&quot;</span><span style="color: #f8f8f2">,encoding</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;UTF-16&quot;</span><span style="color: #f8f8f2">,sep</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;</span><span style="color: #ae81ff">\t</span><span style="color: #e6db74">&#39;</span><span style="color: #f8f8f2">)</span>
 </pre></div>
 </td></tr></table></p>
+<hr />
+<p>おわりですー</p>
                 
                   
                 

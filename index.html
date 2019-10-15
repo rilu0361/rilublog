@@ -539,6 +539,18 @@
 
 
   <li class="md-nav__item">
+    <a href="python/numpy/random/" title="乱数生成" class="md-nav__link">
+      乱数生成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="python/numpy/choice/" title="ランダム選出" class="md-nav__link">
       ランダム選出
     </a>
@@ -647,6 +659,30 @@
 
 
   <li class="md-nav__item">
+    <a href="python/pandas/df_look/" title="DataFrameの参照" class="md-nav__link">
+      DataFrameの参照
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="python/pandas/df_ope/" title="DataFrameの操作" class="md-nav__link">
+      DataFrameの操作
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="python/pandas/df_show/" title="DataFrameの全表示" class="md-nav__link">
       DataFrameの全表示
     </a>
@@ -719,8 +755,20 @@
 
 
   <li class="md-nav__item">
-    <a href="python/matplotlib/scatter/" title="散布図を描く" class="md-nav__link">
-      散布図を描く
+    <a href="python/matplotlib/hist/" title="ヒストグラムの描画" class="md-nav__link">
+      ヒストグラムの描画
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="python/matplotlib/scatter/" title="散布図を描画" class="md-nav__link">
+      散布図を描画
     </a>
   </li>
 
@@ -1072,6 +1120,18 @@
 
 
   <li class="md-nav__item">
+    <a href="nlp/sample/" title="サンプル" class="md-nav__link">
+      サンプル
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="nlp/prepare/" title="前処理の一連の流れ" class="md-nav__link">
       前処理の一連の流れ
     </a>
@@ -1240,6 +1300,18 @@
 
 
   <li class="md-nav__item">
+    <a href="nlp/stanfordnlp.md" title="stanfordnlp" class="md-nav__link">
+      stanfordnlp
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="nlp/parse/" title="単語のパース" class="md-nav__link">
       単語のパース
     </a>
@@ -1254,18 +1326,6 @@
   <li class="md-nav__item">
     <a href="nlp/co_matrix/" title="共起行列の作成" class="md-nav__link">
       共起行列の作成
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="nlp/sample/" title="サンプル" class="md-nav__link">
-      サンプル
     </a>
   </li>
 
@@ -2334,13 +2394,13 @@
 また、予告のない編集により内容が改変されることもご容赦ください。</p>
 <h2 id="_3">更新履歴</h2>
 <p>(2019/10/05 : ここから大幅に改変します！！たぶん！！)</p>
-<p>2019/10/14 : 色々更新したよー</p>
+<p>2019/10/15 : 色々更新したよー(継続)</p>
 <h3 id="_4">ひとこと</h3>
-<p>わりと頑張って更新中です。誰も見てないであろうこのブログ(?)。<br />
-基本的には自分のためなので、結構適当です。<br />
-もし見ている方がいたらごめんなさい。<br />
-その場のノリで文章を書いているので文体がバラバラなのはご愛敬なのです...。<br />
-(2019/10/14)</p>
+<p>昨日に引き続き更新中です。<br />
+極力結論を先に書いてしまおうという方針で記事は書いております。<br />
+詳しい説明を書くのは思ったより労力がですね...。<br />
+検証(動作確認)が面倒なのです。<br />
+(2019/10/15)</p>
 <hr />
 <h2 id="_5">目次</h2>
 <h3 id="python">Python 一般</h3>
@@ -2355,35 +2415,39 @@
 <a href="python/syntax/typehint/">型注釈</a>：型ヒント<br />
 <a href="python/syntax/fizzbuzz/">fizzbuzz</a>：fizzbuzz例</p>
 </details>
-<details class="numpy"><summary>Numpy</summary><p><a href="python/numpy/choice/">ランダムに選ぶ</a>：リストからランダムに抽出<br />
+<details class="numpy"><summary>Numpy</summary><p><a href="python/numpy/random/">乱数生成</a>：乱数生成とその設定<br />
+<a href="python/numpy/choice/">ランダムに選ぶ</a>：リストからランダムに抽出<br />
 <a href="python/numpy/element/">配列の要素を見る</a>：要素のチェック</p>
 </details>
-<details class="pandas"><summary>Pandas</summary><p><a href="python/pandas/save/">表形式データの保存</a>：excelとcsv<br />
-<a href="python/pandas/csv_load/">csvデータの読込</a>：基本<br />
+<details class="pandas"><summary>Pandas</summary><p><a href="python/pandas/save/">表形式データの保存</a>：excelとcsvへの保存<br />
+<a href="python/pandas/csv_load/">csvデータの読込</a>：CSVデータの読込<br />
 <a href="python/pandas/excel_load/">excelデータの読込</a>：シートの扱い<br />
 <a href="python/pandas/remove/">重複の削除</a>：duplicated()<br />
 <a href="python/pandas/df_create/">DetaFrameの生成</a>：DataFrameの生成<br />
+<a href="python/pandas/df_look/">DataFrameの参照</a>：データの参照<br />
+<a href="python/pandas/df_ope">DataFrameの操作</a>：追加・削除・合成・結合・転置<br />
 <a href="python/pandas/df_show/">DataFrameの全表示</a>：表示の省略を防ぐ<br />
 <a href="python/pandas/sr_create/">Seriesの生成</a>：1次元配列</p>
 </details>
 <details class="matplotlib"><summary>Matplotlib</summary><p><a href="python/matplotlib/plot/">matplotlibの基本</a><br />
-<a href="python/matplotlib/subplot/">複数の図をまとめて表示</a>：subplot()  <br />
+<a href="python/matplotlib/subplot/">複数の図をまとめて表示</a>：subplot() <br />
+<a href="python/matplotlib/hist/">ヒストグラムを描く</a>：hist() <br />
 <a href="python/matplotlib/scatter/">散布図を描く</a>：scatter()  </p>
 </details>
-<details class="ファイル関連"><summary>ファイル関連</summary><p><a href="python/file/dir_show/">ファイル一覧取得</a><br />
-<a href="python/file/file_r/">ファイル読み込み</a><br />
-<a href="python/file/file_w/">ファイル書き込み</a><br />
-<a href="python/file/file_d/">ファイル削除</a><br />
-<a href="python/file/dir_create/">ディレクトリ作成</a><br />
-<a href="python/file/dir_d/">ディレクトリ削除</a>  </p>
+<details class="ファイル関連"><summary>ファイル関連</summary><p><a href="python/file/dir_show/">ファイル一覧取得</a>：2通り<br />
+<a href="python/file/file_r/">ファイル読み込み</a>：テキストファイルの読込<br />
+<a href="python/file/file_w/">ファイル書き込み</a>：テキストファイルの書込<br />
+<a href="python/file/file_d/">ファイル削除</a>：削除<br />
+<a href="python/file/dir_create/">ディレクトリ作成</a>：フォルダの作成<br />
+<a href="python/file/dir_d/">ディレクトリ削除</a>：フォルダの削除  </p>
 </details>
 <details class="便利ツール"><summary>便利ツール</summary><p><a href="python/tool/exe/">pythonのexe化</a>：pythonをexeにまとめる<br />
 <a href="python/tool/progress/">プログレスバーの表示</a>：tqdm<br />
 <a href="python/tool/commandLine_option/">コマンドライン引数</a><br />
-<a href="python/tool/time/">現在時間の取得</a><br />
-<a href="python/tool/log/">ログの表示</a><br />
+<a href="python/tool/time/">現在時間の取得</a>:現在時刻をファイル名に<br />
+<a href="python/tool/log/">ログの表示</a>：所説あり?<br />
 <a href="python/tool/key/">キーボード操作</a>：自動キー入力<br />
-<a href="python/tool/tkinter/">tkinter</a>：GUI  </p>
+<a href="python/tool/tkinter/">tkinter</a>：簡単なGUI作成  </p>
 </details>
 <details class="その他"><summary>その他</summary><p><a href="python/other/statistic/">統計基礎</a>：平均分散中央値など</p>
 </details>
@@ -2400,6 +2464,7 @@
 <a href="nlp/mecab_add_userdic/">mecabユーザー辞書の追加</a><br />
 <a href="nlp/mecab_usage/">mecabを使用する</a><br />
 <a href="nlp/janome/">janome</a><br />
+<a href="nlp/stanford/">stanfordnlp</a>
 <a href="nlp/parse/">単語のパース</a>
 <!-- 正規表現: nlp/regex.md --></p>
 </details>
@@ -2430,17 +2495,19 @@
 <details class="基礎"><summary>基礎</summary><p><a href="anormaly/base/">異常検知基礎</a></p>
 </details>
 <h3 id="_10">機械学習フレームワーク</h3>
-<details class="keras"><summary>Keras</summary><p>工事中</p>
+<details class="scikit-learn"><summary>Scikit-learn</summary><p>工事中...</p>
 </details>
-<details class="tensorflow"><summary>Tensorflow</summary><p>工事中</p>
+<details class="keras"><summary>Keras</summary><p>工事中...</p>
 </details>
-<details class="pytorch"><summary>Pytorch</summary><p>工事中</p>
+<details class="tensorflow"><summary>Tensorflow</summary><p>工事中...</p>
+</details>
+<details class="pytorch"><summary>Pytorch</summary><p>工事中...</p>
 </details>
 <h3 id="_11">アプリケーション</h3>
-<details class="言語処理"><summary>言語処理</summary><p>工事中..
+<details class="言語処理"><summary>言語処理</summary><p>工事中...<br />
 <a href="create/pdf2md/">pdfからテキストを抽出する</a></p>
 </details>
-<details class="webアプリ"><summary>Webアプリ</summary><p>工事中</p>
+<details class="webアプリ"><summary>Webアプリ</summary><p>工事中...</p>
 </details>
 <h3 id="_12">数学</h3>
 <details class="公式など"><summary>公式など</summary><p><a href="basis/memo_prob/">確率メモ</a><br />
@@ -2471,7 +2538,7 @@
 <h3 id="_13">文章を書く</h3>
 <details class="markdown"><summary>Markdown</summary><p><a href="markdown/mkd/">markdown基本</a><br />
 <a href="markdown/math/">markdown数式</a><br />
-<a href="markdown/math_symbol/">markdown数式  記号</a><br />
+<a href="markdown/math_symbol/">markdown数式 記号</a><br />
 <a href="markdown/mkdocs_md/">markdown拡張</a><br />
 <a href="markdown/mkd_ex/">markdown例</a><br />
 <a href="markdown/mkdocs/">mkdocsによるwebページの公開</a></p>
@@ -2479,10 +2546,10 @@
 <details class="tex"><summary>Tex</summary><p><a href="tex/install/">Texのインストール(Windows)</a></p>
 </details>
 <details class="restructuredtext"><summary>Restructuredtext</summary><p><a href="rest/fund/">Rest基本構文</a><br />
-<a href="rest/admotions/">注意  強調</a><br />
-<a href="rest/link/">リンク  脚注</a><br />
+<a href="rest/admotions/">注意 強調</a><br />
+<a href="rest/link/">リンク 脚注</a><br />
 <a href="rest/math/">数式の挿入</a><br />
-<a href="rest/module/">コード  表  画像  サイドバー</a><br />
+<a href="rest/module/">コード 表 画像 サイドバー</a><br />
 <a href="rest/other/">その他</a><br />
 <a href="rest/sphinx/">sphinxによるwebページの公開</a></p>
 </details>
