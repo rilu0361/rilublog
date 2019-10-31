@@ -1578,6 +1578,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../ml/torch/data/" title="データ取得と加工" class="md-nav__link">
+      データ取得と加工
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ml/torch/model/" title="モデル作成" class="md-nav__link">
+      モデル作成
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../ml/torch/visual/" title="tensorboard可視化" class="md-nav__link">
+      tensorboard可視化
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../ml/torch/tensor_size/" title="テンソルサイズ操作" class="md-nav__link">
       テンソルサイズ操作
     </a>
@@ -2420,8 +2456,10 @@
 4
 5
 6
-7</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">MeCab</span>
+7
+8</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">MeCab</span>
 <span style="color: #f8f8f2">mecab</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">MeCab</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Tagger(</span><span style="color: #e6db74">&quot;-Owakati&quot;</span><span style="color: #f8f8f2">)</span>
+
 <span style="color: #66d9ef">def</span> <span style="color: #a6e22e">wakati</span><span style="color: #f8f8f2">(text</span> <span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">str)</span> <span style="color: #f92672">-&gt;</span> <span style="color: #f8f8f2">list[str]:</span>
     <span style="color: #f8f8f2">text</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">mecab</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parse(str(text))</span>
     <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">text</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">split()</span>
@@ -2435,19 +2473,26 @@
 </pre></div>
 </td></tr></table>
 
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>neologdを使うときなどは、Mecab.Tagger("-d /usr/lib/mecab/dic/mecab-ipadic-neologd")
+などとする。pathはneologdのインストール先次第で変更する必要あり。</p>
+</div>
 <h2 id="_2">各単語の情報の出力</h2>
-<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">MeCab</span>
-<span style="color: #f8f8f2">mecabTagger</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">MeCab</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Tagger(</span><span style="color: #e6db74">&quot;-Ochasen&quot;</span><span style="color: #f8f8f2">)</span>
+<p><table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">MeCab</span>
+<span style="color: #f8f8f2">mecab</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">MeCab</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Tagger(</span><span style="color: #e6db74">&quot;-Ochasen&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">mecab</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parse(</span><span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">)</span>
 <span style="color: #66d9ef">def</span> <span style="color: #a6e22e">node_feature</span><span style="color: #f8f8f2">(text:</span> <span style="color: #f8f8f2">str)</span> <span style="color: #f92672">-&gt;</span> <span style="color: #f8f8f2">None:</span>
-    <span style="color: #f8f8f2">node</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">mecabTagger</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parseToNode(text)</span>
+    <span style="color: #f8f8f2">node</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">mecab</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parseToNode(text)</span>
     <span style="color: #66d9ef">while</span> <span style="color: #f8f8f2">node:</span>
         <span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(node</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">feature)</span>
         <span style="color: #f8f8f2">node</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">node</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">next</span>
