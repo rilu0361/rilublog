@@ -3,24 +3,118 @@ nav:
     - HOME: index.md
     - Python:
         - Anacondaコマンド集: python/anaconda_cmd.md
-        - python基本構文: python/general.md
-        - 条件分岐if : python/if.md
-        - 繰り返し for,while: python/for.md
-        - コレクション: python/collection.md
-        - pandas: python/pandas.md
-        - 平均・分散・中央値など: python/statistic.md
-        - 型注釈: python/typehint.md
-        - コマンドライン引数: python/commandLine_option.md
-        - ちょっとしたプログラム集: python/tips.md
-        - Anacondaによる環境構築: python/anaconda_install.md
-        - pyenvでの環境構築: python/pyenv.md
+        - python構文:
+            - 繰り返し for,while: python/syntax/for.md
+            - 条件分岐 if : python/syntax/if.md
+            - リスト: python/syntax/list.md
+            - タプル: python/syntax/tuple.md
+            - 集合(set) : python/syntax/set.md
+            - 辞書(dict) : python/syntax/dict.md
+            - 内包表記: python/syntax/comprehension.md
+            - 型注釈: python/syntax/typehint.md
+            - fizzbuzz: python/syntax/fizzbuzz.md
+        - numpy:
+            - 乱数生成: python/numpy/random.md
+            - ランダム選出: python/numpy/choice.md
+            - 配列の要素を見る: python/numpy/element.md
+        - pandas:
+            - 表形式データの保存: python/pandas/save.md
+            - csvデータの読込: python/pandas/csv_load.md
+            - excelデータの読込: python/pandas/excel_load.md
+            - 重複の削除: python/pandas/remove.md
+            - DetaFrameの生成: python/pandas/df_create.md
+            - DataFrameの参照: python/pandas/df_look.md
+            - DataFrameの操作: python/pandas/df_ope.md
+            - DataFrameの全表示: python/pandas/df_show.md 
+            - Seriesの生成: python/pandas/sr_create.md
+        - scipy:
+            - 確率密度関数: python/scipy/prob_density.md
+        - matplotlib:
+            - matplotlibの基本: python/matplotlib/plot.md
+            - 複数の図をまとめて表示: python/matplotlib/subplot.md
+            - ヒストグラムの描画: python/matplotlib/hist.md
+            - 散布図を描画: python/matplotlib/scatter.md
+        - ファイル操作:
+            - ファイル一覧取得: python/file/dir_show.md
+            - ファイル読み込み: python/file/file_r.md
+            - ファイル書き込み: python/file/file_w.md
+            - ファイル削除:     python/file/file_d.md
+            - ディレクトリ作成: python/file/dir_create.md
+            - ディレクトリ削除: python/file/dir_d.md
+        - 便利ツール:
+            - コマンドライン引数: python/tool/commandLine_option.md
+            - プログレスバーの表示: python/tool/progress.md
+            - データの保存(pickle): python/tool/pickle.md
+            - pythonのexe化: python/tool/exe.md
+            - 現在時間の取得: python/tool/time.md
+            - ログの表示: python/tool/log.md
+            - キーボード操作: python/tool/key.md
+            - tkinter: python/tool/tkinter.md
+        - その他?:
+            - 統計基礎: python/other/statistic.md
+            - ちょっとしたなにか: python/other/tips.md
+        - 環境構築:
+            - Anacondaによる環境構築: python/env/anaconda_install.md
+            - pyenvでの環境構築: python/env/pyenv.md
     - 自然言語処理:
-        - mecabの導入: nlp/mecab.md
-        - mecabユーザー辞書の追加: nlp/mecab_add_userdic.md
-        - mecabを使用する: nlp/mecab_usage.md
-        # - 正規表現: nlp/regex.md
-    # - 異常検知:
-    #     - 異常検知基礎: anormaly/base.md
+        - サンプル: nlp/sample.md
+        - データの扱いと前処理:
+            - 前処理の一連の流れ: nlp/data/prepare.md
+            - データの読み込みと保存: nlp/data/textdata.md
+            - 半角全角変換: nlp/data/zenhan.md
+            - mecabの導入: nlp/data/mecab.md
+            - mecabユーザー辞書の追加: nlp/data/mecab_add_userdic.md
+            - mecabを使用する: nlp/data/mecab_usage.md
+            - janome: nlp/data/janome.md
+            - stanfordnlp: nlp/data/stanford.md
+            - 単語のパース: nlp/data/parse.md
+            - ストップワード除去: nlp/data/stopword.md
+             # - 正規表現: nlp/data/regex.md
+        - 統計処理:
+            - TFIDF: nlp/sta/tfidf.md
+            - 単語のカウント: nlp/sta/count.md
+            - 共起行列の作成: nlp/sta/co_matrix.md
+            - ワードクラウド: nlp/sta/wordcloud.md
+        - 機械学習:
+            - word2vec: nlp/ml/word2vec.md
+            - kmenas: nlp/ml/kmeans.md
+            - 次元削減: nlp/ml/dimention.md
+        - 評価:
+            - コサイン類似度: nlp/eva/cos.md
+    - 画像:
+        - 画像の読み込み: image/img_load.md
+        - 画像のデータ拡張: image/img_aug.md
+        - 特徴量: image/feature.md
+        - フィルタ: image/filter.md
+        - テンプレートマッチング: image/template_matching.md
+    - 音声:
+        - 基礎: audio/general.md
+        - 特徴量: audio/feature.md
+    - 異常検知:
+        - 異常検知基礎: anormaly/base.md
+        # - 単純ベイズ法による異常検知: anormaly/temp.md
+    - 機械学習:
+        - pytorch:
+            - pytorch導入: ml/torch/intro.md
+            - データ取得と加工: ml/torch/data.md
+            - モデル作成: ml/torch/model.md
+            - tensorboard可視化: ml/torch/visual.md
+            - テンソルサイズ操作: ml/torch/tensor_size.md
+            - テンソル計算基礎: ml/torch/tensor_culc.md
+            - tensor<-->Numpy: ml/torch/tensor2numpy.md
+            - テンソル生成: ml/torch/tensor_c.md
+            - テンソル参照: ml/torch/tensor_o.md
+    #     - keras:
+    #     - tensorflow:
+    #     - scikit-learn:
+    - 基礎:
+        - 確率メモ: basis/memo_prob.md
+        - 微積分メモ: basis/memo_culculus.md
+        - 確率分布メモ: basis/memo_distribution.md
+        - 最小値を求める基礎: basis/minimize.md
+        - 最尤推定: basis/likelihood.md
+        - MAP推定: basis/map.md
+        - ベイズ推定: basis/bayesian.md
     - Markdown:
         - markdown基本: markdown/mkd.md
         - markdown数式: markdown/math.md
@@ -35,9 +129,14 @@ nav:
         - GPU for tensorflow-gpu: ubuntu/gpu.md
         - ログインループの対処: ubuntu/login_loop.md
     - Windows:
+        - ショートカットキー: windows/shortcut.md
         - WSL導入: windows/wsl.md
         - WSL ~matplotlib~ : windows/wsl_matplotlib.md
+        - WSL python: windows/wsl_python.md
         - Xming文字化け対処: windows/xming_char.md
+        - VScode設定: windows/vscode.md
+    - Tex:
+        - Texのインストール(Win): tex/install.md
     - RestructuredText:
         - Rest基本構文: rest/fund.md
         - 注意・強調: rest/admotions.md
@@ -46,10 +145,17 @@ nav:
         - コード・表・画像・サイドバー: rest/module.md
         - その他: rest/other.md
         - sphinxによるwebページの公開: rest/sphinx.md
+    - アプリケーション:
+        - pdfからテキストを抽出する: create/pdf2md.md
     - その他:
         - git: other/git.md
-    - 雑記: 
-        - 2019年4月: blog/201904.md
+        - RPA概要: other/rpa.md
+    - ひとこと: 
+        - 2019年10月: blog/201910.md
+        - 2019年07月: blog/201907.md
+        - 2019年06月: blog/201906.md
+        - 2019年05月: blog/201905.md
+        - 2019年04月: blog/201904.md
     - 免責事項: disclaimer.md
 
 # theme: readthedocs

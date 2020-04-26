@@ -54,6 +54,7 @@ $$
 \frac{y_{i+j}}{x_i+x_j}
 $$
 
+
 ## 平方根　\sqrt{}
 ```md
 $$
@@ -93,7 +94,7 @@ $$
 ## 対数 \log \ln
 ```md
 $$
-\log_2x , \ln 10
+\log_2x , \ln y
 $$
 ```
 
@@ -177,6 +178,25 @@ a &= x+y+z \\
 b + c &= x + y
 \end{align}
 $$
+
+## 数式に番号を割当 \tag{}
+
+```md
+$$
+\begin{align}
+a &= x+y+z \tag{2.11} \\
+b + c &= x + y \tag{2.12}
+\end{align}
+$$
+```
+
+$$
+\begin{align}
+a &= x+y+z \tag{2.11} \\
+b + c &= x + y \tag{2.12}
+\end{align}
+$$
+
 
 ## 行列 \begin{matrix}
 ```md

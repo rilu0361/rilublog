@@ -64,6 +64,28 @@ $$
 x, \boldsymbol x , \vec x , \mathbb x
 $$
 
+## カリグラフィー
+```md
+$$
+\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+$$
+```
+$$
+\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+$$
+
+## 中抜き文字
+
+```md
+$$
+\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+$$
+```
+
+$$
+\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+$$
+
 ## 等号など
 ```md
 $$
@@ -103,6 +125,18 @@ $$
 \forall , \exists
 $$
 
+## 比例
+
+```md
+$$
+\propto
+$$
+```
+
+$$
+\propto
+$$
+
 ## 3点リーダー
 ```md
 $$
@@ -137,6 +171,18 @@ $$
 \therefore
 $$
 
+## 下に文字を書く
+
+```md
+$$
+\underset{\theta}{\text{argmax}}
+$$
+```
+
+$$
+\underset{\theta}{\text{argmax}}
+$$
+
 ## 括弧()
 
 ```md
@@ -156,3 +202,17 @@ $$
 \bigr)
 \biggr)
 $$
+
+## 囲む
+
+```md
+$$
+\fbox{$a_b$, a_b}
+$$
+```
+
+$$
+\fbox{$a_b$, a_b}
+$$
+
+`\fbox{}` 内で数式を書くときは`$`で囲む。
