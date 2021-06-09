@@ -2530,54 +2530,6 @@
     メイン
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ae" title="ae" class="md-nav__link">
-    ae
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#predict" title="predict" class="md-nav__link">
-    predict
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" title="メイン" class="md-nav__link">
-    メイン
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" title="データセット読込" class="md-nav__link">
-    データセット読込
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transform" title="transform" class="md-nav__link">
-    transform
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#predict_1" title="predict" class="md-nav__link">
-    predict
-  </a>
-  
 </li>
       
       
@@ -2603,7 +2555,8 @@
 <p>変更の余地が大幅にあるので、閲覧注意</p>
 <p>工事中です。。。</p>
 <h2 id="_3">メイン</h2>
-<h3 id="ae">ae</h3>
+<!-- 
+### ae
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>  1
   2
   3
@@ -3233,6 +3186,8 @@
 <span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;評価時のloss:&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">valid_loss)</span>
 </pre></div>
 </td></tr></table>
+
+
 
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>  1
   2
@@ -4118,7 +4073,8 @@
 </pre></div>
 </td></tr></table>
 
-<h3 id="predict">predict</h3>
+
+### predict
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>  1
   2
   3
@@ -4659,7 +4615,7 @@
 </pre></div>
 </td></tr></table>
 
-<h3 id="_4">メイン</h3>
+### メイン
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>  1
   2
   3
@@ -5444,6 +5400,7 @@
 </pre></div>
 </td></tr></table>
 
+
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span>  1
   2
   3
@@ -5702,8 +5659,9 @@
 </pre></div>
 </td></tr></table>
 
-<h2 id="_5">データセット読込</h2>
-<p>下は実は動画用なので注意</p>
+## データセット読込
+下は実は動画用なので注意
+
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span> 1
  2
  3
@@ -5858,7 +5816,8 @@
 </pre></div>
 </td></tr></table>
 
-<h2 id="transform">transform</h2>
+## transform
+
 <table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span> 1
  2
  3
@@ -5915,122 +5874,69 @@
 </pre></div>
 </td></tr></table>
 
-<h2 id="predict_1">predict</h2>
-<table class="codehilitetable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57</pre></div></td><td class="code"><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">import</span> <span style="color: #f8f8f2">torch</span>
-<span style="color: #f92672">import</span> <span style="color: #f8f8f2">torchvision.transforms</span> <span style="color: #f92672">as</span> <span style="color: #f8f8f2">transforms</span>
-<span style="color: #f92672">import</span> <span style="color: #f8f8f2">torchvision.datasets</span> <span style="color: #f92672">as</span> <span style="color: #f8f8f2">datasets</span>
-<span style="color: #f92672">import</span> <span style="color: #f8f8f2">torch.nn</span> <span style="color: #f92672">as</span> <span style="color: #f8f8f2">nn</span>
-<span style="color: #f92672">import</span> <span style="color: #f8f8f2">torch.optim</span> <span style="color: #f92672">as</span> <span style="color: #f8f8f2">optim</span>
-<span style="color: #f92672">from</span> <span style="color: #f8f8f2">my_transform</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">BaseTransform,</span> <span style="color: #f8f8f2">VaTransform</span>
-<span style="color: #75715e"># from my_dataloader import BaseDataloader</span>
-<span style="color: #f92672">from</span> <span style="color: #f8f8f2">my_model</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">C2DNet,</span> <span style="color: #f8f8f2">FCNet</span>
-<span style="color: #f92672">from</span> <span style="color: #f8f8f2">tqdm</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">tqdm</span>
-<span style="color: #f8f8f2">MODEL_PATH</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;model.tar&quot;</span>
-<span style="color: #f8f8f2">DEVICE</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">torch</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">device(</span><span style="color: #e6db74">&quot;cuda:0&quot;</span> <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">torch</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">cuda</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">is_available()</span> <span style="color: #66d9ef">else</span> <span style="color: #e6db74">&quot;cpu&quot;</span><span style="color: #f8f8f2">)</span>
-<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;使用するデバイス：&quot;</span><span style="color: #f8f8f2">,DEVICE)</span>
-<span style="color: #f8f8f2">BATCH_SIZE</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">5</span>
-<span style="color: #f8f8f2">EPOCH</span>      <span style="color: #f92672">=</span> <span style="color: #ae81ff">5</span>
-<span style="color: #75715e"># データのロード MNIST</span>
-<span style="color: #f8f8f2">RESIZE</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">28</span>
-<span style="color: #f8f8f2">MEAN</span>   <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">0.485</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">0.456</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">0.406</span><span style="color: #f8f8f2">)</span>
-<span style="color: #f8f8f2">STD</span>    <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(</span><span style="color: #ae81ff">0.229</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">0.224</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">0.225</span><span style="color: #f8f8f2">)</span>
-<span style="color: #f8f8f2">data_transform</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">BaseTransform(RESIZE,</span> <span style="color: #f8f8f2">MEAN,</span> <span style="color: #f8f8f2">STD)</span>
 
-<span style="color: #75715e"># 学習データ</span>
-<span style="color: #f8f8f2">testset</span>    <span style="color: #f92672">=</span> <span style="color: #f8f8f2">MyDataset(test_path_list,</span> <span style="color: #f8f8f2">transform</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">data_transform,</span> <span style="color: #f8f8f2">phase</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;test&quot;</span><span style="color: #f8f8f2">)</span>
-<span style="color: #f8f8f2">testloader</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">torch</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">utils</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">data</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">DataLoader(testset,</span> <span style="color: #f8f8f2">batch_size</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">BATCH_SIZE,</span> 
-                                        <span style="color: #f8f8f2">shuffle</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False,</span> <span style="color: #f8f8f2">num_workers</span><span style="color: #f92672">=</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">pin_memory</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">True)</span>
-<span style="color: #75715e"># テストデータ</span>
-<span style="color: #75715e"># モデルのロード</span>
-<span style="color: #f8f8f2">model</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">C2DNet()</span>
-<span style="color: #f8f8f2">optimizer</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">optim</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">Adam(model</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">parameters(),</span> <span style="color: #f8f8f2">lr</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0.001</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">eps</span><span style="color: #f92672">=</span><span style="color: #ae81ff">1e-08</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">weight_decay</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span>
-<span style="color: #f8f8f2">checkpoint</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">torch</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">load(MODEL_PATH)</span>
-<span style="color: #f8f8f2">model</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">load_state_dict(checkpoint[</span><span style="color: #e6db74">&#39;model_state_dict&#39;</span><span style="color: #f8f8f2">])</span>
-<span style="color: #f8f8f2">optimizer</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">load_state_dict(checkpoint[</span><span style="color: #e6db74">&#39;optimizer_state_dict&#39;</span><span style="color: #f8f8f2">])</span>
-<span style="color: #f8f8f2">epoch</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">checkpoint[</span><span style="color: #e6db74">&#39;epoch&#39;</span><span style="color: #f8f8f2">]</span>
-<span style="color: #f8f8f2">train_loss</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">checkpoint[</span><span style="color: #e6db74">&#39;train_loss&#39;</span><span style="color: #f8f8f2">]</span>
-<span style="color: #f8f8f2">valid_loss</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">checkpoint[</span><span style="color: #e6db74">&#39;valid_loss&#39;</span><span style="color: #f8f8f2">]</span>
-<span style="color: #75715e"># Loss関数定義</span>
-<span style="color: #f8f8f2">criterion</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">nn</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">CrossEntropyLoss()</span>
-<span style="color: #75715e"># 評価用の設定</span>
-<span style="color: #f8f8f2">model</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">eval()</span>
-<span style="color: #f8f8f2">correct</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span>            <span style="color: #75715e"># 正解率計算用の変数を宣言</span>
-<span style="color: #f8f8f2">total_loss</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0.0</span>       <span style="color: #75715e"># 1epochの損失合計</span>
-<span style="color: #f8f8f2">data_num</span>  <span style="color: #f92672">=</span> <span style="color: #f8f8f2">len(testloader</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">dataset)</span>              <span style="color: #75715e"># テストデータの総数</span>
-<span style="color: #f8f8f2">pbar</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">tqdm(total</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">int(data_num</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">BATCH_SIZE))</span>  <span style="color: #75715e"># プログレスバー設定</span>
-<span style="color: #66d9ef">with</span> <span style="color: #f8f8f2">torch</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">no_grad():</span>  <span style="color: #75715e"># 推論時には勾配は不要(メモリ節約)</span>
-    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i,</span> <span style="color: #f8f8f2">(inputs,</span> <span style="color: #f8f8f2">targets)</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">enumerate(testloader):</span>
-        <span style="color: #f8f8f2">inputs</span>  <span style="color: #f92672">=</span> <span style="color: #f8f8f2">inputs</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to(DEVICE,</span> <span style="color: #f8f8f2">non_blocking</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False)</span>         <span style="color: #75715e"># データをGPUに乗せる</span>
-        <span style="color: #f8f8f2">targets</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">targets</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">to(DEVICE,</span> <span style="color: #f8f8f2">non_blocking</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False)</span>        <span style="color: #75715e"># ラベルをGPUに乗せる</span>
-        <span style="color: #75715e"># print(targets)</span>
-        <span style="color: #f8f8f2">outputs</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">model(inputs)</span>             <span style="color: #75715e"># モデルから出力を得る</span>
-        <span style="color: #75715e"># print(outputs)</span>
-        <span style="color: #f8f8f2">loss</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">criterion(outputs,</span> <span style="color: #f8f8f2">targets)</span>  <span style="color: #75715e"># Lossの計算</span>
-        <span style="color: #f8f8f2">total_loss</span> <span style="color: #f92672">+=</span> <span style="color: #f8f8f2">loss</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">item()</span>           <span style="color: #75715e"># 表示用のロスの計算</span>
-        <span style="color: #75715e"># 推論結果の取得と正誤判定</span>
-        <span style="color: #f8f8f2">_,</span> <span style="color: #f8f8f2">predicted</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">torch</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">max(outputs</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">data,</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>                      <span style="color: #75715e"># 確率が最大のラベルを取得</span>
-        <span style="color: #f8f8f2">correct</span> <span style="color: #f92672">+=</span> <span style="color: #f8f8f2">predicted</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">eq(targets</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">data</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">view_as(predicted))</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">sum()</span> <span style="color: #75715e"># 正解ならば正解数をカウントアップ</span>
-        <span style="color: #f8f8f2">pbar</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">update(</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
-<span style="color: #f8f8f2">valid_acc</span> <span style="color: #f92672">=</span>  <span style="color: #f8f8f2">(correct,</span> <span style="color: #f8f8f2">data_num,</span> <span style="color: #ae81ff">100.</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">correct</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">data_num)</span>
-<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;評価時のloss:&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">valid_loss,</span> <span style="color: #e6db74">&#39;ValidAcc: {}/{} ({:.0f}%)&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">format(</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">valid_acc))</span>
-</pre></div>
-</td></tr></table>
+## predict
+
+```py
+import torch
+import torchvision.transforms as transforms
+import torchvision.datasets as datasets
+import torch.nn as nn
+import torch.optim as optim
+from my_transform import BaseTransform, VaTransform
+# from my_dataloader import BaseDataloader
+from my_model import C2DNet, FCNet
+from tqdm import tqdm
+MODEL_PATH = "model.tar"
+DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+print("使用するデバイス：",DEVICE)
+BATCH_SIZE = 5
+EPOCH      = 5
+# データのロード MNIST
+RESIZE = 28
+MEAN   = (0.485, 0.456, 0.406)
+STD    = (0.229, 0.224, 0.225)
+data_transform = BaseTransform(RESIZE, MEAN, STD)
+
+# 学習データ
+testset    = MyDataset(test_path_list, transform=data_transform, phase="test")
+testloader = torch.utils.data.DataLoader(testset, batch_size=BATCH_SIZE, 
+                                        shuffle=False, num_workers=10, pin_memory=True)
+# テストデータ
+# モデルのロード
+model = C2DNet()
+optimizer = optim.Adam(model.parameters(), lr=0.001, eps=1e-08, weight_decay=0)
+checkpoint = torch.load(MODEL_PATH)
+model.load_state_dict(checkpoint['model_state_dict'])
+optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+epoch = checkpoint['epoch']
+train_loss = checkpoint['train_loss']
+valid_loss = checkpoint['valid_loss']
+# Loss関数定義
+criterion = nn.CrossEntropyLoss()
+# 評価用の設定
+model.eval()
+correct = 0            # 正解率計算用の変数を宣言
+total_loss = 0.0       # 1epochの損失合計
+data_num  = len(testloader.dataset)              # テストデータの総数
+pbar = tqdm(total=int(data_num/BATCH_SIZE))  # プログレスバー設定
+with torch.no_grad():  # 推論時には勾配は不要(メモリ節約)
+    for i, (inputs, targets) in enumerate(testloader):
+        inputs  = inputs.to(DEVICE, non_blocking=False)         # データをGPUに乗せる
+        targets = targets.to(DEVICE, non_blocking=False)        # ラベルをGPUに乗せる
+        # print(targets)
+        outputs = model(inputs)             # モデルから出力を得る
+        # print(outputs)
+        loss = criterion(outputs, targets)  # Lossの計算
+        total_loss += loss.item()           # 表示用のロスの計算
+        # 推論結果の取得と正誤判定
+        _, predicted = torch.max(outputs.data, 1)                      # 確率が最大のラベルを取得
+        correct += predicted.eq(targets.data.view_as(predicted)).sum() # 正解ならば正解数をカウントアップ
+        pbar.update(1)
+valid_acc =  (correct, data_num, 100.*correct/data_num)
+print("評価時のloss:", valid_loss, 'ValidAcc: {}/{} ({:.0f}%)'.format(*valid_acc))
+
+``` -->
                 
                   
                 
